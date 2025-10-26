@@ -3,11 +3,107 @@
   "WorkspaceRootPath": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\Logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|solutionrelative:Logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorPDF.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|solutionrelative:GestorPDF.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorJSON.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|solutionrelative:GestorJSON.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ValidadorDatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|solutionrelative:ValidadorDatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\HashContrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|NewFolder1{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}|solutionrelative:HashContrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ValidadorTarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:ValidadorTarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\RepositorioUsuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:RepositorioUsuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\RepositorioCompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:RepositorioCompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorTransacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:GestorTransacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorInventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:GestorInventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorConcurrencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:GestorConcurrencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:ControladorUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorHistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:ControladorHistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorCompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:ControladorCompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorAutenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:ControladorAutenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\FabricaUsuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|solutionrelative:FabricaUsuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\FachadaCompraTique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|solutionrelative:FachadaCompraTique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ObservadorUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|solutionrelative:ObservadorUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorEventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|solutionrelative:GestorEventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SujetoObservable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|solutionrelative:SujetoObservable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\IObservador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45794F35-51E2-444D-A583-942169CC266B}|NewFolder1{45794F35-51E2-444D-A583-942169CC266B}|solutionrelative:IObservador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\modelo\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\modelo\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\modelo\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,55 +111,47 @@
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\modelo\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\modelo\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\modelo\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\modelo\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\modelo\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\modelo\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\modelo\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\modelo\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\modelo\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\modelo\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistaconfirmacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistaconfirmacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistaconfirmacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistadetalleevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistadetalleevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistadetalleevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -82,7 +170,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +178,317 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VistaLogin.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:35:38.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ValidadorTarjeta.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ValidadorTarjeta.cs",
+              "RelativeDocumentMoniker": "ValidadorTarjeta.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ValidadorTarjeta.cs",
+              "RelativeToolTip": "ValidadorTarjeta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:15:08.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HashContrasena.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\HashContrasena.cs",
+              "RelativeDocumentMoniker": "HashContrasena.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\HashContrasena.cs",
+              "RelativeToolTip": "HashContrasena.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:18:54.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ValidadorDatos.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ValidadorDatos.cs",
+              "RelativeDocumentMoniker": "ValidadorDatos.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ValidadorDatos.cs",
+              "RelativeToolTip": "ValidadorDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:19:38.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GestorPDF.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorPDF.cs",
+              "RelativeDocumentMoniker": "GestorPDF.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorPDF.cs",
+              "RelativeToolTip": "GestorPDF.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:19:16.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GestorJSON.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorJSON.cs",
+              "RelativeDocumentMoniker": "GestorJSON.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorJSON.cs",
+              "RelativeToolTip": "GestorJSON.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:19:28.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\Logger.cs",
+              "RelativeDocumentMoniker": "Logger.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\Logger.cs",
+              "RelativeToolTip": "Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:19:49.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Inicio.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\Inicio.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\Inicio.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:13:29.143Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VistaLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T05:40:50.844Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RepositorioUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\RepositorioUsuarios.cs",
+              "RelativeDocumentMoniker": "RepositorioUsuarios.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\RepositorioUsuarios.cs",
+              "RelativeToolTip": "RepositorioUsuarios.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAuwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:14:17.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RepositorioCompras.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\RepositorioCompras.cs",
+              "RelativeDocumentMoniker": "RepositorioCompras.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\RepositorioCompras.cs",
+              "RelativeToolTip": "RepositorioCompras.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:14:27.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GestorTransacciones.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorTransacciones.cs",
+              "RelativeDocumentMoniker": "GestorTransacciones.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorTransacciones.cs",
+              "RelativeToolTip": "GestorTransacciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:16:24.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GestorInventario.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorInventario.cs",
+              "RelativeDocumentMoniker": "GestorInventario.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorInventario.cs",
+              "RelativeToolTip": "GestorInventario.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:15:25.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GestorConcurrencia.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorConcurrencia.cs",
+              "RelativeDocumentMoniker": "GestorConcurrencia.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorConcurrencia.cs",
+              "RelativeToolTip": "GestorConcurrencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:15:42.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ControladorUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorUsuario.cs",
+              "RelativeDocumentMoniker": "ControladorUsuario.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorUsuario.cs",
+              "RelativeToolTip": "ControladorUsuario.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:12:33.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ControladorHistorial.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorHistorial.cs",
+              "RelativeDocumentMoniker": "ControladorHistorial.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorHistorial.cs",
+              "RelativeToolTip": "ControladorHistorial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:14:52.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ControladorCompra.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorCompra.cs",
+              "RelativeDocumentMoniker": "ControladorCompra.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorCompra.cs",
+              "RelativeToolTip": "ControladorCompra.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:14:41.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ControladorAutenticacion.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorAutenticacion.cs",
+              "RelativeDocumentMoniker": "ControladorAutenticacion.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ControladorAutenticacion.cs",
+              "RelativeToolTip": "ControladorAutenticacion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:13:02.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FabricaUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\FabricaUsuarios.cs",
+              "RelativeDocumentMoniker": "FabricaUsuarios.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\FabricaUsuarios.cs",
+              "RelativeToolTip": "FabricaUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:18:20.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FachadaCompraTique.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\FachadaCompraTique.cs",
+              "RelativeDocumentMoniker": "FachadaCompraTique.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\FachadaCompraTique.cs",
+              "RelativeToolTip": "FachadaCompraTique.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:17:01.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ObservadorUI.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ObservadorUI.cs",
+              "RelativeDocumentMoniker": "ObservadorUI.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\ObservadorUI.cs",
+              "RelativeToolTip": "ObservadorUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:18:01.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GestorEventos.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorEventos.cs",
+              "RelativeDocumentMoniker": "GestorEventos.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\GestorEventos.cs",
+              "RelativeToolTip": "GestorEventos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:17:44.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SujetoObservable.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SujetoObservable.cs",
+              "RelativeDocumentMoniker": "SujetoObservable.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SujetoObservable.cs",
+              "RelativeToolTip": "SujetoObservable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:17:31.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IObservador.cs",
+              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\IObservador.cs",
+              "RelativeDocumentMoniker": "IObservador.cs",
+              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\IObservador.cs",
+              "RelativeToolTip": "IObservador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T07:17:13.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Enums.cs",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Enums.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\Enums.cs",
@@ -103,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 29,
               "Title": "Inventario.cs",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Inventario.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\Inventario.cs",
@@ -116,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 28,
               "Title": "Transaccion.cs",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Transaccion.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\Transaccion.cs",
@@ -129,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 25,
               "Title": "DetalleCompra.cs",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\DetalleCompra.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\DetalleCompra.cs",
@@ -142,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 30,
               "Title": "UserControl1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\UserControl1.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\UserControl1.cs",
@@ -154,20 +552,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 24,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Usuario.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\Usuario.cs",
               "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Usuario.cs",
               "RelativeToolTip": "SistemaDeTickets\\Modelo\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-17T01:57:27.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 26,
               "Title": "Compra.cs",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Compra.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\Compra.cs",
@@ -180,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 35,
               "Title": "VistaRecuperacionPassword.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
@@ -192,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 32,
               "Title": "VistaConfirmacion.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaConfirmacion.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaConfirmacion.cs",
@@ -204,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 33,
               "Title": "VistaCompra.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCompra.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaCompra.cs",
@@ -216,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 34,
               "Title": "VistaDetalleEvento.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaDetalleEvento.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaDetalleEvento.cs",
@@ -228,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 31,
               "Title": "VistaHistorial.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaHistorial.cs",
@@ -240,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 36,
               "Title": "VistaRegistro.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRegistro.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRegistro.cs",
@@ -252,19 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "VistaLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaLogin.cs",
-              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T05:40:50.844Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 37,
               "Title": "Inicio.cs",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\Inicio.cs",
@@ -277,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 38,
               "Title": "Eventos.json",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Data\\Eventos.json",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Data\\Eventos.json",
@@ -290,19 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Inicio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\Inicio.cs",
-              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\Inicio.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:13:29.143Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 39,
               "Title": "Evento.cs",
               "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Evento.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\Evento.cs",

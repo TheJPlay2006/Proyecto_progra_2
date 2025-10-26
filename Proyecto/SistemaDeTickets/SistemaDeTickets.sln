@@ -1,9 +1,42 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaDeTickets", "SistemaDeTickets\SistemaDeTickets.csproj", "{2F7BCE54-0EA4-4530-8E07-6D765A859F81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controlador", "Controlador", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		ControladorAutenticacion.cs = ControladorAutenticacion.cs
+		ControladorCompra.cs = ControladorCompra.cs
+		ControladorHistorial.cs = ControladorHistorial.cs
+		ControladorUsuario.cs = ControladorUsuario.cs
+		GestorConcurrencia.cs = GestorConcurrencia.cs
+		GestorInventario.cs = GestorInventario.cs
+		GestorTransacciones.cs = GestorTransacciones.cs
+		RepositorioCompras.cs = RepositorioCompras.cs
+		RepositorioUsuarios.cs = RepositorioUsuarios.cs
+		ValidadorTarjeta.cs = ValidadorTarjeta.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patrones", "Patrones", "{45794F35-51E2-444D-A583-942169CC266B}"
+	ProjectSection(SolutionItems) = preProject
+		FabricaUsuarios.cs = FabricaUsuarios.cs
+		FachadaCompraTique.cs = FachadaCompraTique.cs
+		GestorEventos.cs = GestorEventos.cs
+		ObservadorUI.cs = ObservadorUI.cs
+		IObservador.cs = IObservador.cs
+		SujetoObservable.cs = SujetoObservable.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{B9AB85C5-A053-4B32-A5CE-47DC029B8C73}"
+	ProjectSection(SolutionItems) = preProject
+		GestorJSON.cs = GestorJSON.cs
+		GestorPDF.cs = GestorPDF.cs
+		HashContrasena.cs = HashContrasena.cs
+		Logger.cs = Logger.cs
+		ValidadorDatos.cs = ValidadorDatos.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +51,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{45794F35-51E2-444D-A583-942169CC266B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B205FE6-0F69-4210-BC29-A68255D05BCC}

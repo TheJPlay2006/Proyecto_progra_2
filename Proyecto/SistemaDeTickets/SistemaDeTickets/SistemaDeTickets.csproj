@@ -77,9 +77,7 @@
     <Compile Include="Vista\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\VistaLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Vista\VistaLogin.cs" />
     <Compile Include="Vista\VistaLogin.Designer.cs">
       <DependentUpon>VistaLogin.cs</DependentUpon>
     </Compile>
@@ -180,8 +178,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controlador\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
