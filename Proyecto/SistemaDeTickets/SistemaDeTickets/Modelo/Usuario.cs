@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaDeTickets.Modelo
 {
@@ -10,18 +7,34 @@ namespace SistemaDeTickets.Modelo
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public string Correo { get; set; }
-        public string Contraseña { get; set; }
-        public string Rol { get; set; } = "usuario";
+        public string Email { get; set; }
+        public string PasswordHash { get; set; }
+        public RolUsuario Rol { get; set; }
+        public List<int> EventosSeguidos { get; set; }
+        public DateTime FechaRegistro { get; set; }
+        public string TokenRecuperacion { get; set; }
+        public DateTime? TokenExpiracion { get; set; }
 
-        public Usuario() { }
-        public Usuario(int id, string nombre, string correo, string contraseña, string rol)
+        public bool ValidarCredenciales(string passwordIngresado)
         {
-            Id = id;
-            Nombre = nombre;
-            Correo = correo;
-            Contraseña = contraseña;
-            Rol = rol;
+            return BCrypt.Net.BCrypt.Verify(passwordIngresado, PasswordHash);
+        }
+
+        public void CambiarPassword(string nuevoPassword)
+        {
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(nuevoPassword);
+        }
+
+        public void SeguirEvento(int eventoId)
+        {
+            if (!EventosSeguidos.Contains(eventoId))
+                EventosSeguidos.Add(eventoId);
+        }
+
+        public void DejarDeSeguirEvento(int eventoId)
+        {
+            if (EventosSeguidos.Contains(eventoId))
+                EventosSeguidos.Remove(eventoId);
         }
     }
 }

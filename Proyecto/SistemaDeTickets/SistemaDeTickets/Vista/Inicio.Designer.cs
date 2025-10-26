@@ -57,6 +57,7 @@
             this.btnVerEventos.TabIndex = 1;
             this.btnVerEventos.Text = "Ver Eventos";
             this.btnVerEventos.UseVisualStyleBackColor = false;
+            this.btnVerEventos.Click += new System.EventHandler(this.btnVerEventos_Click);
             // 
             // btnIniciarSesion
             // 
@@ -67,6 +68,7 @@
             this.btnIniciarSesion.TabIndex = 2;
             this.btnIniciarSesion.Text = "Iniciar Sesión";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click_1);
             // 
             // btnRegistrarse
             // 

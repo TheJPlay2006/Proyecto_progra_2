@@ -26,5 +26,15 @@ namespace SistemaDeTickets.Vista
         {
 
         }
+
+        private void btnVerEventos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

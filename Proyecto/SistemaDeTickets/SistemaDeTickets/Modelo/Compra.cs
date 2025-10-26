@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaDeTickets.Modelo
 {
@@ -12,19 +8,22 @@ namespace SistemaDeTickets.Modelo
         public int UsuarioId { get; set; }
         public int EventoId { get; set; }
         public int Cantidad { get; set; }
+        public decimal PrecioUnitario { get; set; }
+        public decimal PrecioTotal { get; set; }
         public DateTime FechaCompra { get; set; }
-        public double Total { get; set; }
-        
+        public EstadoCompra Estado { get; set; }
+        public MetodoPago MetodoPago { get; set; }
+        public string UltimosDigitosTarjeta { get; set; }
 
-        public Compra() { }
-        public Compra(int id, int usuarioId, int eventoId, int cantidad, DateTime fechaCompra,double total)
+        public decimal CalcularTotal()
         {
-            Id = id;
-            UsuarioId = usuarioId;
-            EventoId = eventoId;
-            Cantidad = cantidad;
-            FechaCompra = fechaCompra;
-            Total = total;
+            PrecioTotal = PrecioUnitario * Cantidad;
+            return PrecioTotal;
+        }
+
+        public bool Validar()
+        {
+            return Cantidad > 0 && PrecioUnitario > 0 && UsuarioId > 0 && EventoId > 0;
         }
     }
 }
