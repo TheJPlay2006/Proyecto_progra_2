@@ -1,0 +1,12 @@
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.csproj.AssemblyReference.cache
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Properties.Resources.resources
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.Inicio.resources
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.csproj.GenerateResource.cache
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.csproj.CoreCompileInputs.cache
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.exe.config
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.exe
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.pdb
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.pdb
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\Eventos.json
+C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe.config

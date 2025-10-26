@@ -1,0 +1,11 @@
+{
+  "Id": 1,
+  "Nombre": "Concierto Costa Viva",
+  "Fecha": "2025-11-10T20:00:00",
+  "Recinto": "Estadio Nacional",
+  "Tipo": "Concierto",
+  "Descripcion": "Concierto de música pop nacional e internacional.",
+  "TiquetesDisponibles": 150,
+  "Precio": "₡40.000"
+
+}
