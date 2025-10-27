@@ -2,15 +2,15 @@
 {
     public class GestorEventos : SujetoObservable
     {
-        public void NotificarNuevoEvento(Evento evento)
+        public void NotificarNuevoEvento(Modelo.Evento evento)
         {
-            NotificarObservadores(TipoNotificacion.NuevoEvento, evento);
+            NotificarObservadores(Modelo.TipoNotificacion.NuevoEvento, evento);
         }
 
         public void NotificarBajoInventario(int eventoId, int cantidadRestante)
         {
             var datos = new { EventoId = eventoId, CantidadRestante = cantidadRestante };
-            NotificarObservadores(TipoNotificacion.BajoInventario, datos);
+            NotificarObservadores(Modelo.TipoNotificacion.BajoInventario, datos);
         }
     }
 }

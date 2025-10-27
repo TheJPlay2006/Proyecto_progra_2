@@ -1,3 +1,15 @@
-{
-
-}
+[
+  {
+    "Id": 1,
+    "UsuarioId": 1,
+    "EventoId": 1,
+    "Cantidad": 2,
+    "PrecioUnitario": 40000.0,
+    "PrecioTotal": 80000.0,
+    "FechaCompra": "2024-10-01T10:00:00",
+    "Estado": 3,
+    "MetodoPago": 0,
+    "UltimosDigitosTarjeta": "1234",
+    "Detalles": "Compra realizada exitosamente"
+  }
+]

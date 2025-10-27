@@ -10,13 +10,31 @@ C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\Sist
 C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.pdb
 C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\Eventos.json
 C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe.config
+c:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.csproj.AssemblyReference.cache
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\Eventos.json
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.exe.config
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.exe
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.pdb
-C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.csproj.AssemblyReference.cache
-C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe.config
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Evento.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\itextsharp.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Buffers.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Memory.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\itextsharp.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Buffers.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Memory.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Properties.Resources.resources
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.UserControl1.resources
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.UserControlNotificacion.resources
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaLogin.resources
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.Inicio.resources
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaCompra.resources
@@ -27,6 +45,7 @@ C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaRegistro.resources
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.csproj.GenerateResource.cache
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.csproj.CoreCompileInputs.cache
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaD.E54A863B.Up2Date
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.pdb
-C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.UserControl1.resources
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe.config

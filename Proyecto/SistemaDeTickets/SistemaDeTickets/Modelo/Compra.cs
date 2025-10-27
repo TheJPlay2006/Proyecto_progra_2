@@ -2,6 +2,10 @@
 
 namespace SistemaDeTickets.Modelo
 {
+    /// <summary>
+    /// Modelo que representa una compra de tickets realizada por un usuario.
+    /// Incluye detalles de la transacción y estado de procesamiento.
+    /// </summary>
     public class Compra
     {
         public int Id { get; set; }
@@ -14,6 +18,7 @@ namespace SistemaDeTickets.Modelo
         public EstadoCompra Estado { get; set; }
         public MetodoPago MetodoPago { get; set; }
         public string UltimosDigitosTarjeta { get; set; }
+        public string Detalles { get; set; }
 
         public decimal CalcularTotal()
         {

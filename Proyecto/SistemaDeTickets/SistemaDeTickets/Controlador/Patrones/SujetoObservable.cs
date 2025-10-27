@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using SistemaDeTickets.Modelo;
 
 namespace SistemaDeTickets.Controlador.Patrones
 {

@@ -27,4 +27,11 @@
         BajoInventario,
         CompraExitosa
     }
+
+    public enum EstadoEvento
+    {
+        Activo,
+        Inactivo,
+        Cancelado
+    }
 }

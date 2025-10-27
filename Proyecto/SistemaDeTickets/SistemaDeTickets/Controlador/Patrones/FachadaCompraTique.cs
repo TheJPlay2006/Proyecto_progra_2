@@ -1,8 +1,14 @@
 ﻿using SistemaDeTickets.Modelo;
 using SistemaDeTickets.Controlador.Patrones;
+using System;
 
 namespace SistemaDeTickets.Controlador.Patrones
 {
+    /// <summary>
+    /// Fachada que simplifica el proceso de compra de tickets.
+    /// Implementa el patrón Facade para coordinar validaciones, pagos y confirmaciones.
+    /// Centraliza la lógica de compra en una interfaz unificada.
+    /// </summary>
     public class FachadaCompraTique
     {
         private readonly ControladorUsuario _usuarioControlador;

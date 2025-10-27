@@ -98,7 +98,8 @@
             this.btnRegistrar.TabIndex = 4;
             this.btnRegistrar.Text = "Registrarse";
             this.btnRegistrar.UseVisualStyleBackColor = true;
-            // 
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            //
             // btnVolver
             // 
             this.btnVolver.Location = new System.Drawing.Point(346, 323);
@@ -107,7 +108,8 @@
             this.btnVolver.TabIndex = 5;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
-            // 
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            //
             // lblNombre
             // 
             this.lblNombre.AccessibleName = "";

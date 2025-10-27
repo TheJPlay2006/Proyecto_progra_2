@@ -27,7 +27,7 @@ namespace SistemaDeTickets.Controlador
 
         public bool ValidarCompra(DetalleCompra detalle)
         {
-            return detalle.Cantidad > 0 && detalle.Evento != null && detalle.Evento.TiquesDisponibles >= detalle.Cantidad;
+            return detalle.Cantidad > 0 && detalle.Evento != null && detalle.Evento.TiquetesDisponibles >= detalle.Cantidad;
         }
 
         public bool ProcesarPago(DetalleCompra detalle, string numeroTarjeta, string cvv)
@@ -42,7 +42,7 @@ namespace SistemaDeTickets.Controlador
                 UsuarioId = 0, // Setea el usuario real aquí
                 EventoId = detalle.Evento.Id,
                 Cantidad = detalle.Cantidad,
-                PrecioUnitario = detalle.Evento.Precio,
+                PrecioUnitario = (decimal)detalle.Evento.Precio,
                 PrecioTotal = detalle.Total,
                 FechaCompra = DateTime.Now,
                 Estado = EstadoCompra.Completada,
@@ -66,7 +66,7 @@ namespace SistemaDeTickets.Controlador
         {
             var compra = _repositorioCompras.BuscarPorId(compraId);
 
-            return GeneradorPDF.GenerarRecibo(compra, null, null);
+            return Utils.GeneradorPDF.GenerarRecibo(compra, null, null);
         }
     }
 }

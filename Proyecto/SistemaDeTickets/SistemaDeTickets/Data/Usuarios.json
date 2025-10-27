@@ -1,3 +1,24 @@
-{
-
-}
+[
+  {
+    "Id": 1,
+    "Nombre": "Juan Pérez",
+    "Email": "juan@example.com",
+    "PasswordHash": "$2a$11$examplehash1",
+    "Rol": 0,
+    "EventosSeguidos": [1],
+    "FechaRegistro": "2024-01-01T00:00:00",
+    "TokenRecuperacion": null,
+    "TokenExpiracion": null
+  },
+  {
+    "Id": 2,
+    "Nombre": "Admin Sistema",
+    "Email": "admin@example.com",
+    "PasswordHash": "$2a$11$examplehash2",
+    "Rol": 1,
+    "EventosSeguidos": [],
+    "FechaRegistro": "2024-01-01T00:00:00",
+    "TokenRecuperacion": null,
+    "TokenExpiracion": null
+  }
+]

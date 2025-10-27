@@ -7,7 +7,7 @@ namespace SistemaDeTickets.Utils
 {
     public static class GeneradorPDF
     {
-        public static byte[] GenerarRecibo(Compra compra, Evento evento, Usuario usuario)
+        public static byte[] GenerarRecibo(Compra compra, Modelo.Evento evento, Usuario usuario)
         {
             using (MemoryStream ms = new MemoryStream())
             {

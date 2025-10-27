@@ -1,0 +1,13 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Jairo",
+    "Email": "jh599350@gmail.com",
+    "PasswordHash": "$2a$11$qWCoJwpW/kv0haAIwQWGLOKdo6zQgjhPqLE0sQ3SDyjrdx5eK3Fsu",
+    "Rol": 0,
+    "EventosSeguidos": [],
+    "FechaRegistro": "2025-10-27T00:12:21.4847359-06:00",
+    "TokenRecuperacion": null,
+    "TokenExpiracion": null
+  }
+]

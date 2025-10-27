@@ -79,7 +79,8 @@
             this.btnRegistrarse.TabIndex = 3;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
-            // 
+            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
+            //
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -89,6 +90,7 @@
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.btnVerEventos);
             this.Controls.Add(this.pictureBox1);
+            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
             this.Name = "Inicio";
             this.Text = "Inicio";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

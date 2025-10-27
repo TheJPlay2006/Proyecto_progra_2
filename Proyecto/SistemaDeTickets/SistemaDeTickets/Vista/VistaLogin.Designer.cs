@@ -36,20 +36,22 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblLogin = new System.Windows.Forms.Label();
+            this.btnRegistrarse = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(171, 63);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(159, 22);
+            this.txtEmail.Size = new System.Drawing.Size(208, 22);
             this.txtEmail.TabIndex = 0;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(161, 134);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(169, 22);
+            this.txtPassword.Size = new System.Drawing.Size(218, 22);
             this.txtPassword.TabIndex = 1;
             // 
             // lblCorreo
@@ -73,30 +75,33 @@
             // linkOlvidePassword
             // 
             this.linkOlvidePassword.AutoSize = true;
-            this.linkOlvidePassword.Location = new System.Drawing.Point(226, 170);
+            this.linkOlvidePassword.Location = new System.Drawing.Point(213, 173);
             this.linkOlvidePassword.Name = "linkOlvidePassword";
             this.linkOlvidePassword.Size = new System.Drawing.Size(133, 16);
             this.linkOlvidePassword.TabIndex = 4;
             this.linkOlvidePassword.TabStop = true;
             this.linkOlvidePassword.Text = "Olvidé mi contraseña";
+            this.linkOlvidePassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkOlvidePassword_LinkClicked);
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(72, 244);
+            this.btnLogin.Location = new System.Drawing.Point(48, 220);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(103, 38);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(255, 228);
+            this.btnSalir.Location = new System.Drawing.Point(437, 254);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lblLogin
             // 
@@ -107,11 +112,34 @@
             this.lblLogin.TabIndex = 7;
             this.lblLogin.Text = "Login";
             // 
+            // btnRegistrarse
+            // 
+            this.btnRegistrarse.Location = new System.Drawing.Point(171, 209);
+            this.btnRegistrarse.Name = "btnRegistrarse";
+            this.btnRegistrarse.Size = new System.Drawing.Size(105, 75);
+            this.btnRegistrarse.TabIndex = 8;
+            this.btnRegistrarse.Text = "Registrarse";
+            this.btnRegistrarse.UseVisualStyleBackColor = true;
+            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(304, 235);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 9;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // VistaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 321);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(545, 409);
+            this.Controls.Add(this.btnVolver);
+            this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnLogin);
@@ -137,5 +165,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblLogin;
+        private System.Windows.Forms.Button btnRegistrarse;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

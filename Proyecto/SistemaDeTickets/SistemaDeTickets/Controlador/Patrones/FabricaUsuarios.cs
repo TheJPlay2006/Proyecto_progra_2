@@ -1,7 +1,14 @@
 ﻿using SistemaDeTickets.Modelo;
+using System;
+using System.Collections.Generic;
 
 namespace SistemaDeTickets.Controlador.Patrones
 {
+    /// <summary>
+    /// Fábrica para crear instancias de Usuario.
+    /// Implementa el patrón Factory para centralizar la creación de usuarios con validaciones.
+    /// Maneja la creación de usuarios regulares y administradores.
+    /// </summary>
     public class FabricaUsuarios
     {
         public Usuario CrearUsuario(string nombre, string email, string password)

@@ -116,7 +116,8 @@
             this.btnConfirmar.TabIndex = 8;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
-            // 
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            //
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(420, 324);
@@ -125,7 +126,8 @@
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            //
             // lblNumeroTarjeta
             // 
             this.lblNumeroTarjeta.AutoSize = true;

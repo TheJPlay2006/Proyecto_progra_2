@@ -85,6 +85,7 @@
             this.lblToken.Size = new System.Drawing.Size(108, 16);
             this.lblToken.TabIndex = 5;
             this.lblToken.Text = "Ingrese el token: ";
+            this.lblToken.Visible = false;
             // 
             // label3
             // 

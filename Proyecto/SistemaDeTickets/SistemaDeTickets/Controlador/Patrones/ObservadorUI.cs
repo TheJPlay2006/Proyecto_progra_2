@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using SistemaDeTickets.Modelo;
 
 namespace SistemaDeTickets.Controlador.Patrones
 {
@@ -9,7 +10,7 @@ namespace SistemaDeTickets.Controlador.Patrones
             switch (tipo)
             {
                 case TipoNotificacion.NuevoEvento:
-                    MostrarNotificacionNuevoEvento((Evento)datos);
+                    MostrarNotificacionNuevoEvento((Modelo.Evento)datos);
                     break;
                 case TipoNotificacion.BajoInventario:
                     var info = (dynamic)datos;
@@ -20,7 +21,7 @@ namespace SistemaDeTickets.Controlador.Patrones
             }
         }
 
-        public void MostrarNotificacionNuevoEvento(Evento evento)
+        public void MostrarNotificacionNuevoEvento(Modelo.Evento evento)
         {
             MessageBox.Show($"Nuevo evento creado: {evento.Nombre} ({evento.Fecha:dd/MM/yyyy})", "Nuevo Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
