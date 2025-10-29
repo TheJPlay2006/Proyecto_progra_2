@@ -87,5 +87,15 @@ namespace SistemaDeTickets.Vista
             inicioForm.Show();
             this.Hide(); // Oculta la ventana actual sin terminar la aplicación
         }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

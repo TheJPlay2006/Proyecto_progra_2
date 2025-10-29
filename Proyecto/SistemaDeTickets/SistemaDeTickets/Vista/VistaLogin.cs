@@ -24,6 +24,8 @@ namespace SistemaDeTickets.Vista
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen; // Centrar ventana en pantalla
             _controladorAutenticacion = new ControladorAutenticacion();
+
+            SetPasswordVisibility(checkPassword.Checked);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -42,19 +44,17 @@ namespace SistemaDeTickets.Vista
                 var usuario = _controladorAutenticacion.IniciarSesion(email, password);
                 MessageBox.Show($"Bienvenido, {usuario.Nombre}!", "Login exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Navegar al panel principal del usuario (estilo dispose() de Java)
-                // Usar Hide() para mantener la aplicación viva y permitir navegación fluida
-                var inicioForm = new Inicio();
-                inicioForm.StartPosition = FormStartPosition.CenterScreen;
-                inicioForm.Show();
-                this.Hide(); // Oculta el login sin terminar la aplicación
+                var vista = new VistaDetalleEvento(); // si tu form requiere parámetros, pásalos aquí
+                vista.StartPosition = FormStartPosition.CenterScreen;
+                vista.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error de login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // NO cerrar la ventana en caso de error - permitir reintento
             }
         }
+
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
@@ -76,6 +76,12 @@ namespace SistemaDeTickets.Vista
             this.Hide(); // Oculta el login sin terminar la aplicación
         }
 
+        private void SetPasswordVisibility(bool ocultar)
+        {
+            txtPassword.UseSystemPasswordChar = ocultar;
+            checkPassword.Text = ocultar ? "Ocultar" : "Mostrar";
+        }
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
             // Solo usar Application.Exit() cuando el usuario realmente quiera cerrar todo
@@ -88,6 +94,25 @@ namespace SistemaDeTickets.Vista
             var recuperacionForm = new VistaRecuperacionPassword();
             recuperacionForm.StartPosition = FormStartPosition.CenterScreen;
             recuperacionForm.ShowDialog(); // Usar ShowDialog para ventana modal
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void checkPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            SetPasswordVisibility(checkPassword.Checked);
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCorreo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

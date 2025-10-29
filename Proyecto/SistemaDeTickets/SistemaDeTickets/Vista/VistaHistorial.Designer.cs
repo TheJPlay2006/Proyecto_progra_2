@@ -38,49 +38,54 @@
             // dataGridViewCompras
             // 
             this.dataGridViewCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCompras.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewCompras.Location = new System.Drawing.Point(9, 10);
+            this.dataGridViewCompras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewCompras.Name = "dataGridViewCompras";
             this.dataGridViewCompras.RowHeadersWidth = 51;
             this.dataGridViewCompras.RowTemplate.Height = 24;
-            this.dataGridViewCompras.Size = new System.Drawing.Size(691, 270);
+            this.dataGridViewCompras.Size = new System.Drawing.Size(518, 219);
             this.dataGridViewCompras.TabIndex = 0;
             // 
             // btnDescargarRecibo
             // 
-            this.btnDescargarRecibo.Location = new System.Drawing.Point(93, 319);
+            this.btnDescargarRecibo.Location = new System.Drawing.Point(64, 259);
+            this.btnDescargarRecibo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDescargarRecibo.Name = "btnDescargarRecibo";
-            this.btnDescargarRecibo.Size = new System.Drawing.Size(138, 23);
+            this.btnDescargarRecibo.Size = new System.Drawing.Size(114, 29);
             this.btnDescargarRecibo.TabIndex = 1;
             this.btnDescargarRecibo.Text = "Descargar recibo";
             this.btnDescargarRecibo.UseVisualStyleBackColor = true;
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(322, 319);
+            this.btnFiltrar.Location = new System.Drawing.Point(224, 259);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrar.Size = new System.Drawing.Size(68, 29);
             this.btnFiltrar.TabIndex = 2;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(539, 319);
+            this.btnVolver.Location = new System.Drawing.Point(404, 259);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.Size = new System.Drawing.Size(56, 19);
             this.btnVolver.TabIndex = 3;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
             // 
             // VistaHistorial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.btnDescargarRecibo);
             this.Controls.Add(this.dataGridViewCompras);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VistaHistorial";
             this.Text = "VistaHistorial";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompras)).EndInit();
