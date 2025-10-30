@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="Controlador\ControladorAutenticacion.cs" />
     <Compile Include="Controlador\ControladorCompra.cs" />
+    <Compile Include="Controlador\ControladorEvento.cs" />
     <Compile Include="Controlador\ControladorHistorial.cs" />
     <Compile Include="Controlador\ControladorUsuario.cs" />
     <Compile Include="Controlador\GestorConcurrencia.cs" />
@@ -100,6 +101,10 @@
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\ServicioAutenticacion.cs" />
+    <Compile Include="services\ServicioEvento.cs" />
+    <Compile Include="services\ServicioInventario.cs" />
+    <Compile Include="services\ServicioUsuario.cs" />
     <Compile Include="Utils\GestorJSON.cs" />
     <Compile Include="Utils\GestorPDF.cs" />
     <Compile Include="Utils\HashContrasena.cs" />
@@ -117,6 +122,12 @@
     </Compile>
     <Compile Include="Vista\UserControlNotificacion.Designer.cs">
       <DependentUpon>UserControlNotificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaEvento.Designer.cs">
+      <DependentUpon>VistaEvento.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaLogin.cs">
       <SubType>Form</SubType>
@@ -182,6 +193,9 @@
     <EmbeddedResource Include="Vista\UserControlNotificacion.resx">
       <DependentUpon>UserControlNotificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaEvento.resx">
+      <DependentUpon>VistaEvento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaLogin.resx">
       <DependentUpon>VistaLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,7 +221,7 @@
       <DependentUpon>VistaRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Data\Compras.json" />
-    <None Include="Data\Eventos.json">
+    <None Include="Data\MisEventos.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Usuarios.json" />

@@ -1,0 +1,36 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Concierto Costa Viva",
+    "Fecha": "2025-11-10T20:00:00",
+    "Recinto": "Estadio Nacional",
+    "Tipo": "Concierto",
+    "Descripcion": "Concierto de música pop nacional e internacional.",
+    "TiquetesDisponibles": 150,
+    "Precio": 40000.0,
+    "Estado": 0
+  },
+  {
+    "Id": 2,
+    "Nombre": "Obra de Teatro: Hamlet",
+    "Fecha": "2025-10-25T19:00:00",
+    "Recinto": "Teatro Melico Salazar",
+    "Tipo": "teatro",
+    "Descripcion": "Clásica obra de Shakespeare.",
+    "TiquesDisponibles": 200,
+    "Precio": 8000.00,
+    "Estado": 0
+  },
+
+  {
+    "Id": 3,
+    "Nombre": "Partido de Fútbol: Costa Rica vs. México",
+    "Fecha": "2025-12-05T18:00:00",
+    "Recinto": "Estadio Nacional",
+    "Tipo": "deportes",
+    "Descripcion": "Amistoso internacional.",
+    "TiquesDisponibles": 1000,
+    "Precio": 25000.00,
+    "Estado": 0
+  }
+]

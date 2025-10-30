@@ -87,27 +87,23 @@ namespace SistemaDeTickets.Vista
 
         private void btnVerEventos_Click(object sender, EventArgs e)
         {
-            // TODO: Implementar vista de eventos disponibles
-            MessageBox.Show("Funcionalidad de ver eventos próximamente disponible.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnIniciarSesion_Click_1(object sender, EventArgs e)
         {
-            // Navegar a login: ocultar ventana anterior (estilo dispose() de Java) y centrar nueva
-            // Usar Hide() para mantener la aplicación viva y permitir navegación fluida
-            var loginForm = new VistaLogin();
-            loginForm.StartPosition = FormStartPosition.CenterScreen;
-            loginForm.Show();
-            this.Hide(); // Oculta la ventana actual sin terminar la aplicación
+          
         }
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
-            // Navegar a registro: ocultar ventana anterior (estilo dispose() de Java) y centrar nueva
-            // Usar Hide() para mantener la aplicación viva y permitir navegación fluida
-            var registroForm = new VistaRegistro();
-            registroForm.StartPosition = FormStartPosition.CenterScreen;
-            registroForm.Show();
+            
+        }
+
+        private void btnVerEvento_Click(object sender, EventArgs e)
+        {
+            var vistaEvento = new VistaEvento();
+            vistaEvento.StartPosition = FormStartPosition.CenterScreen;
+            vistaEvento.Show();
             this.Hide(); // Oculta la ventana actual sin terminar la aplicación
         }
     }
