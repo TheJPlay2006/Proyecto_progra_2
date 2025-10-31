@@ -97,6 +97,7 @@
     <Compile Include="Modelo\Enums.cs" />
     <Compile Include="Modelo\Evento.cs" />
     <Compile Include="Modelo\Inventario.cs" />
+    <Compile Include="Modelo\PasswordResetToken.cs" />
     <Compile Include="Modelo\Transaccion.cs" />
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Program.cs" />
@@ -224,6 +225,7 @@
     <None Include="Data\MisEventos.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Data\ResetTokens.json" />
     <None Include="Data\Usuarios.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

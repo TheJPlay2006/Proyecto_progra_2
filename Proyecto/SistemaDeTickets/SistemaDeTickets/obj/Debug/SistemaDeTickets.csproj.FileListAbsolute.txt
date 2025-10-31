@@ -49,7 +49,6 @@ C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.pdb
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe.config
-C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\Eventos.json
 C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.exe.config
 C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.exe
 C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.pdb
@@ -127,3 +126,5 @@ C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto_1\Proyecto_pr
 C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto_1\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.pdb
 C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto_1\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaEvento.resources
 C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto_1\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\MisEventos.json
+C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\MisEventos.json
+C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaEvento.resources

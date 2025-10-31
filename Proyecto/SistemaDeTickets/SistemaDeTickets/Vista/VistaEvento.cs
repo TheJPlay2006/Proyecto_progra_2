@@ -1,5 +1,7 @@
 ﻿using SistemaDeTickets.Controlador;
 using SistemaDeTickets.Services;
+using SistemaDeTickets.Controlador.Patrones;
+using SistemaDeTickets.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,16 +14,40 @@ using System.Windows.Forms;
 
 namespace SistemaDeTickets.Vista
 {
-    public partial class VistaEvento : Form
+    public partial class VistaEvento : Form, IObservador
     {
         // Variable para poder usar las funciones del controlador de eventos
         private ControladorEvento controlador;
+        private Label lblStockBajo; // Label para mostrar alertas de stock bajo
 
         // Constructor del formulario
         public VistaEvento()
         {
             InitializeComponent(); // Carga los componentes del formulario
             controlador = new ControladorEvento(); // Se crea el controlador para manejar los eventos
+
+            // Inicializar label de stock bajo
+            InicializarLabelStockBajo();
+
+            // Registrar como observador (si hay un sujeto observable)
+            // Nota: En implementación completa, se debería registrar con el GestorEventos
+        }
+
+        /// <summary>
+        /// Inicializa el label para mostrar alertas de stock bajo
+        /// </summary>
+        private void InicializarLabelStockBajo()
+        {
+            lblStockBajo = new Label();
+            lblStockBajo.Text = "";
+            lblStockBajo.ForeColor = Color.Red;
+            lblStockBajo.Font = new Font(Font, FontStyle.Bold);
+            lblStockBajo.AutoSize = true;
+            lblStockBajo.Visible = false;
+
+            // Posicionar en la parte superior del formulario
+            lblStockBajo.Location = new Point(10, 10);
+            this.Controls.Add(lblStockBajo);
         }
 
         
@@ -235,7 +261,7 @@ namespace SistemaDeTickets.Vista
         }
 
         // Botón de salir del sistema
-       
+
         private void button3_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
@@ -250,6 +276,73 @@ namespace SistemaDeTickets.Vista
             {
                 Application.Exit();
             }
+        }
+
+        /// <summary>
+        /// Implementación del patrón Observer - recibe actualizaciones del sistema
+        /// </summary>
+        public void Actualizar(TipoNotificacion tipo, object datos)
+        {
+            // Ejecutar en el hilo de la UI
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() => Actualizar(tipo, datos)));
+                return;
+            }
+
+            switch (tipo)
+            {
+                case TipoNotificacion.NuevoEvento:
+                    // Mostrar notificación de nuevo evento
+                    var nuevoEvento = datos as Modelo.Evento;
+                    if (nuevoEvento != null)
+                    {
+                        MessageBox.Show($"¡Nuevo evento disponible: {nuevoEvento.Nombre}!",
+                            "Nuevo Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Recargar eventos
+                        CargarEventos();
+                    }
+                    break;
+
+                case TipoNotificacion.BajoInventario:
+                    // Mostrar alerta de stock bajo
+                    var infoStock = datos as dynamic;
+                    if (infoStock != null)
+                    {
+                        string eventoId = infoStock.EventoId;
+                        int cantidadRestante = infoStock.CantidadRestante;
+
+                        // Mostrar en label y MessageBox
+                        lblStockBajo.Text = $"¡ALERTA! Quedan solo {cantidadRestante} tickets para el evento {eventoId}";
+                        lblStockBajo.Visible = true;
+
+                        MessageBox.Show($"¡Atención! Quedan solo {cantidadRestante} tickets disponibles para el evento {eventoId}.",
+                            "Stock Bajo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                        // Ocultar después de 10 segundos
+                        Task.Delay(10000).ContinueWith(_ =>
+                        {
+                            if (!this.IsDisposed)
+                            {
+                                this.Invoke(new Action(() => lblStockBajo.Visible = false));
+                            }
+                        });
+                    }
+                    break;
+
+                case TipoNotificacion.CompraExitosa:
+                    // Actualizar la vista después de una compra exitosa
+                    CargarEventos();
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Método auxiliar para recargar eventos sin parámetros
+        /// </summary>
+        private void CargarEventos()
+        {
+            CargarEventos(null);
         }
     }
 }
