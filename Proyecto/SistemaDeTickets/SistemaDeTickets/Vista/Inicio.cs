@@ -24,8 +24,55 @@ namespace SistemaDeTickets.Vista
         public Inicio()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen; // Centrar ventana en pantalla
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            // Configurar apariencia moderna
+            this.Text = "Sistema de Tickets - Inicio";
+            this.BackColor = Color.FromArgb(247, 247, 251); // Color de fondo claro
+
+            // Configurar título principal
+            if (this.Controls.ContainsKey("lblTitulo"))
+            {
+                var lblTitulo = this.Controls["lblTitulo"] as Label;
+                if (lblTitulo != null)
+                {
+                    lblTitulo.Font = new Font("Segoe UI", 24, FontStyle.Bold);
+                    lblTitulo.ForeColor = Color.FromArgb(30, 31, 59); // Color primario
+                    lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
+                }
+            }
+
+            // Configurar botones con estilo moderno (solo si existen en el designer)
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    if (btn.Name.Contains("IniciarSesion") || btn.Name.Contains("Login"))
+                        ConfigurarBoton(btn, "Iniciar Sesión", Color.FromArgb(255, 56, 92));
+                    else if (btn.Name.Contains("Registrarse") || btn.Name.Contains("Registro"))
+                        ConfigurarBoton(btn, "Registrarse", Color.FromArgb(48, 63, 159));
+                    else if (btn.Name.Contains("VerEvento") || btn.Name.Contains("Eventos"))
+                        ConfigurarBoton(btn, "Ver Eventos", Color.FromArgb(76, 175, 80));
+                }
+            }
+
             InicializarNotificaciones();
+        }
+
+        private void ConfigurarBoton(Button btn, string texto, Color colorFondo)
+        {
+            if (btn != null)
+            {
+                btn.Text = texto;
+                btn.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+                btn.BackColor = colorFondo;
+                btn.ForeColor = Color.White;
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderSize = 0;
+                btn.Height = 45;
+                btn.Width = 200;
+                btn.Cursor = Cursors.Hand;
+            }
         }
 
         /// <summary>
@@ -72,12 +119,11 @@ namespace SistemaDeTickets.Vista
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            // Navegar a login: ocultar ventana anterior (estilo dispose() de Java) y centrar nueva
-            // Usar Hide() para mantener la aplicación viva y permitir navegación fluida
+            // Navegar a login: ocultar ventana anterior y centrar nueva
             var loginForm = new VistaLogin();
             loginForm.StartPosition = FormStartPosition.CenterScreen;
             loginForm.Show();
-            this.Hide(); // Oculta la ventana actual sin terminar la aplicación
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -91,12 +137,17 @@ namespace SistemaDeTickets.Vista
 
         private void btnIniciarSesion_Click_1(object sender, EventArgs e)
         {
-          
+            // Duplicado del método anterior - mantener consistencia
+            btnIniciarSesion_Click(sender, e);
         }
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
-            
+            // Navegar a registro: ocultar ventana anterior y centrar nueva
+            var registroForm = new VistaRegistro();
+            registroForm.StartPosition = FormStartPosition.CenterScreen;
+            registroForm.Show();
+            this.Hide();
         }
 
         private void btnVerEvento_Click(object sender, EventArgs e)

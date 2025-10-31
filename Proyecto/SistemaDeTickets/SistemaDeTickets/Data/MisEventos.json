@@ -17,11 +17,10 @@
     "Recinto": "Teatro Melico Salazar",
     "Tipo": "teatro",
     "Descripcion": "Clásica obra de Shakespeare.",
-    "TiquesDisponibles": 200,
+    "TiquetesDisponibles": 200,
     "Precio": 8000.00,
     "Estado": 0
   },
-
   {
     "Id": 3,
     "Nombre": "Partido de Fútbol: Costa Rica vs. México",
@@ -29,8 +28,118 @@
     "Recinto": "Estadio Nacional",
     "Tipo": "deportes",
     "Descripcion": "Amistoso internacional.",
-    "TiquesDisponibles": 1000,
+    "TiquetesDisponibles": 1000,
     "Precio": 25000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 4,
+    "Nombre": "Festival de Jazz Internacional",
+    "Fecha": "2025-11-15T19:30:00",
+    "Recinto": "Centro de Convenciones",
+    "Tipo": "Festival",
+    "Descripcion": "Tres días de jazz con artistas internacionales.",
+    "TiquetesDisponibles": 300,
+    "Precio": 35000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 5,
+    "Nombre": "Conferencia Tecnología 2025",
+    "Fecha": "2025-11-20T09:00:00",
+    "Recinto": "Hotel Real Intercontinental",
+    "Tipo": "Conferencia",
+    "Descripcion": "Últimas tendencias en tecnología e innovación.",
+    "TiquetesDisponibles": 150,
+    "Precio": 25000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 6,
+    "Nombre": "Ballet Clásico: El Lago de los Cisnes",
+    "Fecha": "2025-11-25T20:00:00",
+    "Recinto": "Teatro Nacional",
+    "Tipo": "Ballet",
+    "Descripcion": "Presentación completa del ballet clásico de Tchaikovsky.",
+    "TiquetesDisponibles": 250,
+    "Precio": 18000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 7,
+    "Nombre": "Concierto de Rock: Los Iracundos",
+    "Fecha": "2025-12-01T21:00:00",
+    "Recinto": "Parque Viva",
+    "Tipo": "Concierto",
+    "Descripcion": "Reunión especial de la legendaria banda costarricense.",
+    "TiquetesDisponibles": 400,
+    "Precio": 30000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 8,
+    "Nombre": "Feria del Libro Internacional",
+    "Fecha": "2025-12-10T10:00:00",
+    "Recinto": "Centro de Eventos Pedregal",
+    "Tipo": "Feria",
+    "Descripcion": "Tres días de literatura, autores y cultura.",
+    "TiquetesDisponibles": 500,
+    "Precio": 15000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 9,
+    "Nombre": "Partido de Básquetbol: Nacional vs. Herediano",
+    "Fecha": "2025-12-15T19:00:00",
+    "Recinto": "Gimnasio Nacional",
+    "Tipo": "deportes",
+    "Descripcion": "Clásico del básquetbol costarricense.",
+    "TiquetesDisponibles": 800,
+    "Precio": 12000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 10,
+    "Nombre": "Ópera: La Bohème",
+    "Fecha": "2025-12-20T19:30:00",
+    "Recinto": "Auditorio Nacional",
+    "Tipo": "Ópera",
+    "Descripcion": "Producción completa de la ópera de Puccini.",
+    "TiquetesDisponibles": 180,
+    "Precio": 45000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 11,
+    "Nombre": "Festival de Cine Centroamericano",
+    "Fecha": "2026-01-05T14:00:00",
+    "Recinto": "Cine Magaly",
+    "Tipo": "Festival",
+    "Descripcion": "Selección de películas centroamericanas premiadas.",
+    "TiquetesDisponibles": 200,
+    "Precio": 8000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 12,
+    "Nombre": "Concierto Sinfónico Navideño",
+    "Fecha": "2025-12-24T20:00:00",
+    "Recinto": "Teatro Melico Salazar",
+    "Tipo": "Concierto",
+    "Descripcion": "Especial navideño con la Orquesta Sinfónica Nacional.",
+    "TiquetesDisponibles": 350,
+    "Precio": 22000.00,
+    "Estado": 0
+  },
+  {
+    "Id": 13,
+    "Nombre": "Torneo de Tenis: Costa Rica Open",
+    "Fecha": "2026-01-10T09:00:00",
+    "Recinto": "Club de Tenis La Paz",
+    "Tipo": "deportes",
+    "Descripcion": "Torneo internacional de tenis ATP.",
+    "TiquetesDisponibles": 600,
+    "Precio": 28000.00,
     "Estado": 0
   }
 ]

@@ -3,11 +3,11 @@
     "Id": 1,
     "Nombre": "Jairo",
     "Email": "jh599350@gmail.com",
-    "PasswordHash": "$2a$11$o1IITVULgy9ftzMAWTan2.5/QH.cdebXIXs7h03aQDWzYPtwdOemC",
+    "PasswordHash": "PBKDF2$100000$ZtcJs/WY6RWQf9Sc/SZnQQ==$yzrWUpiV30JlkJ0RJVva5MDs14WJpw99CmrDEhuE7xM=",
     "Rol": 0,
     "EventosSeguidos": [],
     "FechaRegistro": "2025-10-27T00:12:21.4847359-06:00",
-    "TokenRecuperacion": "c92d7841-460b-4ffa-b24f-dc7c06ee0ced",
-    "TokenExpiracion": "2025-10-30T23:36:28.5191869-06:00"
+    "TokenRecuperacion": "dbfda604-ca88-48f1-b034-9d6c9b1d8197",
+    "TokenExpiracion": "2025-10-31T01:15:32.3031235-06:00"
   }
 ]

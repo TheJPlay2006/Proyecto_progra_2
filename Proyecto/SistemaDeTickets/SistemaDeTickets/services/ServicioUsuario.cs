@@ -16,8 +16,8 @@ namespace SistemaDeTickets.Services
 
         public ServicioUsuario()
         {
-            // Llamar a migración automática al crear el servicio
-            ServicioAutenticacion.MigrarPasswords();
+            // Nota: Migración automática removida para evitar StackOverflowException
+            // La migración se debe llamar explícitamente desde el punto de entrada de la aplicación
         }
 
         public List<Usuario> ObtenerTodos()

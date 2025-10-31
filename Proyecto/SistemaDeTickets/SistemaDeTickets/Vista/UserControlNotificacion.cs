@@ -70,6 +70,29 @@ namespace SistemaDeTickets.Vista
         public void MostrarNotificacion(string mensaje)
         {
             lblMensaje.Text = mensaje;
+            this.BackColor = Color.FromArgb(76, 175, 80); // Verde para notificaciones positivas
+            this.Visible = true;
+            _timerAutoOcultar.Start();
+        }
+
+        /// <summary>
+        /// Muestra una notificación de alerta (roja)
+        /// </summary>
+        public void MostrarAlerta(string mensaje)
+        {
+            lblMensaje.Text = mensaje;
+            this.BackColor = Color.FromArgb(244, 67, 54); // Rojo para alertas
+            this.Visible = true;
+            _timerAutoOcultar.Start();
+        }
+
+        /// <summary>
+        /// Muestra una notificación de información (azul)
+        /// </summary>
+        public void MostrarInformacion(string mensaje)
+        {
+            lblMensaje.Text = mensaje;
+            this.BackColor = Color.FromArgb(33, 150, 243); // Azul para información
             this.Visible = true;
             _timerAutoOcultar.Start();
         }

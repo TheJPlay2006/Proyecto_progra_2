@@ -20,7 +20,8 @@ namespace SistemaDeTickets.Controlador
         public byte[] GenerarReciboPDF(int compraId)
         {
             var compra = _repositorioCompras.BuscarPorId(compraId);
-            return Utils.GeneradorPDF.GenerarRecibo(compra, null, null);
+            string rutaPdf = Utils.GeneradorPDF.GenerarRecibo(compra, null, null);
+            return System.IO.File.ReadAllBytes(rutaPdf);
         }
 
         public void DescargarRecibo(int compraId, string rutaDestino)

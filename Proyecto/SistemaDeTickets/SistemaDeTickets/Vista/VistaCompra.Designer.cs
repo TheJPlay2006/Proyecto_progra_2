@@ -30,7 +30,6 @@
         {
             this.lblNombreEvento = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtNumeroTarjeta = new System.Windows.Forms.TextBox();
             this.txtNombreTitular = new System.Windows.Forms.TextBox();
@@ -42,133 +41,179 @@
             this.lblCVV = new System.Windows.Forms.Label();
             this.lblFechaExpiracion = new System.Windows.Forms.Label();
             this.lblNombreTitular = new System.Windows.Forms.Label();
+            this.panelDetalles = new System.Windows.Forms.Panel();
+            this.numericUpDownCantidad = new System.Windows.Forms.NumericUpDown();
+            this.panelErrores = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombreEvento
             // 
             this.lblNombreEvento.AutoSize = true;
-            this.lblNombreEvento.Location = new System.Drawing.Point(50, 41);
+            this.lblNombreEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreEvento.Location = new System.Drawing.Point(38, 33);
+            this.lblNombreEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreEvento.Name = "lblNombreEvento";
-            this.lblNombreEvento.Size = new System.Drawing.Size(100, 16);
+            this.lblNombreEvento.Size = new System.Drawing.Size(117, 20);
             this.lblNombreEvento.TabIndex = 0;
             this.lblNombreEvento.Text = "Nombre evento";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(185, 41);
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(279, 33);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(45, 16);
+            this.lblFecha.Size = new System.Drawing.Size(54, 20);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "Fecha";
-            // 
-            // lblCantidad
-            // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(285, 41);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(61, 16);
-            this.lblCantidad.TabIndex = 2;
-            this.lblCantidad.Text = "Cantidad";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(417, 41);
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(603, 33);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(38, 16);
+            this.lblTotal.Size = new System.Drawing.Size(44, 20);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "Total";
             // 
             // txtNumeroTarjeta
             // 
-            this.txtNumeroTarjeta.Location = new System.Drawing.Point(50, 157);
+            this.txtNumeroTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroTarjeta.Location = new System.Drawing.Point(271, 182);
+            this.txtNumeroTarjeta.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroTarjeta.Name = "txtNumeroTarjeta";
-            this.txtNumeroTarjeta.Size = new System.Drawing.Size(117, 22);
+            this.txtNumeroTarjeta.Size = new System.Drawing.Size(165, 18);
             this.txtNumeroTarjeta.TabIndex = 4;
             // 
             // txtNombreTitular
             // 
-            this.txtNombreTitular.Location = new System.Drawing.Point(540, 157);
+            this.txtNombreTitular.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreTitular.Location = new System.Drawing.Point(29, 182);
+            this.txtNombreTitular.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreTitular.Name = "txtNombreTitular";
-            this.txtNombreTitular.Size = new System.Drawing.Size(154, 22);
+            this.txtNombreTitular.Size = new System.Drawing.Size(220, 18);
             this.txtNombreTitular.TabIndex = 5;
             // 
             // txtCVV
             // 
-            this.txtCVV.Location = new System.Drawing.Point(232, 157);
+            this.txtCVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCVV.Location = new System.Drawing.Point(463, 182);
+            this.txtCVV.Margin = new System.Windows.Forms.Padding(2);
             this.txtCVV.Name = "txtCVV";
-            this.txtCVV.Size = new System.Drawing.Size(100, 22);
+            this.txtCVV.Size = new System.Drawing.Size(88, 18);
             this.txtCVV.TabIndex = 6;
             // 
             // txtFechaExpiracion
             // 
-            this.txtFechaExpiracion.Location = new System.Drawing.Point(367, 157);
+            this.txtFechaExpiracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaExpiracion.Location = new System.Drawing.Point(595, 182);
+            this.txtFechaExpiracion.Margin = new System.Windows.Forms.Padding(2);
             this.txtFechaExpiracion.Name = "txtFechaExpiracion";
-            this.txtFechaExpiracion.Size = new System.Drawing.Size(105, 22);
+            this.txtFechaExpiracion.Size = new System.Drawing.Size(147, 18);
             this.txtFechaExpiracion.TabIndex = 7;
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(213, 324);
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.Location = new System.Drawing.Point(313, 263);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmar.Size = new System.Drawing.Size(90, 33);
             this.btnConfirmar.TabIndex = 8;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
-            //
+            // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(420, 324);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(525, 263);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(88, 33);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            //
+            // 
             // lblNumeroTarjeta
             // 
             this.lblNumeroTarjeta.AutoSize = true;
-            this.lblNumeroTarjeta.Location = new System.Drawing.Point(53, 122);
+            this.lblNumeroTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroTarjeta.Location = new System.Drawing.Point(267, 131);
+            this.lblNumeroTarjeta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumeroTarjeta.Name = "lblNumeroTarjeta";
-            this.lblNumeroTarjeta.Size = new System.Drawing.Size(114, 16);
+            this.lblNumeroTarjeta.Size = new System.Drawing.Size(136, 20);
             this.lblNumeroTarjeta.TabIndex = 10;
             this.lblNumeroTarjeta.Text = "Número de tarjeta";
             // 
             // lblCVV
             // 
             this.lblCVV.AutoSize = true;
-            this.lblCVV.Location = new System.Drawing.Point(244, 122);
+            this.lblCVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCVV.Location = new System.Drawing.Point(469, 131);
+            this.lblCVV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCVV.Name = "lblCVV";
-            this.lblCVV.Size = new System.Drawing.Size(34, 16);
+            this.lblCVV.Size = new System.Drawing.Size(42, 20);
             this.lblCVV.TabIndex = 11;
             this.lblCVV.Text = "CVV";
             // 
             // lblFechaExpiracion
             // 
             this.lblFechaExpiracion.AutoSize = true;
-            this.lblFechaExpiracion.Location = new System.Drawing.Point(367, 122);
+            this.lblFechaExpiracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaExpiracion.Location = new System.Drawing.Point(591, 131);
+            this.lblFechaExpiracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFechaExpiracion.Name = "lblFechaExpiracion";
-            this.lblFechaExpiracion.Size = new System.Drawing.Size(129, 16);
+            this.lblFechaExpiracion.Size = new System.Drawing.Size(151, 20);
             this.lblFechaExpiracion.TabIndex = 12;
             this.lblFechaExpiracion.Text = "Fecha de expiración";
             // 
             // lblNombreTitular
             // 
             this.lblNombreTitular.AutoSize = true;
-            this.lblNombreTitular.Location = new System.Drawing.Point(559, 121);
+            this.lblNombreTitular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreTitular.Location = new System.Drawing.Point(25, 131);
+            this.lblNombreTitular.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreTitular.Name = "lblNombreTitular";
-            this.lblNombreTitular.Size = new System.Drawing.Size(112, 16);
+            this.lblNombreTitular.Size = new System.Drawing.Size(137, 20);
             this.lblNombreTitular.TabIndex = 13;
-            this.lblNombreTitular.Text = "Nombre del titular";
+            this.lblNombreTitular.Text = "Nombre del titular:";
+            // 
+            // panelDetalles
+            // 
+            this.panelDetalles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelDetalles.Location = new System.Drawing.Point(813, 33);
+            this.panelDetalles.Name = "panelDetalles";
+            this.panelDetalles.Size = new System.Drawing.Size(306, 292);
+            this.panelDetalles.TabIndex = 14;
+            // 
+            // numericUpDownCantidad
+            // 
+            this.numericUpDownCantidad.Location = new System.Drawing.Point(442, 36);
+            this.numericUpDownCantidad.Name = "numericUpDownCantidad";
+            this.numericUpDownCantidad.Size = new System.Drawing.Size(81, 20);
+            this.numericUpDownCantidad.TabIndex = 15;
+            // 
+            // panelErrores
+            // 
+            this.panelErrores.Location = new System.Drawing.Point(29, 235);
+            this.panelErrores.Name = "panelErrores";
+            this.panelErrores.Size = new System.Drawing.Size(200, 100);
+            this.panelErrores.TabIndex = 16;
             // 
             // VistaCompra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1158, 404);
+            this.Controls.Add(this.panelErrores);
+            this.Controls.Add(this.numericUpDownCantidad);
+            this.Controls.Add(this.panelDetalles);
             this.Controls.Add(this.lblNombreTitular);
             this.Controls.Add(this.lblFechaExpiracion);
             this.Controls.Add(this.lblCVV);
@@ -180,11 +225,13 @@
             this.Controls.Add(this.txtNombreTitular);
             this.Controls.Add(this.txtNumeroTarjeta);
             this.Controls.Add(this.lblTotal);
-            this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblNombreEvento);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaCompra";
             this.Text = "VistaCompra";
+            this.Load += new System.EventHandler(this.VistaCompra_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,7 +241,6 @@
 
         private System.Windows.Forms.Label lblNombreEvento;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.TextBox txtNumeroTarjeta;
         private System.Windows.Forms.TextBox txtNombreTitular;
@@ -206,5 +252,8 @@
         private System.Windows.Forms.Label lblCVV;
         private System.Windows.Forms.Label lblFechaExpiracion;
         private System.Windows.Forms.Label lblNombreTitular;
+        private System.Windows.Forms.Panel panelDetalles;
+        private System.Windows.Forms.NumericUpDown numericUpDownCantidad;
+        private System.Windows.Forms.Panel panelErrores;
     }
 }

@@ -23,8 +23,58 @@ namespace SistemaDeTickets.Vista
         public VistaRegistro()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen; // Centrar ventana en pantalla
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Tickets - Registro de Usuario";
+            this.BackColor = Color.FromArgb(247, 247, 251);
+
             _controladorAutenticacion = new ControladorAutenticacion();
+
+            ConfigurarInterfazRegistro();
+        }
+
+        private void ConfigurarInterfazRegistro()
+        {
+            // Configurar título
+            if (this.Controls.ContainsKey("lblTitulo"))
+            {
+                var lblTitulo = this.Controls["lblTitulo"] as Label;
+                if (lblTitulo != null)
+                {
+                    lblTitulo.Font = new Font("Segoe UI", 18, FontStyle.Bold);
+                    lblTitulo.ForeColor = Color.FromArgb(30, 31, 59);
+                    lblTitulo.Text = "REGISTRO DE USUARIO";
+                    lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
+                }
+            }
+
+            // Configurar botones
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    if (btn.Name.Contains("Registrar"))
+                        ConfigurarBoton(btn, "Crear Cuenta", Color.FromArgb(76, 175, 80));
+                    else if (btn.Name.Contains("Volver"))
+                        ConfigurarBoton(btn, "Volver", Color.FromArgb(158, 158, 158));
+                }
+                else if (ctrl is TextBox txt)
+                {
+                    txt.Font = new Font("Segoe UI", 10);
+                    txt.BorderStyle = BorderStyle.FixedSingle;
+                }
+            }
+        }
+
+        private void ConfigurarBoton(Button btn, string texto, Color colorFondo)
+        {
+            btn.Text = texto;
+            btn.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btn.BackColor = colorFondo;
+            btn.ForeColor = Color.White;
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.Height = 40;
+            btn.Cursor = Cursors.Hand;
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)

@@ -2,6 +2,7 @@
 using SistemaDeTickets.Services;
 using SistemaDeTickets.Controlador.Patrones;
 using SistemaDeTickets.Modelo;
+using SistemaDeTickets.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,11 +27,98 @@ namespace SistemaDeTickets.Vista
             InitializeComponent(); // Carga los componentes del formulario
             controlador = new ControladorEvento(); // Se crea el controlador para manejar los eventos
 
+            // Configurar apariencia moderna
+            ConfigurarInterfazEvento();
+
             // Inicializar label de stock bajo
             InicializarLabelStockBajo();
 
-            // Registrar como observador (si hay un sujeto observable)
-            // Nota: En implementación completa, se debería registrar con el GestorEventos
+            // Registrar como observador con el GestorEventos
+            var gestorEventos = new GestorEventos();
+            gestorEventos.AgregarObservador(this);
+        }
+
+        private void ConfigurarInterfazEvento()
+        {
+            this.Text = "Sistema de Tickets - Eventos Disponibles";
+            this.BackColor = Color.FromArgb(247, 247, 251);
+
+            // Restaurar imagen de fondo original
+            try
+            {
+                string rutaImagen = System.IO.Path.Combine(Application.StartupPath, "Images", "Fondo_Pop-Conciertos_Fondo-claro_F7F7FB_3840x2160.png");
+                if (System.IO.File.Exists(rutaImagen))
+                {
+                    this.BackgroundImage = Image.FromFile(rutaImagen);
+                    this.BackgroundImageLayout = ImageLayout.Stretch;
+                }
+            }
+            catch
+            {
+                // Si no se puede cargar la imagen, mantener color sólido
+            }
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            // Configurar título
+            if (this.Controls.ContainsKey("lblTitulo"))
+            {
+                var lblTitulo = this.Controls["lblTitulo"] as Label;
+                if (lblTitulo != null)
+                {
+                    lblTitulo.Font = new Font("Segoe UI", 20, FontStyle.Bold);
+                    lblTitulo.ForeColor = Color.FromArgb(30, 31, 59);
+                    lblTitulo.Text = "EVENTOS DISPONIBLES";
+                }
+            }
+
+            // Configurar botones con colores originales (blanco)
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    if (btn.Name.Contains("Comprar"))
+                        ConfigurarBoton(btn, "Comprar Tickets", Color.White);
+                    else if (btn.Name.Contains("VerDetalles"))
+                        ConfigurarBoton(btn, "Ver Detalles", Color.White);
+                    else if (btn.Name.Contains("Buscar"))
+                        ConfigurarBoton(btn, "Buscar", Color.White);
+                    else if (btn.Name.Contains("Login") || btn.Name.Contains("Iniciar"))
+                        ConfigurarBoton(btn, "Iniciar Sesión", Color.White);
+                    else if (btn.Name.Contains("Registro"))
+                        ConfigurarBoton(btn, "Registrarse", Color.White);
+                    else if (btn.Name.Contains("Salir"))
+                        ConfigurarBoton(btn, "Salir", Color.White);
+                }
+            }
+
+            // Configurar DataGridView
+            if (this.Controls.ContainsKey("dgvEventos"))
+            {
+                var dgv = this.Controls["dgvEventos"] as DataGridView;
+                if (dgv != null)
+                {
+                    dgv.BackgroundColor = Color.White;
+                    dgv.BorderStyle = BorderStyle.FixedSingle;
+                    dgv.GridColor = Color.LightGray;
+                    dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9);
+                    dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                    dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 31, 59);
+                    dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                    dgv.EnableHeadersVisualStyles = false;
+                }
+            }
+        }
+
+        private void ConfigurarBoton(Button btn, string texto, Color colorFondo)
+        {
+            btn.Text = texto;
+            btn.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btn.BackColor = colorFondo;
+            btn.ForeColor = Color.Black;
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.Height = 35;
+            btn.Cursor = Cursors.Hand;
         }
 
         /// <summary>
@@ -40,13 +128,17 @@ namespace SistemaDeTickets.Vista
         {
             lblStockBajo = new Label();
             lblStockBajo.Text = "";
-            lblStockBajo.ForeColor = Color.Red;
-            lblStockBajo.Font = new Font(Font, FontStyle.Bold);
+            lblStockBajo.ForeColor = Color.White;
+            lblStockBajo.BackColor = Color.FromArgb(244, 67, 54); // Rojo para alerta
+            lblStockBajo.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             lblStockBajo.AutoSize = true;
             lblStockBajo.Visible = false;
+            lblStockBajo.Padding = new Padding(10);
+            lblStockBajo.BorderStyle = BorderStyle.FixedSingle;
 
             // Posicionar en la parte superior del formulario
             lblStockBajo.Location = new Point(10, 10);
+            lblStockBajo.BringToFront();
             this.Controls.Add(lblStockBajo);
         }
 
@@ -162,55 +254,72 @@ namespace SistemaDeTickets.Vista
         
         private void btnComprar_Click(object sender, EventArgs e)
         {
-            // Primero se verifica si el usuario ha iniciado sesión
-            if (!ServicioAutenticacion.IsLoggedIn())
+            // Verificar selección de evento primero
+            if (dgvEventos.CurrentRow == null)
             {
-                // Si no está logeado, se pregunta si quiere hacerlo
-                var result = MessageBox.Show("Debes iniciar sesión para comprar. ¿Quieres iniciar sesión ahora?",
-                                             "Login requerido", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                MessageBox.Show("Por favor, selecciona un evento de la lista.",
+                                "Selección Requerida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            Modelo.Evento eventoSeleccionado = (Modelo.Evento)dgvEventos.CurrentRow.DataBoundItem;
+
+            // RECARGAR DATOS FRESCOS DEL ARCHIVO para verificar stock real
+            var eventosActualizados = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
+            var eventoActual = eventosActualizados.FirstOrDefault(ev => ev.Id == eventoSeleccionado.Id);
+
+            if (eventoActual == null)
+            {
+                MessageBox.Show("El evento seleccionado ya no está disponible.",
+                                "Evento No Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CargarEventos(); // Recargar grilla
+                return;
+            }
+
+            // Verificar stock usando datos DIRECTOS del archivo JSON
+            if (eventoActual.TiquetesDisponibles < 1)
+            {
+                MessageBox.Show("Lo sentimos, no hay tickets disponibles para este evento.",
+                                "Sin Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CargarEventos(); // Recargar grilla para mostrar stock actualizado
+                return;
+            }
+
+            // Verificar sesión de manera consistente
+            if (!ServicioAutenticacion.IsLoggedIn() || ServicioAutenticacion.CurrentUser == null)
+            {
+                var result = MessageBox.Show("Debes iniciar sesión para comprar tickets. ¿Quieres iniciar sesión ahora?",
+                                              "Inicio de Sesión Requerido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
-                    // Abre el formulario de login
-                    using (var login = new VistaLogin())
-                    {
-                        var dlg = login.ShowDialog();
+                    // Abrir login con contexto de compra
+                    var loginForm = new VistaLogin();
+                    loginForm.ContextoOrigen = VistaLogin.ContextoNavegacion.DesdeCompraEvento;
+                    loginForm.EventoSeleccionadoCache = eventoSeleccionado; // Guardar evento seleccionado
+                    loginForm.StartPosition = FormStartPosition.CenterScreen;
 
-                        // Si aún no inició sesión, no puede seguir
-                        if (!ServicioAutenticacion.IsLoggedIn())
-                        {
-                            MessageBox.Show("No se inició sesión. La compra no puede continuar.",
-                                            "Login requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                    }
+                    this.Hide(); // Ocultar VistaEvento mientras está en login
+                    loginForm.Show(); // Mostrar login
+                    return; // Salir para que el login maneje la navegación posterior
                 }
                 else
                 {
-                    // Si el usuario dijo que no, se cancela la compra
-                    return;
+                    return; // Usuario canceló
                 }
             }
 
-            // Si el usuario ya está logeado
-            if (dgvEventos.CurrentRow != null)
+            // Usuario autenticado - proceder con compra usando datos frescos
+            var compraForm = new VistaCompra(new DetalleCompra
             {
-                // Obtiene el evento seleccionado de la tabla
-                Modelo.Evento seleccionado = (Modelo.Evento)dgvEventos.CurrentRow.DataBoundItem;
+                Evento = eventoActual, // Usar datos frescos del archivo
+                Cantidad = 1, // Cantidad por defecto
+                Total = (decimal)eventoActual.Precio
+            });
 
-                // Se podría agregar una validación de cantidad o un formulario de pago aquí
-                if (controlador.Comprar(seleccionado, 1))
-                {
-                    MessageBox.Show("Compra realizada con éxito.", "Compra", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    // Actualiza la tabla con la nueva cantidad de tiques
-                    CargarEventos(controlador.ObtenerEventos());
-                }
-                else
-                {
-                    MessageBox.Show("No hay tiques disponibles.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
+            compraForm.StartPosition = FormStartPosition.CenterScreen;
+            compraForm.Show();
+            this.Hide(); // Ocultar vista de eventos durante compra
         }
 
        
@@ -222,18 +331,22 @@ namespace SistemaDeTickets.Vista
             {
                 Modelo.Evento seleccionado = (Modelo.Evento)dgvEventos.CurrentRow.DataBoundItem;
 
-                // Arma el texto con toda la información del evento
-                string mensaje =
-                    $"Nombre: {seleccionado.Nombre}\n" +
-                    $"Fecha: {seleccionado.Fecha:dd/MM/yyyy HH:mm}\n" +
-                    $"Recinto: {seleccionado.Recinto}\n" +
-                    $"Tipo: {seleccionado.Tipo}\n" +
-                    $"Tiques disponibles: {seleccionado.TiquetesDisponibles}\n" +
-                    $"Descripción: {seleccionado.Descripcion}\n" +
-                    $"Precio: {seleccionado.Precio:C}";
+                // RECARGAR DATOS FRESCOS DEL ARCHIVO ANTES DE MOSTRAR DETALLES
+                var eventosActualizados = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
+                var eventoActual = eventosActualizados.FirstOrDefault(ev => ev.Id == seleccionado.Id);
 
-                // Muestra los detalles en un mensaje
-                MessageBox.Show(mensaje, "Detalles del Evento");
+                if (eventoActual == null)
+                {
+                    MessageBox.Show("El evento seleccionado ya no está disponible.",
+                                    "Evento No Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    CargarEventos(); // Recargar grilla
+                    return;
+                }
+
+                // CREAR NUEVA INSTANCIA DE FORMULARIO PARA EVITAR OBJETOS DISPOSEADOS
+                var vistaDetalle = new VistaDetalleEvento(ServicioAutenticacion.CurrentUser?.Id ?? 0, eventoActual.Id);
+                vistaDetalle.StartPosition = FormStartPosition.CenterScreen;
+                vistaDetalle.Show();
             }
         }
 
@@ -279,6 +392,23 @@ namespace SistemaDeTickets.Vista
         }
 
         /// <summary>
+        /// Evento para cerrar sesión y volver al login
+        /// </summary>
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            // Cerrar sesión
+            ServicioAutenticacion.Logout();
+
+            // Mostrar login nuevamente
+            var loginForm = new VistaLogin();
+            loginForm.StartPosition = FormStartPosition.CenterScreen;
+            loginForm.Show();
+
+            // Cerrar vista de eventos
+            this.Close();
+        }
+
+        /// <summary>
         /// Implementación del patrón Observer - recibe actualizaciones del sistema
         /// </summary>
         public void Actualizar(TipoNotificacion tipo, object datos)
@@ -312,21 +442,28 @@ namespace SistemaDeTickets.Vista
                         string eventoId = infoStock.EventoId;
                         int cantidadRestante = infoStock.CantidadRestante;
 
-                        // Mostrar en label y MessageBox
-                        lblStockBajo.Text = $"¡ALERTA! Quedan solo {cantidadRestante} tickets para el evento {eventoId}";
+                        // Mostrar badge de alerta en la parte superior
+                        lblStockBajo.Text = $"⚠ ALERTA: Solo {cantidadRestante} tickets restantes para evento #{eventoId}";
                         lblStockBajo.Visible = true;
 
-                        MessageBox.Show($"¡Atención! Quedan solo {cantidadRestante} tickets disponibles para el evento {eventoId}.",
-                            "Stock Bajo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        // Mostrar notificación emergente (opcional, solo si es crítico)
+                        if (cantidadRestante <= 5)
+                        {
+                            MessageBox.Show($"¡CRÍTICO! Solo quedan {cantidadRestante} tickets para el evento #{eventoId}.\n¡Compra ahora!",
+                                "Stock Muy Bajo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
 
-                        // Ocultar después de 10 segundos
-                        Task.Delay(10000).ContinueWith(_ =>
+                        // Auto-ocultar después de 8 segundos
+                        Task.Delay(8000).ContinueWith(_ =>
                         {
                             if (!this.IsDisposed)
                             {
                                 this.Invoke(new Action(() => lblStockBajo.Visible = false));
                             }
                         });
+
+                        // Actualizar la vista de eventos para reflejar stock actual
+                        CargarEventos();
                     }
                     break;
 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaDeTickets.Controlador;
+using SistemaDeTickets.Services;
 
 namespace SistemaDeTickets.Vista
 {
@@ -19,13 +20,93 @@ namespace SistemaDeTickets.Vista
     {
         private ControladorAutenticacion _controladorAutenticacion;
 
+        // Contexto de navegación: de dónde viene el usuario
+        public enum ContextoNavegacion
+        {
+            DesdeInicio,      // Vino desde la pantalla de inicio
+            DesdeRegistro,    // Vino desde registro
+            DesdeCompraEvento // Vino porque intentó comprar en VistaEvento
+        }
+
+        public ContextoNavegacion ContextoOrigen { get; set; } = ContextoNavegacion.DesdeInicio;
+
+        // Cache del evento seleccionado (para restaurar selección después del login)
+        public Modelo.Evento EventoSeleccionadoCache { get; set; }
+
         public VistaLogin()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen; // Centrar ventana en pantalla
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Tickets - Iniciar Sesión";
+            this.BackColor = Color.FromArgb(247, 247, 251);
+
+            // Restaurar imagen de fondo original
+            try
+            {
+                string rutaImagen = System.IO.Path.Combine(Application.StartupPath, "Images", "Fondo_Pop-Conciertos_Fondo-claro_F7F7FB_3840x2160.png");
+                if (System.IO.File.Exists(rutaImagen))
+                {
+                    this.BackgroundImage = Image.FromFile(rutaImagen);
+                    this.BackgroundImageLayout = ImageLayout.Stretch;
+                }
+            }
+            catch
+            {
+                // Si no se puede cargar la imagen, mantener color sólido
+            }
+
             _controladorAutenticacion = new ControladorAutenticacion();
 
+            // Configurar apariencia moderna
+            ConfigurarControlesLogin();
+
             SetPasswordVisibility(checkPassword.Checked);
+        }
+
+        private void ConfigurarControlesLogin()
+        {
+            // Configurar título
+            if (this.Controls.ContainsKey("lblTitulo") || this.Controls.ContainsKey("label1"))
+            {
+                var titulo = this.Controls.OfType<Label>().FirstOrDefault(l => l.Text.Contains("Login") || l.Text.Contains("Iniciar"));
+                if (titulo != null)
+                {
+                    titulo.Font = new Font("Segoe UI", 20, FontStyle.Bold);
+                    titulo.ForeColor = Color.FromArgb(30, 31, 59);
+                    titulo.TextAlign = ContentAlignment.MiddleCenter;
+                }
+            }
+
+            // Configurar botones con colores originales (blanco)
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    if (btn.Name.Contains("Login") || btn.Name.Contains("Iniciar"))
+                        ConfigurarBoton(btn, "Iniciar Sesión", Color.White);
+                    else if (btn.Name.Contains("Volver"))
+                        ConfigurarBoton(btn, "Volver", Color.White);
+                    else if (btn.Name.Contains("Salir"))
+                        ConfigurarBoton(btn, "Salir", Color.White);
+                }
+                else if (ctrl is TextBox txt)
+                {
+                    txt.Font = new Font("Segoe UI", 10);
+                    txt.BorderStyle = BorderStyle.FixedSingle;
+                }
+            }
+        }
+
+        private void ConfigurarBoton(Button btn, string texto, Color colorFondo)
+        {
+            btn.Text = texto;
+            btn.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btn.BackColor = colorFondo;
+            btn.ForeColor = Color.Black;
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.Height = 40;
+            btn.Cursor = Cursors.Hand;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -35,23 +116,53 @@ namespace SistemaDeTickets.Vista
 
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, complete todos los campos.", "Campos Requeridos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            try
-            {
-                var usuario = _controladorAutenticacion.IniciarSesion(email, password);
-                MessageBox.Show($"Bienvenido, {usuario.Nombre}!", "Login exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Validar credenciales usando el servicio de autenticación
+            bool credencialesValidas = ServicioAutenticacion.Login(email, password);
 
-                var vista = new VistaDetalleEvento(); // si tu form requiere parámetros, pásalos aquí
-                vista.StartPosition = FormStartPosition.CenterScreen;
-                vista.Show();
-                this.Hide();
-            }
-            catch (Exception ex)
+            if (credencialesValidas)
             {
-                MessageBox.Show(ex.Message, "Error de login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"¡Bienvenido, {ServicioAutenticacion.CurrentUser?.Nombre}!", "Inicio de Sesión Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Navegación contextual según el origen
+                switch (ContextoOrigen)
+                {
+                    case ContextoNavegacion.DesdeCompraEvento:
+                        // Volver a VistaEvento para continuar con la compra pendiente
+                        var ventanaEventos = new VistaEvento();
+                        ventanaEventos.StartPosition = FormStartPosition.CenterScreen;
+
+                        // Restaurar selección previa si existe
+                        if (EventoSeleccionadoCache != null)
+                        {
+                            // Aquí podríamos implementar lógica para preseleccionar el evento
+                            // ventanaEventos.EventoPreseleccionado = EventoSeleccionadoCache;
+                        }
+
+                        ventanaEventos.Show();
+                        break;
+
+                    case ContextoNavegacion.DesdeRegistro:
+                    case ContextoNavegacion.DesdeInicio:
+                    default:
+                        // Ir a VistaEvento por defecto
+                        var ventanaEventosDefault = new VistaEvento();
+                        ventanaEventosDefault.StartPosition = FormStartPosition.CenterScreen;
+                        ventanaEventosDefault.Show();
+                        break;
+                }
+
+                this.Hide(); // Oculta la vista login actual sin cerrarla
+            }
+            else
+            {
+                // Mostrar error
+                MessageBox.Show("Credenciales incorrectas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPassword.Clear();
+                txtPassword.Focus();
             }
         }
 
@@ -68,11 +179,32 @@ namespace SistemaDeTickets.Vista
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            // Botón "Volver": regresar a la ventana de inicio (estilo dispose() de Java)
-            // Usar Hide() para mantener la aplicación viva
-            var inicioForm = new Inicio();
-            inicioForm.StartPosition = FormStartPosition.CenterScreen;
-            inicioForm.Show();
+            // Navegación contextual según el origen
+            switch (ContextoOrigen)
+            {
+                case ContextoNavegacion.DesdeCompraEvento:
+                    // Si vino desde compra en VistaEvento, volver a VistaEvento
+                    var ventanaEventos = new VistaEvento();
+                    ventanaEventos.StartPosition = FormStartPosition.CenterScreen;
+                    ventanaEventos.Show();
+                    break;
+
+                case ContextoNavegacion.DesdeRegistro:
+                    // Si vino desde registro, volver a registro
+                    var registroForm = new VistaRegistro();
+                    registroForm.StartPosition = FormStartPosition.CenterScreen;
+                    registroForm.Show();
+                    break;
+
+                case ContextoNavegacion.DesdeInicio:
+                default:
+                    // Por defecto, volver a inicio
+                    var inicioForm = new Inicio();
+                    inicioForm.StartPosition = FormStartPosition.CenterScreen;
+                    inicioForm.Show();
+                    break;
+            }
+
             this.Hide(); // Oculta el login sin terminar la aplicación
         }
 

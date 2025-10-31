@@ -1,0 +1,31 @@
+JE TICKETS CR
+RECIBO DE COMPRA DE TICKETS
+==================================================
+
+DETALLE DE COMPRA
+Código de Compra: 32
+Fecha y Hora: 31/10/2025 08:07:15
+
+INFORMACIÓN DEL EVENTO
+Evento: Concierto Costa Viva
+Recinto: Estadio Nacional
+Fecha y Hora: 10/11/2025 20:00
+Tipo: Concierto
+
+DATOS DEL USUARIO
+Nombre: Jairo
+Email: jh599350@gmail.com
+
+DETALLE DE TICKETS
++--------------------------------+--------+--------------+----------+
+| Tipo de Ticket                 | Cant.  | Precio Unit. | Subtotal |
++--------------------------------+--------+--------------+----------+
+| Tickets para Concierto Costa Viva | 3      | ₡    40 000 | ₡120 000 |
++--------------------------------+--------+--------------+----------+
+                     TOTAL A PAGAR: ₡120 000
+
+Gracias por su compra en JE Tickets CR
+
+Para soporte técnico: soporte@jetickets.cr | Tel: 2222-3333
+
+Documento generado automáticamente por el sistema JE Tickets CR

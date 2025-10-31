@@ -12,8 +12,27 @@ namespace SistemaDeTickets.Services
 {
     public static class ServicioAutenticacion
     {
-        // Usuario actual (null = no logeado)
-        public static Usuario CurrentUser { get; private set; } = null;
+        // Usuario actual (singleton thread-safe para persistencia de sesión)
+        private static Usuario _currentUser = null;
+        private static readonly object _lock = new object();
+
+        public static Usuario CurrentUser
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    return _currentUser;
+                }
+            }
+            private set
+            {
+                lock (_lock)
+                {
+                    _currentUser = value;
+                }
+            }
+        }
 
         // Constantes para PBKDF2
         private const int Iteraciones = 100000;
@@ -96,9 +115,12 @@ namespace SistemaDeTickets.Services
         {
             var repo = new ServicioUsuario();
             var usuarios = repo.ObtenerTodos();
+
+            // Crear copia de la lista para evitar InvalidOperationException
+            var usuariosCopia = new List<Usuario>(usuarios);
             bool huboCambios = false;
 
-            foreach (var usuario in usuarios)
+            foreach (var usuario in usuariosCopia)
             {
                 // Si el password no tiene formato PBKDF2, es un password en claro
                 if (!usuario.PasswordHash.StartsWith("PBKDF2$"))
@@ -113,7 +135,7 @@ namespace SistemaDeTickets.Services
             // Guardar cambios si hubo migración
             if (huboCambios)
             {
-                repo.GuardarTodos(usuarios);
+                repo.GuardarTodos(usuariosCopia);
             }
         }
 

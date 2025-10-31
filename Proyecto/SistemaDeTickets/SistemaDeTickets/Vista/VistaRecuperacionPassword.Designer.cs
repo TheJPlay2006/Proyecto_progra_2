@@ -47,7 +47,7 @@ namespace SistemaDeTickets.Vista
             // 
             this.btnRecuperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperar.Location = new System.Drawing.Point(662, 163);
-            this.btnRecuperar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRecuperar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecuperar.Name = "btnRecuperar";
             this.btnRecuperar.Size = new System.Drawing.Size(177, 27);
             this.btnRecuperar.TabIndex = 0;
@@ -57,28 +57,28 @@ namespace SistemaDeTickets.Vista
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(261, 90);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Location = new System.Drawing.Point(125, 125);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(326, 21);
+            this.txtEmail.Size = new System.Drawing.Size(462, 21);
             this.txtEmail.TabIndex = 1;
             // 
             // txtToken
             // 
             this.txtToken.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtToken.Location = new System.Drawing.Point(261, 163);
-            this.txtToken.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtToken.Location = new System.Drawing.Point(125, 183);
+            this.txtToken.Margin = new System.Windows.Forms.Padding(2);
             this.txtToken.Name = "txtToken";
-            this.txtToken.Size = new System.Drawing.Size(326, 21);
+            this.txtToken.Size = new System.Drawing.Size(462, 21);
             this.txtToken.TabIndex = 2;
             // 
             // txtNuevoPassword
             // 
             this.txtNuevoPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNuevoPassword.Location = new System.Drawing.Point(261, 244);
-            this.txtNuevoPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNuevoPassword.Location = new System.Drawing.Point(125, 244);
+            this.txtNuevoPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtNuevoPassword.Name = "txtNuevoPassword";
-            this.txtNuevoPassword.Size = new System.Drawing.Size(326, 21);
+            this.txtNuevoPassword.Size = new System.Drawing.Size(462, 21);
             this.txtNuevoPassword.TabIndex = 3;
             // 
             // lblEmail
@@ -86,7 +86,7 @@ namespace SistemaDeTickets.Vista
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(72, 90);
+            this.lblEmail.Location = new System.Drawing.Point(121, 83);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(176, 24);
@@ -99,7 +99,7 @@ namespace SistemaDeTickets.Vista
             this.lblToken.AutoSize = true;
             this.lblToken.BackColor = System.Drawing.Color.Transparent;
             this.lblToken.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblToken.Location = new System.Drawing.Point(72, 160);
+            this.lblToken.Location = new System.Drawing.Point(121, 148);
             this.lblToken.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblToken.Name = "lblToken";
             this.lblToken.Size = new System.Drawing.Size(154, 24);
@@ -113,7 +113,7 @@ namespace SistemaDeTickets.Vista
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(72, 244);
+            this.label3.Location = new System.Drawing.Point(124, 218);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(173, 24);
@@ -124,7 +124,7 @@ namespace SistemaDeTickets.Vista
             // 
             this.btnEnviarToken.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnviarToken.Location = new System.Drawing.Point(662, 83);
-            this.btnEnviarToken.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnviarToken.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnviarToken.Name = "btnEnviarToken";
             this.btnEnviarToken.Size = new System.Drawing.Size(177, 34);
             this.btnEnviarToken.TabIndex = 7;
@@ -178,7 +178,7 @@ namespace SistemaDeTickets.Vista
             this.Controls.Add(this.txtToken);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnRecuperar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaRecuperacionPassword";
             this.Text = "VistaRecuperacionPassword";
             this.ResumeLayout(false);

@@ -41,62 +41,69 @@
             // lblNombreEvento
             // 
             this.lblNombreEvento.AutoSize = true;
-            this.lblNombreEvento.Location = new System.Drawing.Point(115, 61);
+            this.lblNombreEvento.Location = new System.Drawing.Point(86, 50);
+            this.lblNombreEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreEvento.Name = "lblNombreEvento";
-            this.lblNombreEvento.Size = new System.Drawing.Size(100, 16);
+            this.lblNombreEvento.Size = new System.Drawing.Size(80, 13);
             this.lblNombreEvento.TabIndex = 0;
             this.lblNombreEvento.Text = "Nombre evento";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(114, 116);
+            this.lblFecha.Location = new System.Drawing.Point(86, 94);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(95, 16);
+            this.lblFecha.Size = new System.Drawing.Size(79, 13);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "Fecha evento: ";
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(114, 166);
+            this.lblPrecio.Location = new System.Drawing.Point(86, 135);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(90, 16);
+            this.lblPrecio.Size = new System.Drawing.Size(73, 13);
             this.lblPrecio.TabIndex = 2;
             this.lblPrecio.Text = "Precio evento";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(118, 212);
+            this.lblDescripcion.Location = new System.Drawing.Point(88, 172);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(123, 16);
+            this.lblDescripcion.Size = new System.Drawing.Size(99, 13);
             this.lblDescripcion.TabIndex = 3;
             this.lblDescripcion.Text = "Descripcion evento";
             // 
             // lblDisponibles
             // 
             this.lblDisponibles.AutoSize = true;
-            this.lblDisponibles.Location = new System.Drawing.Point(117, 283);
+            this.lblDisponibles.Location = new System.Drawing.Point(88, 230);
+            this.lblDisponibles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDisponibles.Name = "lblDisponibles";
-            this.lblDisponibles.Size = new System.Drawing.Size(79, 16);
+            this.lblDisponibles.Size = new System.Drawing.Size(61, 13);
             this.lblDisponibles.TabIndex = 4;
             this.lblDisponibles.Text = "Disponibles";
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(218, 348);
+            this.btnComprar.Location = new System.Drawing.Point(164, 283);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(75, 23);
+            this.btnComprar.Size = new System.Drawing.Size(56, 19);
             this.btnComprar.TabIndex = 5;
             this.btnComprar.Text = "Comprar";
             this.btnComprar.UseVisualStyleBackColor = true;
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(373, 348);
+            this.btnVolver.Location = new System.Drawing.Point(280, 283);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.Size = new System.Drawing.Size(56, 19);
             this.btnVolver.TabIndex = 6;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
@@ -104,17 +111,18 @@
             // numCantidad
             // 
             this.numCantidad.AutoSize = true;
-            this.numCantidad.Location = new System.Drawing.Point(404, 126);
+            this.numCantidad.Location = new System.Drawing.Point(303, 102);
+            this.numCantidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.numCantidad.Name = "numCantidad";
-            this.numCantidad.Size = new System.Drawing.Size(44, 16);
+            this.numCantidad.Size = new System.Drawing.Size(71, 13);
             this.numCantidad.TabIndex = 7;
-            this.numCantidad.Text = "label6";
+            this.numCantidad.Text = "num cantidad";
             // 
             // VistaDetalleEvento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(654, 406);
             this.Controls.Add(this.numCantidad);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnComprar);
@@ -123,6 +131,7 @@
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblNombreEvento);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VistaDetalleEvento";
             this.Text = "VistaDetalleEvento";
             this.ResumeLayout(false);

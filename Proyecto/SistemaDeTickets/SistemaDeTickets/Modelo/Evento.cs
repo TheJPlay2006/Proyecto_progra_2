@@ -20,6 +20,7 @@ namespace SistemaDeTickets.Modelo
         public string Descripcion { get; set; }
         public int TiquetesDisponibles { get; set; }
         public double Precio { get; set; }
+        public EstadoEvento Estado { get; set; }
 
 
         public Evento() { }

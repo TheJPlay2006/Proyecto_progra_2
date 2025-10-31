@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using SistemaDeTickets.Modelo;
 
 namespace SistemaDeTickets.Controlador.Patrones
@@ -21,9 +22,20 @@ namespace SistemaDeTickets.Controlador.Patrones
 
         protected void NotificarObservadores(TipoNotificacion tipo, object datos)
         {
-            foreach (var obs in observadores)
+            // Crear copia de la lista para evitar InvalidOperationException si se modifica durante notificación
+            var observadoresCopia = new List<IObservador>(observadores);
+
+            foreach (var obs in observadoresCopia)
             {
-                obs.Actualizar(tipo, datos);
+                try
+                {
+                    obs.Actualizar(tipo, datos);
+                }
+                catch (Exception ex)
+                {
+                    // Log error silenciosamente para evitar que un observador roto detenga a los demás
+                    Console.WriteLine($"Error notificando observador: {ex.Message}");
+                }
             }
         }
 
