@@ -163,7 +163,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\ServicioAutenticacion.cs" />
     <Compile Include="services\ServicioEvento.cs" />
-    <Compile Include="services\ServicioInventario.cs" />
     <Compile Include="services\ServicioUsuario.cs" />
     <Compile Include="Utils\GestorJSON.cs" />
     <Compile Include="Utils\GestorPDF.cs" />
@@ -183,11 +182,23 @@
     <Compile Include="Vista\UserControlNotificacion.Designer.cs">
       <DependentUpon>UserControlNotificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\VistaCambiosEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaCambiosEventos.Designer.cs">
+      <DependentUpon>VistaCambiosEventos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\VistaEvento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\VistaEvento.Designer.cs">
       <DependentUpon>VistaEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaGestionEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaGestionEventos.Designer.cs">
+      <DependentUpon>VistaGestionEventos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaLogin.cs">
       <SubType>Form</SubType>
@@ -253,8 +264,14 @@
     <EmbeddedResource Include="Vista\UserControlNotificacion.resx">
       <DependentUpon>UserControlNotificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaCambiosEventos.resx">
+      <DependentUpon>VistaCambiosEventos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaEvento.resx">
       <DependentUpon>VistaEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaGestionEventos.resx">
+      <DependentUpon>VistaGestionEventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaLogin.resx">
       <DependentUpon>VistaLogin.cs</DependentUpon>

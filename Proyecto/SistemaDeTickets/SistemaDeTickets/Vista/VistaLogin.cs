@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaDeTickets.Controlador;
+using SistemaDeTickets.Modelo;
 using SistemaDeTickets.Services;
 
 namespace SistemaDeTickets.Vista
@@ -125,37 +126,46 @@ namespace SistemaDeTickets.Vista
 
             if (credencialesValidas)
             {
-                MessageBox.Show($"¡Bienvenido, {ServicioAutenticacion.CurrentUser?.Nombre}!", "Inicio de Sesión Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var usuario = ServicioAutenticacion.CurrentUser;
 
-                // Navegación contextual según el origen
-                switch (ContextoOrigen)
+                MessageBox.Show($"¡Bienvenido, {usuario.Nombre}!", "Inicio de Sesión Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // 🔹 Verificar el rol del usuario usando enum
+                if (usuario.Rol == RolUsuario.Admin)
                 {
-                    case ContextoNavegacion.DesdeCompraEvento:
-                        // Volver a VistaEvento para continuar con la compra pendiente
-                        var ventanaEventos = new VistaEvento();
-                        ventanaEventos.StartPosition = FormStartPosition.CenterScreen;
+                    // Si es ADMIN → abrir formulario de gestión de eventos
+                    var gestion = new VistaGestionEventos();
+                    gestion.StartPosition = FormStartPosition.CenterScreen;
+                    gestion.Show();
+                }
+                else // RolUsuario.Usuario
+                {
+                    // Si es USUARIO → navegar según el contexto
+                    switch (ContextoOrigen)
+                    {
+                        case ContextoNavegacion.DesdeCompraEvento:
+                            var ventanaEventos = new VistaEvento();
+                            ventanaEventos.StartPosition = FormStartPosition.CenterScreen;
 
-                        // Restaurar selección previa si existe
-                        if (EventoSeleccionadoCache != null)
-                        {
-                            // Aquí podríamos implementar lógica para preseleccionar el evento
-                            // ventanaEventos.EventoPreseleccionado = EventoSeleccionadoCache;
-                        }
+                            if (EventoSeleccionadoCache != null)
+                            {
+                                // Aquí podrías preseleccionar el evento, si lo implementas
+                            }
 
-                        ventanaEventos.Show();
-                        break;
+                            ventanaEventos.Show();
+                            break;
 
-                    case ContextoNavegacion.DesdeRegistro:
-                    case ContextoNavegacion.DesdeInicio:
-                    default:
-                        // Ir a VistaEvento por defecto
-                        var ventanaEventosDefault = new VistaEvento();
-                        ventanaEventosDefault.StartPosition = FormStartPosition.CenterScreen;
-                        ventanaEventosDefault.Show();
-                        break;
+                        case ContextoNavegacion.DesdeRegistro:
+                        case ContextoNavegacion.DesdeInicio:
+                        default:
+                            var ventanaEventosDefault = new VistaEvento();
+                            ventanaEventosDefault.StartPosition = FormStartPosition.CenterScreen;
+                            ventanaEventosDefault.Show();
+                            break;
+                    }
                 }
 
-                this.Hide(); // Oculta la vista login actual sin cerrarla
+                this.Hide(); // Oculta el login sin cerrarlo
             }
             else
             {

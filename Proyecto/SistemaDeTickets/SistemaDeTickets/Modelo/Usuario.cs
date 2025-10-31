@@ -3,10 +3,11 @@ using System.Collections.Generic;
 
 namespace SistemaDeTickets.Modelo
 {
-    /// <summary>
-    /// Modelo que representa a un usuario del sistema.
-    /// Incluye información personal, credenciales y seguimiento de eventos.
-    /// </summary>
+    public enum RolUsuario
+    {
+        Usuario,  // valor 0
+        Admin     // valor 1
+    }
     public class Usuario
     {
         public int Id { get; set; }

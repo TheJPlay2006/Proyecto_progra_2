@@ -481,5 +481,10 @@ namespace SistemaDeTickets.Vista
         {
             CargarEventos(null);
         }
+
+        private void cmbTipoEvento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

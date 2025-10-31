@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaEvento));
             this.btnRegistrarse = new System.Windows.Forms.Button();
             this.btnInicioSesion = new System.Windows.Forms.Button();
             this.lblListaEventos = new System.Windows.Forms.Label();
@@ -45,16 +46,18 @@
             this.lblBuscarFecha = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvEventos = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegistrarse
             // 
             this.btnRegistrarse.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarse.Location = new System.Drawing.Point(588, -84);
-            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrarse.Location = new System.Drawing.Point(784, -103);
+            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(104, 28);
+            this.btnRegistrarse.Size = new System.Drawing.Size(139, 34);
             this.btnRegistrarse.TabIndex = 24;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = true;
@@ -62,10 +65,10 @@
             // btnInicioSesion
             // 
             this.btnInicioSesion.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicioSesion.Location = new System.Drawing.Point(453, -84);
-            this.btnInicioSesion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInicioSesion.Location = new System.Drawing.Point(604, -103);
+            this.btnInicioSesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInicioSesion.Name = "btnInicioSesion";
-            this.btnInicioSesion.Size = new System.Drawing.Size(104, 28);
+            this.btnInicioSesion.Size = new System.Drawing.Size(139, 34);
             this.btnInicioSesion.TabIndex = 23;
             this.btnInicioSesion.Text = "Inicio Sesion";
             this.btnInicioSesion.UseVisualStyleBackColor = true;
@@ -74,20 +77,19 @@
             // 
             this.lblListaEventos.AutoSize = true;
             this.lblListaEventos.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListaEventos.Location = new System.Drawing.Point(217, -37);
-            this.lblListaEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblListaEventos.Location = new System.Drawing.Point(289, -46);
             this.lblListaEventos.Name = "lblListaEventos";
-            this.lblListaEventos.Size = new System.Drawing.Size(170, 25);
+            this.lblListaEventos.Size = new System.Drawing.Size(212, 32);
             this.lblListaEventos.TabIndex = 15;
             this.lblListaEventos.Text = "Lista de Eventos";
             // 
             // btnVerDetalles
             // 
             this.btnVerDetalles.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerDetalles.Location = new System.Drawing.Point(580, 221);
-            this.btnVerDetalles.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerDetalles.Location = new System.Drawing.Point(1284, 229);
+            this.btnVerDetalles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerDetalles.Name = "btnVerDetalles";
-            this.btnVerDetalles.Size = new System.Drawing.Size(124, 32);
+            this.btnVerDetalles.Size = new System.Drawing.Size(165, 39);
             this.btnVerDetalles.TabIndex = 38;
             this.btnVerDetalles.Text = "Ver Detalles";
             this.btnVerDetalles.UseVisualStyleBackColor = true;
@@ -96,10 +98,10 @@
             // btnComprar
             // 
             this.btnComprar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComprar.Location = new System.Drawing.Point(344, 221);
-            this.btnComprar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnComprar.Location = new System.Drawing.Point(917, 229);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(100, 28);
+            this.btnComprar.Size = new System.Drawing.Size(133, 34);
             this.btnComprar.TabIndex = 37;
             this.btnComprar.Text = "Comprar";
             this.btnComprar.UseVisualStyleBackColor = true;
@@ -108,10 +110,10 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(61, 221);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Location = new System.Drawing.Point(536, 229);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(92, 28);
+            this.btnBuscar.Size = new System.Drawing.Size(123, 34);
             this.btnBuscar.TabIndex = 36;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -120,10 +122,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(719, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(1335, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 28);
+            this.button1.Size = new System.Drawing.Size(179, 34);
             this.button1.TabIndex = 35;
             this.button1.Text = "Registrarse";
             this.button1.UseVisualStyleBackColor = true;
@@ -132,10 +134,10 @@
             // btnIniciarSesion
             // 
             this.btnIniciarSesion.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciarSesion.Location = new System.Drawing.Point(584, 2);
-            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(1081, 11);
+            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(104, 28);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(200, 34);
             this.btnIniciarSesion.TabIndex = 34;
             this.btnIniciarSesion.Text = "Inicio Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
@@ -146,10 +148,10 @@
             this.btnSalir.BackColor = System.Drawing.Color.Snow;
             this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(842, 484);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Location = new System.Drawing.Point(932, 613);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(76, 30);
+            this.btnSalir.Size = new System.Drawing.Size(101, 37);
             this.btnSalir.TabIndex = 33;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -162,10 +164,10 @@
             "",
             "Estadio Nacional",
             "Teatro Melico Salazar"});
-            this.cmbRecinto.Location = new System.Drawing.Point(662, 140);
-            this.cmbRecinto.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbRecinto.Location = new System.Drawing.Point(255, 549);
+            this.cmbRecinto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbRecinto.Name = "cmbRecinto";
-            this.cmbRecinto.Size = new System.Drawing.Size(119, 21);
+            this.cmbRecinto.Size = new System.Drawing.Size(157, 24);
             this.cmbRecinto.TabIndex = 32;
             // 
             // cmbTipoEvento
@@ -175,11 +177,12 @@
             "",
             "Concierto de Rock Nacional",
             "Obra de Teatro: Hamlet"});
-            this.cmbTipoEvento.Location = new System.Drawing.Point(437, 140);
-            this.cmbTipoEvento.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbTipoEvento.Location = new System.Drawing.Point(255, 455);
+            this.cmbTipoEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTipoEvento.Name = "cmbTipoEvento";
-            this.cmbTipoEvento.Size = new System.Drawing.Size(112, 21);
+            this.cmbTipoEvento.Size = new System.Drawing.Size(157, 24);
             this.cmbTipoEvento.TabIndex = 31;
+            this.cmbTipoEvento.SelectedIndexChanged += new System.EventHandler(this.cmbTipoEvento_SelectedIndexChanged);
             // 
             // cmbBuscarFecha
             // 
@@ -190,20 +193,19 @@
             "10-11-2025",
             "11-11-2025",
             "12-11-2025"});
-            this.cmbBuscarFecha.Location = new System.Drawing.Point(192, 141);
-            this.cmbBuscarFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbBuscarFecha.Location = new System.Drawing.Point(255, 359);
+            this.cmbBuscarFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBuscarFecha.Name = "cmbBuscarFecha";
-            this.cmbBuscarFecha.Size = new System.Drawing.Size(92, 22);
+            this.cmbBuscarFecha.Size = new System.Drawing.Size(157, 25);
             this.cmbBuscarFecha.TabIndex = 30;
             // 
             // lblRecinto
             // 
             this.lblRecinto.AutoSize = true;
             this.lblRecinto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecinto.Location = new System.Drawing.Point(577, 140);
-            this.lblRecinto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRecinto.Location = new System.Drawing.Point(28, 550);
             this.lblRecinto.Name = "lblRecinto";
-            this.lblRecinto.Size = new System.Drawing.Size(70, 18);
+            this.lblRecinto.Size = new System.Drawing.Size(84, 23);
             this.lblRecinto.TabIndex = 29;
             this.lblRecinto.Text = "Recinto";
             // 
@@ -211,10 +213,9 @@
             // 
             this.lblTipoEvento.AutoSize = true;
             this.lblTipoEvento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoEvento.Location = new System.Drawing.Point(302, 141);
-            this.lblTipoEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTipoEvento.Location = new System.Drawing.Point(28, 456);
             this.lblTipoEvento.Name = "lblTipoEvento";
-            this.lblTipoEvento.Size = new System.Drawing.Size(126, 18);
+            this.lblTipoEvento.Size = new System.Drawing.Size(155, 23);
             this.lblTipoEvento.TabIndex = 28;
             this.lblTipoEvento.Text = "Tipo de Evento";
             // 
@@ -222,21 +223,19 @@
             // 
             this.lblBuscarFecha.AutoSize = true;
             this.lblBuscarFecha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscarFecha.Location = new System.Drawing.Point(39, 142);
-            this.lblBuscarFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBuscarFecha.Location = new System.Drawing.Point(28, 361);
             this.lblBuscarFecha.Name = "lblBuscarFecha";
-            this.lblBuscarFecha.Size = new System.Drawing.Size(151, 18);
+            this.lblBuscarFecha.Size = new System.Drawing.Size(184, 23);
             this.lblBuscarFecha.TabIndex = 27;
             this.lblBuscarFecha.Text = "Buscar por Fecha";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(348, 49);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(693, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 25);
+            this.label1.Size = new System.Drawing.Size(257, 38);
             this.label1.TabIndex = 26;
             this.label1.Text = "Lista de Eventos";
             // 
@@ -246,20 +245,30 @@
             this.dgvEventos.AllowUserToDeleteRows = false;
             this.dgvEventos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvEventos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEventos.Location = new System.Drawing.Point(42, 289);
-            this.dgvEventos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvEventos.Location = new System.Drawing.Point(433, 288);
+            this.dgvEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvEventos.Name = "dgvEventos";
             this.dgvEventos.ReadOnly = true;
             this.dgvEventos.RowHeadersWidth = 51;
             this.dgvEventos.RowTemplate.Height = 24;
-            this.dgvEventos.Size = new System.Drawing.Size(723, 245);
+            this.dgvEventos.Size = new System.Drawing.Size(1047, 302);
             this.dgvEventos.TabIndex = 25;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1528, 703);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
             // 
             // VistaEvento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 570);
+            this.ClientSize = new System.Drawing.Size(1526, 702);
             this.Controls.Add(this.btnVerDetalles);
             this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.btnBuscar);
@@ -277,10 +286,12 @@
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.btnInicioSesion);
             this.Controls.Add(this.lblListaEventos);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VistaEvento";
             this.Load += new System.EventHandler(this.VistaEvento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +315,6 @@
         private System.Windows.Forms.Label lblBuscarFecha;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvEventos;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
