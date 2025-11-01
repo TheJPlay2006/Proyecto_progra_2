@@ -3,7 +3,7 @@
     public enum RolUsuario
     {
         Usuario,
-        Administrador
+        Admin
     }
 
     public enum EstadoCompra

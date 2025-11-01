@@ -40,6 +40,11 @@
             this.txtConfirmarPassword = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.progressBarContrasena = new System.Windows.Forms.ProgressBar();
+            this.progressBarConfirmarContrasena = new System.Windows.Forms.ProgressBar();
+            this.lblFortalezaContrasena = new System.Windows.Forms.Label();
+            this.lblFortalezaConfirmarContrasena = new System.Windows.Forms.Label();
+            this.btnOcultarVerContra = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,12 +71,19 @@
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtNombre);
+            this.panel1.Controls.Add(this.progressBarContrasena);
+            this.panel1.Controls.Add(this.progressBarConfirmarContrasena);
+            this.panel1.Controls.Add(this.lblFortalezaContrasena);
+            this.panel1.Controls.Add(this.lblFortalezaConfirmarContrasena);
+            this.panel1.Controls.Add(this.btnOcultarVerContra);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(662, 450);
             this.panel1.TabIndex = 1;
-            // 
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            //
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
@@ -94,7 +106,54 @@
             this.lblConfirmarPassword.Size = new System.Drawing.Size(194, 24);
             this.lblConfirmarPassword.TabIndex = 9;
             this.lblConfirmarPassword.Text = "Confirmar contraseña:";
-            // 
+            //
+            // progressBarContrasena
+            //
+            this.progressBarContrasena.Location = new System.Drawing.Point(274, 265);
+            this.progressBarContrasena.Name = "progressBarContrasena";
+            this.progressBarContrasena.Size = new System.Drawing.Size(238, 15);
+            this.progressBarContrasena.TabIndex = 11;
+            this.progressBarContrasena.Value = 0;
+            //
+            // progressBarConfirmarContrasena
+            //
+            this.progressBarConfirmarContrasena.Location = new System.Drawing.Point(274, 316);
+            this.progressBarConfirmarContrasena.Name = "progressBarConfirmarContrasena";
+            this.progressBarConfirmarContrasena.Size = new System.Drawing.Size(238, 15);
+            this.progressBarConfirmarContrasena.TabIndex = 12;
+            this.progressBarConfirmarContrasena.Value = 0;
+            //
+            // lblFortalezaContrasena
+            //
+            this.lblFortalezaContrasena.AutoSize = true;
+            this.lblFortalezaContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFortalezaContrasena.Location = new System.Drawing.Point(520, 265);
+            this.lblFortalezaContrasena.Name = "lblFortalezaContrasena";
+            this.lblFortalezaContrasena.Size = new System.Drawing.Size(35, 13);
+            this.lblFortalezaContrasena.TabIndex = 13;
+            this.lblFortalezaContrasena.Text = "";
+            //
+            // lblFortalezaConfirmarContrasena
+            //
+            this.lblFortalezaConfirmarContrasena.AutoSize = true;
+            this.lblFortalezaConfirmarContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFortalezaConfirmarContrasena.Location = new System.Drawing.Point(520, 316);
+            this.lblFortalezaConfirmarContrasena.Name = "lblFortalezaConfirmarContrasena";
+            this.lblFortalezaConfirmarContrasena.Size = new System.Drawing.Size(35, 13);
+            this.lblFortalezaConfirmarContrasena.TabIndex = 14;
+            this.lblFortalezaConfirmarContrasena.Text = "";
+            //
+            // btnOcultarVerContra
+            //
+            this.btnOcultarVerContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcultarVerContra.Location = new System.Drawing.Point(520, 237);
+            this.btnOcultarVerContra.Name = "btnOcultarVerContra";
+            this.btnOcultarVerContra.Size = new System.Drawing.Size(30, 25);
+            this.btnOcultarVerContra.TabIndex = 15;
+            this.btnOcultarVerContra.Text = "👁";
+            this.btnOcultarVerContra.UseVisualStyleBackColor = true;
+            this.btnOcultarVerContra.Click += new System.EventHandler(this.btnOcultarVerContra_Click);
+            //
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
@@ -161,6 +220,7 @@
             this.txtConfirmarPassword.Name = "txtConfirmarPassword";
             this.txtConfirmarPassword.Size = new System.Drawing.Size(238, 22);
             this.txtConfirmarPassword.TabIndex = 3;
+            this.txtConfirmarPassword.TextChanged += new System.EventHandler(this.txtConfirmarPassword_TextChanged);
             // 
             // txtPassword
             // 
@@ -170,6 +230,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(238, 22);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtEmail
             // 
@@ -210,5 +271,10 @@
         private System.Windows.Forms.TextBox txtConfirmarPassword;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.ProgressBar progressBarContrasena;
+        private System.Windows.Forms.ProgressBar progressBarConfirmarContrasena;
+        private System.Windows.Forms.Label lblFortalezaContrasena;
+        private System.Windows.Forms.Label lblFortalezaConfirmarContrasena;
+        private System.Windows.Forms.Button btnOcultarVerContra;
     }
 }

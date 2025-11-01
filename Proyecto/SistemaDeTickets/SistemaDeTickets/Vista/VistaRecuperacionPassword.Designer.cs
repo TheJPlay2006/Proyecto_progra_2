@@ -41,6 +41,7 @@ namespace SistemaDeTickets.Vista
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCambiarContrasena = new System.Windows.Forms.Button();
+            this.btnOcultarVerContra = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRecuperar
@@ -162,11 +163,22 @@ namespace SistemaDeTickets.Vista
             this.btnCambiarContrasena.UseVisualStyleBackColor = true;
             this.btnCambiarContrasena.Click += new System.EventHandler(this.btnCambiarContrasena_Click);
             // 
+            // btnOcultarVerContra
+            // 
+            this.btnOcultarVerContra.Location = new System.Drawing.Point(592, 242);
+            this.btnOcultarVerContra.Name = "btnOcultarVerContra";
+            this.btnOcultarVerContra.Size = new System.Drawing.Size(37, 23);
+            this.btnOcultarVerContra.TabIndex = 11;
+            this.btnOcultarVerContra.Text = "👁";
+            this.btnOcultarVerContra.UseVisualStyleBackColor = true;
+            this.btnOcultarVerContra.Click += new System.EventHandler(this.btnOcultarVerContra_Click);
+            // 
             // VistaRecuperacionPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 370);
+            this.Controls.Add(this.btnOcultarVerContra);
             this.Controls.Add(this.btnCambiarContrasena);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label1);
@@ -199,5 +211,6 @@ namespace SistemaDeTickets.Vista
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCambiarContrasena;
+        private System.Windows.Forms.Button btnOcultarVerContra;
     }
 }

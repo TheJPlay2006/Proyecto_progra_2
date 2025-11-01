@@ -31,7 +31,7 @@ namespace SistemaDeTickets.Controlador.Patrones
                 Nombre = nombre,
                 Email = email,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(password),
-                Rol = RolUsuario.Administrador,
+                Rol = RolUsuario.Admin,
                 EventosSeguidos = new List<int>(),
                 FechaRegistro = DateTime.Now
             };

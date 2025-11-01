@@ -57,17 +57,19 @@ namespace SistemaDeTickets.Vista
                     _gestorEventos.AgregarObservador(_notificacionControl);
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                // Log del error para debugging (sin bloquear la aplicación)
-                System.Diagnostics.Debug.WriteLine($"Error en InicializarNotificaciones: {ex.Message}");
-                // En producción, podría mostrar un mensaje al usuario
+                // En producción, podría mostrar un mensaje al usuario o simplemente continuar
             }
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            var loginForm = new VistaLogin();
+            loginForm.StartPosition = FormStartPosition.CenterScreen;
+            loginForm.ShowDialog();
+            this.Show(); // Mostrar inicio nuevamente cuando se cierre login
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -77,24 +79,34 @@ namespace SistemaDeTickets.Vista
 
         private void btnVerEventos_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            var vistaEvento = new VistaEvento();
+            vistaEvento.StartPosition = FormStartPosition.CenterScreen;
+            vistaEvento.ShowDialog();
+            this.Show(); // Mostrar inicio nuevamente cuando se cierre VistaEvento
         }
 
-        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
-        {
-            
-        }
+        // Este método parece duplicado, lo eliminamos
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            var registroForm = new VistaRegistro();
+            registroForm.StartPosition = FormStartPosition.CenterScreen;
+            registroForm.ShowDialog();
+            this.Show(); // Mostrar inicio nuevamente cuando se cierre registro
         }
 
         private void btnVerEvento_Click(object sender, EventArgs e)
         {
+            this.Hide();
             var vistaEvento = new VistaEvento();
             vistaEvento.StartPosition = FormStartPosition.CenterScreen;
-            vistaEvento.Show();
-            this.Hide(); // Oculta la ventana actual sin terminar la aplicación
+            vistaEvento.ShowDialog();
+            if (!this.IsDisposed)
+            {
+                this.Show(); // Mostrar inicio nuevamente cuando se cierre VistaEvento
+            }
         }
     }
 }

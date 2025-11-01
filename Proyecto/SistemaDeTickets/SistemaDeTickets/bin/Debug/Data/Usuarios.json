@@ -9,5 +9,27 @@
     "FechaRegistro": "2025-10-27T00:12:21.4847359-06:00",
     "TokenRecuperacion": "dbfda604-ca88-48f1-b034-9d6c9b1d8197",
     "TokenExpiracion": "2025-10-31T01:15:32.3031235-06:00"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Alejandro Bolaños Chinchilla",
+    "Email": "alechinchi@gmail.com",
+    "PasswordHash": "PBKDF2$100000$dk3lg/Sn56nGlSnVjCl/ZQ==$rJya5f6LuBqfxka9D+BVjuBdemtbKyl/eWtSdAXLvHw=",
+    "Rol": 0,
+    "EventosSeguidos": [],
+    "FechaRegistro": "2025-10-31T20:40:24.3173929-06:00",
+    "TokenRecuperacion": null,
+    "TokenExpiracion": null
+  },
+  {
+    "Id": 3,
+    "Nombre": "Robert Granados Pérez",
+    "Email": "robertgrana@gmail.com",
+    "PasswordHash": "PBKDF2$100000$uzZLV/NQ5lH7Yg6cjhXvHw==$dAjh5S9zy4s1phOBIVvW+cbuOjcNk4Wt5wxbzsflvoU=",
+    "Rol": 0,
+    "EventosSeguidos": [],
+    "FechaRegistro": "2025-10-31T21:10:43.4560751-06:00",
+    "TokenRecuperacion": null,
+    "TokenExpiracion": null
   }
 ]

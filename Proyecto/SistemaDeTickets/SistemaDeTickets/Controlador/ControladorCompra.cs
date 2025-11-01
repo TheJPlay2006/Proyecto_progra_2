@@ -85,24 +85,70 @@ namespace SistemaDeTickets.Controlador
         /// <param name="cantidadDescontar">Cantidad a descontar del stock</param>
         private void ActualizarStockEventoPersistente(int eventoId, int cantidadDescontar)
         {
+            // DEBUG: Log antes de actualizar
+            Console.WriteLine($"[DEBUG] Actualizando stock - Evento {eventoId}, Cantidad a descontar: {cantidadDescontar}");
+
             // Cargar eventos frescos del archivo
             var eventos = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
 
             // Buscar el evento específico
             var evento = eventos.FirstOrDefault(e => e.Id == eventoId);
 
-            if (evento != null && evento.TiquetesDisponibles >= cantidadDescontar)
+            if (evento != null)
             {
-                // Descontar stock
-                evento.TiquetesDisponibles -= cantidadDescontar;
+                Console.WriteLine($"[DEBUG] Evento encontrado - Stock actual: {evento.TiquetesDisponibles}");
 
-                // Guardar cambios usando escritura atómica - PERSISTENTE EN ARCHIVO
-                GestorJSON.EscribirAtomico("Data/MisEventos.json", eventos);
+                if (evento.TiquetesDisponibles >= cantidadDescontar)
+                {
+                    // Descontar stock
+                    int stockAnterior = evento.TiquetesDisponibles;
+                    evento.TiquetesDisponibles -= cantidadDescontar;
+
+                    Console.WriteLine($"[DEBUG] Stock actualizado: {stockAnterior} -> {evento.TiquetesDisponibles}");
+
+                    // Guardar cambios usando escritura atómica - PERSISTENTE EN ARCHIVO
+                    GestorJSON.EscribirAtomico("Data/MisEventos.json", eventos);
+
+                    // Verificar que se guardó correctamente
+                    var eventosVerificados = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
+                    var eventoVerificado = eventosVerificados.FirstOrDefault(e => e.Id == eventoId);
+                    Console.WriteLine($"[DEBUG] Verificación post-guardado - Stock en JSON: {eventoVerificado?.TiquetesDisponibles ?? -1}");
+                }
+                else
+                {
+                    throw new InvalidOperationException($"Stock insuficiente. Disponible: {evento.TiquetesDisponibles}, Solicitado: {cantidadDescontar}");
+                }
             }
             else
             {
-                throw new InvalidOperationException("Stock insuficiente para completar la operación.");
+                throw new InvalidOperationException($"Evento con ID {eventoId} no encontrado.");
             }
+        }
+
+        /// <summary>
+        /// Método centralizado para restar tiquetes y guardar en JSON
+        /// </summary>
+        public void RestarTiquetesYGuardarJson(int idEvento, int cantidadComprada)
+        {
+            // LEER el JSON actual, fuente de la verdad
+            var eventos = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
+
+            // Encontrar el evento correcto
+            var evento = eventos.FirstOrDefault(e => e.Id == idEvento);
+            if (evento == null)
+            {
+                throw new InvalidOperationException("Evento no encontrado. Contacte al administrador.");
+            }
+
+            // Validar disponibilidad y restar
+            if (evento.TiquetesDisponibles < cantidadComprada)
+            {
+                throw new InvalidOperationException("No hay suficientes tiquetes disponibles.");
+            }
+            evento.TiquetesDisponibles -= cantidadComprada;
+
+            // Guardar el JSON actualizado
+            GestorJSON.EscribirAtomico("Data/MisEventos.json", eventos);
         }
 
         public void CancelarCompra(int compraId)

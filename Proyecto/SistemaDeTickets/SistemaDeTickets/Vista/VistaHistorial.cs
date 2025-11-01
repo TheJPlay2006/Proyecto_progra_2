@@ -1,4 +1,5 @@
-﻿using SistemaDeTickets.Modelo;
+﻿using SistemaDeTickets.Controlador;
+using SistemaDeTickets.Modelo;
 using SistemaDeTickets.Services;
 using SistemaDeTickets.Utils;
 using System;
@@ -28,6 +29,9 @@ namespace SistemaDeTickets.Vista
 
             ConfigurarInterfazHistorial();
             CargarHistorialCompras();
+
+            // Conectar eventos de botones después de InitializeComponent
+            ConectarEventosBotones();
         }
 
         private void ConfigurarInterfazHistorial()
@@ -46,9 +50,9 @@ namespace SistemaDeTickets.Vista
             }
 
             // Configurar DataGridView si existe
-            if (this.Controls.ContainsKey("dgvHistorial"))
+            if (this.Controls.ContainsKey("dataGridViewCompras"))
             {
-                var dgv = this.Controls["dgvHistorial"] as DataGridView;
+                var dgv = this.Controls["dataGridViewCompras"] as DataGridView;
                 if (dgv != null)
                 {
                     dgv.BackgroundColor = Color.White;
@@ -91,6 +95,22 @@ namespace SistemaDeTickets.Vista
             btn.Cursor = Cursors.Hand;
         }
 
+        /// <summary>
+        /// Conecta los eventos Click de los botones después de InitializeComponent
+        /// </summary>
+        private void ConectarEventosBotones()
+        {
+            // Conectar eventos de botones (ya están conectados en el Designer, pero por seguridad)
+            if (btnDescargarRecibo != null)
+                btnDescargarRecibo.Click += btnDescargarRecibo_Click;
+
+            if (btnFiltrar != null)
+                btnFiltrar.Click += btnFiltrar_Click;
+
+            if (btnVolver != null)
+                btnVolver.Click += btnVolver_Click;
+        }
+
         private void CargarHistorialCompras()
         {
             try
@@ -108,9 +128,9 @@ namespace SistemaDeTickets.Vista
                 }
 
                 // Mostrar en DataGridView si existe
-                if (this.Controls.ContainsKey("dgvHistorial"))
+                if (this.Controls.ContainsKey("dataGridViewCompras"))
                 {
-                    var dgv = this.Controls["dgvHistorial"] as DataGridView;
+                    var dgv = this.Controls["dataGridViewCompras"] as DataGridView;
                     if (dgv != null)
                     {
                         // Crear DataTable para mejor presentación
@@ -124,8 +144,10 @@ namespace SistemaDeTickets.Vista
 
                         foreach (var compra in _historialCompras)
                         {
-                            // Cargar información del evento (simplificado)
-                            string nombreEvento = $"Evento #{compra.EventoId}"; // En implementación real, cargar desde eventos
+                            // Cargar información del evento desde el repositorio
+                            var repoEventos = new RepositorioEventos();
+                            var evento = repoEventos.BuscarPorId(compra.EventoId);
+                            string nombreEvento = evento != null ? evento.Nombre : $"Evento #{compra.EventoId}";
                             string estado = "Completada"; // Estado por defecto para compras mostradas
 
                             dt.Rows.Add(
@@ -138,7 +160,16 @@ namespace SistemaDeTickets.Vista
                             );
                         }
 
+                        // Limpiar datos anteriores y asignar nuevos
+                        dgv.DataSource = null;
                         dgv.DataSource = dt;
+
+                        // Configurar propiedades del DataGridView
+                        dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                        dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                        dgv.ReadOnly = true;
+                        dgv.AllowUserToAddRows = false;
+                        dgv.AllowUserToDeleteRows = false;
                     }
                 }
 
@@ -160,27 +191,85 @@ namespace SistemaDeTickets.Vista
         {
             try
             {
-                if (this.Controls.ContainsKey("dgvHistorial"))
+                if (this.Controls.ContainsKey("dataGridViewCompras"))
                 {
-                    var dgv = this.Controls["dgvHistorial"] as DataGridView;
+                    var dgv = this.Controls["dataGridViewCompras"] as DataGridView;
                     if (dgv != null && dgv.SelectedRows.Count > 0)
                     {
                         int compraId = (int)dgv.SelectedRows[0].Cells["ID Compra"].Value;
 
-                        // Buscar archivo PDF en Receipts
-                        string rutaPDF = Path.Combine("Receipts", $"{compraId}.pdf");
-
-                        if (File.Exists(rutaPDF))
+                        // Buscar la compra completa en la lista
+                        var compraSeleccionada = _historialCompras.FirstOrDefault(c => c.Id == compraId);
+                        if (compraSeleccionada == null)
                         {
-                            // Intentar abrir el PDF
-                            Process.Start(rutaPDF);
-                            MessageBox.Show("Recibo abierto exitosamente.",
-                                "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("No se pudo encontrar la información de la compra.",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
                         }
-                        else
+
+                        // Obtener datos relacionados
+                        var repoUsuarios = new RepositorioUsuarios();
+                        var repoEventos = new RepositorioEventos();
+                        var usuario = repoUsuarios.BuscarPorId(compraSeleccionada.UsuarioId);
+                        var evento = repoEventos.BuscarPorId(compraSeleccionada.EventoId);
+
+                        if (usuario == null || evento == null)
                         {
-                            MessageBox.Show("El recibo no está disponible. Puede haber un problema con el archivo.",
-                                "Recibo no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("No se pudieron obtener los datos completos de la compra.",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+
+                        // Generar PDF del recibo
+                        string rutaPdf = GeneradorPDF.GenerarRecibo(compraSeleccionada, evento, usuario);
+
+                        // Mostrar diálogo para guardar
+                        using (SaveFileDialog saveDialog = new SaveFileDialog())
+                        {
+                            saveDialog.Filter = "PDF Files (*.pdf)|*.pdf";
+                            saveDialog.FileName = $"Recibo_Compra_{compraSeleccionada.Id}.pdf";
+                            saveDialog.Title = "Guardar Recibo de Compra";
+                            saveDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+                            if (saveDialog.ShowDialog() == DialogResult.OK)
+                            {
+                                // Copiar el PDF generado a la ubicación seleccionada
+                                System.IO.File.Copy(rutaPdf, saveDialog.FileName, true);
+
+                                // También guardar automáticamente en Receipts/
+                                try
+                                {
+                                    string receiptsDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Receipts");
+                                    if (!Directory.Exists(receiptsDir))
+                                        Directory.CreateDirectory(receiptsDir);
+
+                                    string autoSavePath = Path.Combine(receiptsDir, $"{compraSeleccionada.Id}.pdf");
+                                    File.Copy(rutaPdf, autoSavePath, true);
+                                }
+                                catch
+                                {
+                                    // Si falla el guardado automático, continuar
+                                }
+
+                                MessageBox.Show($"Recibo guardado exitosamente en:\n{saveDialog.FileName}",
+                                    "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                // Abrir el archivo automáticamente
+                                try
+                                {
+                                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                                    {
+                                        FileName = saveDialog.FileName,
+                                        UseShellExecute = true
+                                    });
+                                }
+                                catch
+                                {
+                                    // Si no se puede abrir automáticamente, mostrar mensaje
+                                    MessageBox.Show("El recibo se guardó correctamente, pero no se pudo abrir automáticamente.",
+                                        "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                            }
                         }
                     }
                     else
@@ -192,7 +281,7 @@ namespace SistemaDeTickets.Vista
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al abrir el recibo: {ex.Message}",
+                MessageBox.Show($"Error al descargar el recibo: {ex.Message}",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -200,10 +289,23 @@ namespace SistemaDeTickets.Vista
         private void btnVolver_Click(object sender, EventArgs e)
         {
             // Volver a vista de eventos
+            this.Hide();
             var eventosForm = new VistaEvento();
             eventosForm.StartPosition = FormStartPosition.CenterScreen;
-            eventosForm.Show();
-            this.Hide();
+            eventosForm.ShowDialog();
+            if (!this.IsDisposed)
+            {
+                this.Close(); // Cerrar historial después de volver
+            }
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            // Implementar funcionalidad básica de filtrado
+            // Recargar todas las compras del usuario (simulando quitar filtros)
+            CargarHistorialCompras();
+            MessageBox.Show("Se han recargado todas las compras. Funcionalidad de filtrado avanzado próximamente disponible.",
+                "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

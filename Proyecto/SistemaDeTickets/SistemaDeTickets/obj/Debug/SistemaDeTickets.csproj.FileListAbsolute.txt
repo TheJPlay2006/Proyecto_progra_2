@@ -226,3 +226,5 @@ C:\Users\maire\OneDrive\Escritorio\Proyecto_progra_2\Proyecto\SistemaDeTickets\S
 C:\Users\maire\OneDrive\Escritorio\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.pdb
 C:\Users\maire\OneDrive\Escritorio\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaCambiosEventos.resources
 C:\Users\maire\OneDrive\Escritorio\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaGestionEventos.resources
+C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaCambiosEventos.resources
+C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaGestionEventos.resources

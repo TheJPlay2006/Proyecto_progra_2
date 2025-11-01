@@ -40,6 +40,9 @@ namespace SistemaDeTickets.Vista
             // Entrada segura
             if (txtNuevoPassword != null) txtNuevoPassword.UseSystemPasswordChar = true;
 
+            // El evento ya está conectado en el diseñador, no es necesario conectarlo aquí
+            // btnOcultarVerContra.Click += btnOcultarVerContra_Click;
+
             // Enter dispara el cambio de contraseña
             AcceptButton = btnCambiarContrasena;
         }
@@ -187,9 +190,10 @@ namespace SistemaDeTickets.Vista
                     txtNuevoPassword.Clear();
 
                     // Cerrar formulario de recuperación y abrir login
-                    this.Close();
+                    this.Hide();
                     var loginForm = new VistaLogin { StartPosition = FormStartPosition.CenterScreen };
-                    loginForm.Show();
+                    loginForm.ShowDialog();
+                    this.Close(); // Cerrar después de que login se cierre
                 }
                 else
                 {
@@ -221,5 +225,17 @@ namespace SistemaDeTickets.Vista
 
         private void lblEmail_Click(object sender, EventArgs e) { }
         private void lblToken_Click(object sender, EventArgs e) { }
+
+        /// <summary>
+        /// Maneja el evento de mostrar/ocultar contraseña
+        /// </summary>
+        private void btnOcultarVerContra_Click(object sender, EventArgs e)
+        {
+            // Alternar visibilidad de la contraseña
+            txtNuevoPassword.UseSystemPasswordChar = !txtNuevoPassword.UseSystemPasswordChar;
+
+            // Cambiar ícono del botón basado en el nuevo estado
+            btnOcultarVerContra.Text = txtNuevoPassword.UseSystemPasswordChar ? "👁" : "🙈";
+        }
     }
 }

@@ -138,9 +138,15 @@ namespace SistemaDeTickets.Vista
             try
             {
                 // Verificar sesión
-                if (!ServicioAutenticacion.IsLoggedIn())
+                if (!ServicioAutenticacion.IsLoggedIn() || ServicioAutenticacion.CurrentUser == null)
                 {
                     MessageBox.Show("Debe iniciar sesión para comprar tickets.", "Sesión requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    this.Hide();
+                    var loginForm = new VistaLogin();
+                    loginForm.ContextoOrigen = VistaLogin.ContextoNavegacion.DesdeInicio;
+                    loginForm.StartPosition = FormStartPosition.CenterScreen;
+                    loginForm.ShowDialog();
+                    this.Show();
                     return;
                 }
 
@@ -178,12 +184,16 @@ namespace SistemaDeTickets.Vista
                 };
 
                 // Abrir formulario de compra
+                this.Hide();
                 var compraForm = new VistaCompra(detalleCompra);
                 compraForm.StartPosition = FormStartPosition.CenterScreen;
-                compraForm.Show();
+                compraForm.ShowDialog();
 
-                // Cerrar este formulario
-                this.Hide();
+                // Mostrar este formulario nuevamente cuando se cierre compra
+                if (!this.IsDisposed)
+                {
+                    this.Show();
+                }
             }
             catch (Exception ex)
             {
@@ -196,12 +206,16 @@ namespace SistemaDeTickets.Vista
             try
             {
                 // Volver al listado de eventos
+                this.Hide();
                 var eventosForm = new VistaEvento();
                 eventosForm.StartPosition = FormStartPosition.CenterScreen;
-                eventosForm.Show();
+                eventosForm.ShowDialog();
 
-                // Cerrar este formulario
-                this.Hide();
+                // Cerrar este formulario después de que VistaEvento se cierre
+                if (!this.IsDisposed)
+                {
+                    this.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -211,16 +225,23 @@ namespace SistemaDeTickets.Vista
 
         private void VistaDetalleEvento_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Si el usuario cierra la ventana, mostrar confirmación
+            // Si el usuario cierra la ventana con X, volver al listado de eventos
             if (e.CloseReason == CloseReason.UserClosing)
             {
                 DialogResult result = MessageBox.Show(
-                    "¿Está seguro que desea cerrar la ventana?",
+                    "¿Está seguro que desea cerrar la ventana de detalles?",
                     "Confirmar",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
 
-                if (result == DialogResult.No)
+                if (result == DialogResult.Yes)
+                {
+                    // Volver al listado de eventos
+                    var eventosForm = new VistaEvento();
+                    eventosForm.StartPosition = FormStartPosition.CenterScreen;
+                    eventosForm.Show();
+                }
+                else
                 {
                     e.Cancel = true;
                 }

@@ -30,6 +30,11 @@ namespace SistemaDeTickets.Vista
             _controladorAutenticacion = new ControladorAutenticacion();
 
             ConfigurarInterfazRegistro();
+
+            // Configurar campos de contraseña con máscara por defecto
+            txtPassword.UseSystemPasswordChar = true;
+            txtConfirmarPassword.UseSystemPasswordChar = true;
+
         }
 
         private void ConfigurarInterfazRegistro()
@@ -104,6 +109,14 @@ namespace SistemaDeTickets.Vista
                 return;
             }
 
+            // Validar fortaleza mínima de contraseña
+            var fortaleza = CalcularFortalezaPassword(password);
+            if (fortaleza == PasswordStrength.Weak)
+            {
+                MessageBox.Show("La contraseña es demasiado débil. Debe ser al menos de fortaleza 'Media' para registrarse.", "Contraseña Débil", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (password != confirmarPassword)
             {
                 MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -115,12 +128,13 @@ namespace SistemaDeTickets.Vista
                 var usuario = _controladorAutenticacion.Registrar(nombre, email, password, Modelo.RolUsuario.Usuario);
                 MessageBox.Show($"Usuario {usuario.Nombre} registrado exitosamente. Ahora puede iniciar sesión.", "Registro exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Navegar a login: ocultar ventana anterior (estilo dispose() de Java) y centrar nueva
-                // Usar Hide() para mantener la aplicación viva y permitir navegación fluida
+                // Navegar a login: ocultar ventana anterior y centrar nueva
+                this.Hide();
                 var loginForm = new VistaLogin();
+                loginForm.ContextoOrigen = VistaLogin.ContextoNavegacion.DesdeRegistro; // Indicar que viene desde registro
                 loginForm.StartPosition = FormStartPosition.CenterScreen;
-                loginForm.Show();
-                this.Hide(); // Oculta la ventana actual sin terminar la aplicación
+                loginForm.ShowDialog();
+                this.Show(); // Mostrar registro nuevamente cuando se cierre login
             }
             catch (Exception ex)
             {
@@ -130,17 +144,161 @@ namespace SistemaDeTickets.Vista
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            // Volver a la pantalla de inicio: ocultar ventana anterior (estilo dispose() de Java) y centrar nueva
-            // Usar Hide() para mantener la aplicación viva y permitir navegación fluida
+            // Volver a la pantalla de inicio
+            this.Hide();
             var inicioForm = new Inicio();
             inicioForm.StartPosition = FormStartPosition.CenterScreen;
-            inicioForm.Show();
-            this.Hide(); // Oculta la ventana actual sin terminar la aplicación
+            inicioForm.ShowDialog();
+            this.Show(); // Mostrar registro nuevamente cuando se cierre inicio
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPassword.Text.Length == 0)
+            {
+                progressBarContrasena.Value = 0;
+                lblFortalezaContrasena.Text = "";
+                progressBarContrasena.BackColor = SystemColors.Control;
+                return;
+            }
+            EvaluarFortalezaPassword(txtPassword.Text, true);
+        }
+
+        private void txtConfirmarPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (txtConfirmarPassword.Text.Length == 0)
+            {
+                progressBarConfirmarContrasena.Value = 0;
+                lblFortalezaConfirmarContrasena.Text = "";
+                progressBarConfirmarContrasena.BackColor = SystemColors.Control;
+                return;
+            }
+            EvaluarFortalezaPassword(txtConfirmarPassword.Text, false);
+        }
+
+        /// <summary>
+        /// Evalúa la fortaleza de la contraseña y actualiza la barra de progreso
+        /// </summary>
+        private void EvaluarFortalezaPassword(string password, bool esPasswordPrincipal)
+        {
+            // Evaluar fortaleza
+            var fortaleza = CalcularFortalezaPassword(password);
+
+            // Actualizar barra de progreso correspondiente
+            if (esPasswordPrincipal)
+            {
+                ActualizarProgressBar(progressBarContrasena, fortaleza);
+                ActualizarLabelFortaleza(lblFortalezaContrasena, fortaleza);
+            }
+            else
+            {
+                ActualizarProgressBar(progressBarConfirmarContrasena, fortaleza);
+                ActualizarLabelFortaleza(lblFortalezaConfirmarContrasena, fortaleza);
+            }
+        }
+
+        /// <summary>
+        /// Calcula la fortaleza de una contraseña
+        /// </summary>
+        private PasswordStrength CalcularFortalezaPassword(string password)
+        {
+            if (string.IsNullOrEmpty(password) || password.Length < 4)
+                return PasswordStrength.Weak;
+
+            bool hasLower = password.Any(char.IsLower);
+            bool hasUpper = password.Any(char.IsUpper);
+            bool hasDigit = password.Any(char.IsDigit);
+            bool hasSpecial = password.Any(ch => !char.IsLetterOrDigit(ch));
+
+            int score = 0;
+            if (hasLower) score++;
+            if (hasUpper) score++;
+            if (hasDigit) score++;
+            if (hasSpecial) score++;
+            if (password.Length >= 8) score++;
+            if (password.Length >= 12) score++;
+
+            if (score <= 2) return PasswordStrength.Weak;
+            if (score <= 4) return PasswordStrength.Medium;
+            return PasswordStrength.Strong;
+        }
+
+        /// <summary>
+        /// Actualiza la barra de progreso según la fortaleza
+        /// </summary>
+        private void ActualizarProgressBar(ProgressBar progressBar, PasswordStrength fortaleza)
+        {
+            switch (fortaleza)
+            {
+                case PasswordStrength.Weak:
+                    progressBar.Value = 33;
+                    progressBar.BackColor = Color.Red;
+                    break;
+
+                case PasswordStrength.Medium:
+                    progressBar.Value = 66;
+                    progressBar.BackColor = Color.Orange;
+                    break;
+
+                case PasswordStrength.Strong:
+                    progressBar.Value = 100;
+                    progressBar.BackColor = Color.Green;
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Actualiza el label de fortaleza según la fortaleza
+        /// </summary>
+        private void ActualizarLabelFortaleza(Label label, PasswordStrength fortaleza)
+        {
+            switch (fortaleza)
+            {
+                case PasswordStrength.Weak:
+                    label.Text = "Débil";
+                    label.ForeColor = Color.Red;
+                    break;
+
+                case PasswordStrength.Medium:
+                    label.Text = "Media";
+                    label.ForeColor = Color.Orange;
+                    break;
+
+                case PasswordStrength.Strong:
+                    label.Text = "Fuerte";
+                    label.ForeColor = Color.Green;
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Maneja el evento de mostrar/ocultar contraseña para ambos campos
+        /// </summary>
+        private void btnOcultarVerContra_Click(object sender, EventArgs e)
+        {
+            // Alternar visibilidad para ambos campos de contraseña
+            txtPassword.UseSystemPasswordChar = !txtPassword.UseSystemPasswordChar;
+            txtConfirmarPassword.UseSystemPasswordChar = !txtConfirmarPassword.UseSystemPasswordChar;
+
+            // Cambiar ícono del botón basado en el nuevo estado
+            // Si UseSystemPasswordChar = true (oculto), mostrar 👁 (quiero ver)
+            // Si UseSystemPasswordChar = false (visible), mostrar 🙈 (quiero ocultar)
+            btnOcultarVerContra.Text = txtPassword.UseSystemPasswordChar ? "👁" : "🙈";
+        }
+
+        /// <summary>
+        /// Enum para representar la fortaleza de la contraseña
+        /// </summary>
+        private enum PasswordStrength
+        {
+            Weak,
+            Medium,
+            Strong
         }
 
         private void lblTitulo_Click(object sender, EventArgs e)

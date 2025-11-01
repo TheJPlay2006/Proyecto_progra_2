@@ -360,11 +360,19 @@ namespace SistemaDeTickets.Vista
 
                     MessageBox.Show("Compra realizada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    // DEBUG: Verificar que el JSON se actualizó
+                    var eventosDebug = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
+                    var eventoDebug = eventosDebug.FirstOrDefault(ev => ev.Id == _detalleCompra.Evento.Id);
+                    Console.WriteLine($"[DEBUG Compra] Stock después de compra - Evento {_detalleCompra.Evento.Id}: {eventoDebug?.TiquetesDisponibles ?? -1} tickets");
+
                     // Navegar a confirmación con datos de la compra
+                    this.Hide();
                     var confirmacionForm = new VistaConfirmacion(compraConfirmada);
                     confirmacionForm.StartPosition = FormStartPosition.CenterScreen;
-                    confirmacionForm.Show();
-                    this.Hide();
+                    confirmacionForm.ShowDialog();
+
+                    // REFRESCO FORZADO: Cerrar VistaCompra y forzar refresco en VistaEvento
+                    this.Close(); // Cerrar VistaCompra después de confirmación
                 }
                 else
                 {
@@ -434,13 +442,10 @@ namespace SistemaDeTickets.Vista
         /// </summary>
         private bool ValidarNumeroTarjeta(string numero)
         {
-            // DEPURACIÓN: Mostrar valor recibido
-            System.Diagnostics.Debug.WriteLine($"VALIDANDO NÚMERO: '{numero}' (Largo: {numero.Length})");
 
             // Paso 1: Limpiar entrada (remover espacios)
             if (string.IsNullOrWhiteSpace(numero))
             {
-                System.Diagnostics.Debug.WriteLine("VALIDACIÓN FALLIDA: Número vacío o nulo");
                 return false;
             }
 
@@ -449,38 +454,28 @@ namespace SistemaDeTickets.Vista
             // Paso 2: Verificar formato (solo dígitos)
             if (!System.Text.RegularExpressions.Regex.IsMatch(numero, @"^\d+$"))
             {
-                System.Diagnostics.Debug.WriteLine("VALIDACIÓN FALLIDA: Contiene caracteres no numéricos");
                 return false;
             }
 
             // Paso 3: Verificar longitud según tipo de tarjeta
             bool longitudValida = false;
-            string tipoTarjeta = "";
 
             if (numero.Length == 16)
             {
                 // Visa o Mastercard
-                if (numero.StartsWith("4"))
+                if (numero.StartsWith("4") || numero.StartsWith("5") || numero.StartsWith("2"))
                 {
-                    tipoTarjeta = "Visa";
-                    longitudValida = true;
-                }
-                else if (numero.StartsWith("5") || numero.StartsWith("2"))
-                {
-                    tipoTarjeta = "Mastercard";
                     longitudValida = true;
                 }
             }
             else if (numero.Length == 15 && numero.StartsWith("3"))
             {
                 // American Express
-                tipoTarjeta = "American Express";
                 longitudValida = true;
             }
 
             if (!longitudValida)
             {
-                System.Diagnostics.Debug.WriteLine($"VALIDACIÓN FALLIDA: Longitud {numero.Length} no válida para ningún tipo de tarjeta");
                 return false;
             }
 
@@ -505,7 +500,6 @@ namespace SistemaDeTickets.Vista
             }
 
             bool esValido = sum % 10 == 0;
-            System.Diagnostics.Debug.WriteLine($"VALIDACIÓN {tipoTarjeta}: sum={sum}, sum%10={sum % 10}, válido={esValido}");
 
             return esValido;
         }
@@ -551,8 +545,8 @@ namespace SistemaDeTickets.Vista
                 panelErrores.Visible = true;
             }
 
-            // DEPURACIÓN: También mostrar en consola
-            System.Diagnostics.Debug.WriteLine($"VALIDACIÓN: {mensaje}");
+            // Mostrar mensaje de validación al usuario
+            MessageBox.Show(mensaje, "Validación de Datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         // Validación en tiempo real
@@ -707,8 +701,6 @@ namespace SistemaDeTickets.Vista
                              $"Cantidad válida: {cantidadValida} (Sel:{cantidadSeleccionada}, Disp:{_detalleCompra.Evento.TiquetesDisponibles})\n" +
                              $"TOTAL VÁLIDO: {todosValidos}";
 
-            // Mostrar debug en consola (para desarrollo)
-            System.Diagnostics.Debug.WriteLine(debugInfo);
 
             // Actualizar botón
             var btnConfirmar = this.Controls.OfType<Button>().FirstOrDefault(b => b.Name.Contains("Confirmar") || b.Name.Contains("Pagar"));
@@ -748,12 +740,23 @@ namespace SistemaDeTickets.Vista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            // Cancelar compra y volver a vista de eventos
+            // Cancelar compra y volver a vista de eventos con refresco
             _fachadaCompra.CancelarCompra(0); // TODO: Obtener ID de compra real
+            this.Hide();
             var eventosForm = new VistaEvento();
             eventosForm.StartPosition = FormStartPosition.CenterScreen;
-            eventosForm.Show();
-            this.Hide();
+            eventosForm.ShowDialog();
+
+            // Forzar refresco de VistaEvento al regresar
+            if (eventosForm != null && !eventosForm.IsDisposed)
+            {
+                eventosForm.RefrescarVista();
+            }
+
+            if (!this.IsDisposed)
+            {
+                this.Close(); // Cerrar VistaCompra después de volver
+            }
         }
 
         private void VistaCompra_Load(object sender, EventArgs e)

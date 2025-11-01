@@ -55,6 +55,7 @@
             this.btnDescargarRecibo.TabIndex = 1;
             this.btnDescargarRecibo.Text = "Descargar recibo";
             this.btnDescargarRecibo.UseVisualStyleBackColor = true;
+            this.btnDescargarRecibo.Click += new System.EventHandler(this.btnDescargarRecibo_Click);
             // 
             // btnFiltrar
             // 
@@ -65,16 +66,18 @@
             this.btnFiltrar.TabIndex = 2;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // btnVolver
             // 
             this.btnVolver.Location = new System.Drawing.Point(402, 315);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(56, 19);
+            this.btnVolver.Size = new System.Drawing.Size(72, 29);
             this.btnVolver.TabIndex = 3;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // VistaHistorial
             // 

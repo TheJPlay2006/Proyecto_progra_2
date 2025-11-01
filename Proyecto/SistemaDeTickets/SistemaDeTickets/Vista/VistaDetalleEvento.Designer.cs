@@ -90,23 +90,26 @@
             // 
             // btnComprar
             // 
+            this.btnComprar.BackColor = System.Drawing.Color.Transparent;
             this.btnComprar.Location = new System.Drawing.Point(164, 283);
-            this.btnComprar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(2);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(56, 19);
+            this.btnComprar.Size = new System.Drawing.Size(112, 40);
             this.btnComprar.TabIndex = 5;
             this.btnComprar.Text = "Comprar";
-            this.btnComprar.UseVisualStyleBackColor = true;
+            this.btnComprar.UseVisualStyleBackColor = false;
+            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(280, 283);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVolver.Location = new System.Drawing.Point(318, 283);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(56, 19);
+            this.btnVolver.Size = new System.Drawing.Size(116, 40);
             this.btnVolver.TabIndex = 6;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // numCantidad
             // 
@@ -131,7 +134,7 @@
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblNombreEvento);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaDetalleEvento";
             this.Text = "VistaDetalleEvento";
             this.ResumeLayout(false);

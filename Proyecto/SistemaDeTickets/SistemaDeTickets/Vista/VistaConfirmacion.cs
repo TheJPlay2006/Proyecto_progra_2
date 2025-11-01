@@ -338,13 +338,22 @@ namespace SistemaDeTickets.Vista
                 // Cerrar esta ventana primero para evitar conflictos
                 this.Hide();
 
-                // Crear nueva instancia de VistaDetalleEvento (nunca reutilizar)
-                var detalleEventoForm = new VistaDetalleEvento(userId, 0); // eventoId = 0 para mostrar lista
-                detalleEventoForm.StartPosition = FormStartPosition.CenterScreen;
-                detalleEventoForm.Show();
+                // Crear nueva instancia de VistaEvento (listado de eventos) con refresco forzado
+                var eventosForm = new VistaEvento();
+                eventosForm.StartPosition = FormStartPosition.CenterScreen;
+                eventosForm.ShowDialog();
 
-                // Cerrar completamente esta ventana después de abrir la nueva
-                this.Close();
+                // Forzar refresco de VistaEvento después de la compra
+                if (eventosForm != null && !eventosForm.IsDisposed)
+                {
+                    eventosForm.RefrescarVista();
+                }
+
+                // Cerrar completamente esta ventana después de que VistaEvento se cierre
+                if (!this.IsDisposed)
+                {
+                    this.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -360,13 +369,22 @@ namespace SistemaDeTickets.Vista
                 // Cerrar esta ventana
                 this.Hide();
 
-                // Abrir VistaEvento (lista de eventos) para que el usuario pueda elegir otro evento
+                // Abrir VistaEvento (lista de eventos) para que el usuario pueda elegir otro evento con refresco
                 var eventosForm = new VistaEvento();
                 eventosForm.StartPosition = FormStartPosition.CenterScreen;
-                eventosForm.Show();
+                eventosForm.ShowDialog();
 
-                // Cerrar completamente esta ventana
-                this.Close();
+                // Forzar refresco de VistaEvento después de la compra
+                if (eventosForm != null && !eventosForm.IsDisposed)
+                {
+                    eventosForm.RefrescarVista();
+                }
+
+                // Cerrar completamente esta ventana después de que VistaEvento se cierre
+                if (!this.IsDisposed)
+                {
+                    this.Close();
+                }
             }
             catch (Exception ex)
             {

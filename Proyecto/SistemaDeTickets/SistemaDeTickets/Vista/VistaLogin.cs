@@ -61,7 +61,8 @@ namespace SistemaDeTickets.Vista
             // Configurar apariencia moderna
             ConfigurarControlesLogin();
 
-            SetPasswordVisibility(checkPassword.Checked);
+            // Configurar visibilidad inicial de contraseña
+            txtPassword.UseSystemPasswordChar = true;
         }
 
         private void ConfigurarControlesLogin()
@@ -134,13 +135,16 @@ namespace SistemaDeTickets.Vista
                 if (usuario.Rol == RolUsuario.Admin)
                 {
                     // Si es ADMIN → abrir formulario de gestión de eventos
+                    this.Hide();
                     var gestion = new VistaGestionEventos();
                     gestion.StartPosition = FormStartPosition.CenterScreen;
-                    gestion.Show();
+                    gestion.ShowDialog();
+                    this.Close(); // Cerrar login después de gestión
                 }
                 else // RolUsuario.Usuario
                 {
                     // Si es USUARIO → navegar según el contexto
+                    this.Hide();
                     switch (ContextoOrigen)
                     {
                         case ContextoNavegacion.DesdeCompraEvento:
@@ -152,7 +156,7 @@ namespace SistemaDeTickets.Vista
                                 // Aquí podrías preseleccionar el evento, si lo implementas
                             }
 
-                            ventanaEventos.Show();
+                            ventanaEventos.ShowDialog();
                             break;
 
                         case ContextoNavegacion.DesdeRegistro:
@@ -160,12 +164,11 @@ namespace SistemaDeTickets.Vista
                         default:
                             var ventanaEventosDefault = new VistaEvento();
                             ventanaEventosDefault.StartPosition = FormStartPosition.CenterScreen;
-                            ventanaEventosDefault.Show();
+                            ventanaEventosDefault.ShowDialog();
                             break;
                     }
+                    this.Close(); // Cerrar login después de eventos
                 }
-
-                this.Hide(); // Oculta el login sin cerrarlo
             }
             else
             {
@@ -179,31 +182,32 @@ namespace SistemaDeTickets.Vista
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
-            // Botón "Registrarse": navegar a registro (estilo dispose() de Java)
-            // Usar Hide() para mantener la aplicación viva
+            // Botón "Registrarse": navegar a registro
+            this.Hide();
             var registroForm = new VistaRegistro();
             registroForm.StartPosition = FormStartPosition.CenterScreen;
-            registroForm.Show();
-            this.Hide(); // Oculta el login sin terminar la aplicación
+            registroForm.ShowDialog();
+            this.Show(); // Mostrar login nuevamente cuando se cierre registro
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
             // Navegación contextual según el origen
+            this.Hide();
             switch (ContextoOrigen)
             {
                 case ContextoNavegacion.DesdeCompraEvento:
                     // Si vino desde compra en VistaEvento, volver a VistaEvento
                     var ventanaEventos = new VistaEvento();
                     ventanaEventos.StartPosition = FormStartPosition.CenterScreen;
-                    ventanaEventos.Show();
+                    ventanaEventos.ShowDialog();
                     break;
 
                 case ContextoNavegacion.DesdeRegistro:
                     // Si vino desde registro, volver a registro
                     var registroForm = new VistaRegistro();
                     registroForm.StartPosition = FormStartPosition.CenterScreen;
-                    registroForm.Show();
+                    registroForm.ShowDialog();
                     break;
 
                 case ContextoNavegacion.DesdeInicio:
@@ -211,40 +215,50 @@ namespace SistemaDeTickets.Vista
                     // Por defecto, volver a inicio
                     var inicioForm = new Inicio();
                     inicioForm.StartPosition = FormStartPosition.CenterScreen;
-                    inicioForm.Show();
+                    inicioForm.ShowDialog();
                     break;
             }
-
-            this.Hide(); // Oculta el login sin terminar la aplicación
+            this.Show(); // Mostrar login nuevamente cuando se cierre la ventana anterior
         }
 
-        private void SetPasswordVisibility(bool ocultar)
-        {
-            txtPassword.UseSystemPasswordChar = ocultar;
-            checkPassword.Text = ocultar ? "Ocultar" : "Mostrar";
-        }
+        // Método obsoleto - reemplazado por btnOcultarVerContra_Click
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             // Solo usar Application.Exit() cuando el usuario realmente quiera cerrar todo
-            Application.Exit();
+            DialogResult result = MessageBox.Show("¿Está seguro que desea salir de la aplicación?",
+                                                "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void linkOlvidePassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Abrir formulario de recuperación de contraseña (modal, centrado)
+            // Cerrar/ocultar la ventana de login de inmediato
+            this.Hide();
+
+            // Abrir la ventana de recuperación de contraseña en modo modal
             var recuperacionForm = new VistaRecuperacionPassword();
             recuperacionForm.StartPosition = FormStartPosition.CenterScreen;
-            recuperacionForm.ShowDialog(); // Usar ShowDialog para ventana modal
+            recuperacionForm.ShowDialog();
+
+            // Cerrar la ventana de login después de que se cierre la recuperación
+            this.Close();
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void checkPassword_CheckedChanged(object sender, EventArgs e)
+        private void btnOcultarVerContra_Click(object sender, EventArgs e)
         {
-            SetPasswordVisibility(checkPassword.Checked);
+            // Alternar visibilidad de la contraseña
+            txtPassword.UseSystemPasswordChar = !txtPassword.UseSystemPasswordChar;
+
+            // Cambiar ícono del botón basado en el nuevo estado
+            btnOcultarVerContra.Text = txtPassword.UseSystemPasswordChar ? "👁" : "🙈";
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)

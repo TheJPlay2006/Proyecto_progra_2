@@ -1,4 +1,5 @@
 ﻿using SistemaDeTickets.Controlador;
+using SistemaDeTickets.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -91,6 +92,11 @@ namespace SistemaDeTickets.Vista
         // Botón Salir
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            // Cerrar sesión si hay usuario logueado
+            if (ServicioAutenticacion.IsLoggedIn())
+            {
+                ServicioAutenticacion.Logout();
+            }
             this.Close(); // Cierra solo esta ventana
         }
     }

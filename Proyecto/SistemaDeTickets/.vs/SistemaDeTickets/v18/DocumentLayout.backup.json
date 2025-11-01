@@ -11,8 +11,12 @@
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistadetalleevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistaconfirmacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,6 +27,42 @@
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistacambioseventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistacambioseventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\usercontrolnotificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\usercontrolnotificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistagestioneventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistagestioneventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\controlador\\repositorioevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\controlador\\repositorioevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,36 +71,8 @@
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\controlador\\repositoriocompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\usercontrolnotificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\usercontrolnotificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\controlador\\repositoriousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistarecuperacionpassword.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistaregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -122,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,19 +138,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VistaEvento.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaEvento.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaEvento.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaEvento.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaEvento.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "VistaLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T06:47:47.244Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-29T02:51:09.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "VistaRecuperacionPassword.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:01:35.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VistaConfirmacion.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaConfirmacion.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaConfirmacion.cs",
@@ -164,7 +182,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "VistaLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaLogin.cs",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAWwOsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:50:42.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VistaEvento.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaEvento.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaEvento.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaEvento.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaEvento.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:47:47.244Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "VistaCompra.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCompra.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaCompra.cs",
@@ -175,86 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VistaHistorial.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaHistorial.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaHistorial.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T04:05:59.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RepositorioCompras.cs",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioCompras.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Controlador\\RepositorioCompras.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioCompras.cs",
-              "RelativeToolTip": "SistemaDeTickets\\Controlador\\RepositorioCompras.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:27:33.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RepositorioEvento.cs",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioEvento.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Controlador\\RepositorioEvento.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioEvento.cs",
-              "RelativeToolTip": "SistemaDeTickets\\Controlador\\RepositorioEvento.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwD4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T10:04:46.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Inicio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\Inicio.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\Inicio.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T02:51:32.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VistaLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaLogin.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T02:51:09.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VistaRecuperacionPassword.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T05:01:35.505Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "VistaRegistro.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRegistro.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRegistro.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRegistro.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaRegistro.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T04:06:03.828Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "UserControl1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\UserControl1.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\UserControl1.cs",
@@ -265,7 +228,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
+              "Title": "VistaCambiosEventos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCambiosEventos.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaCambiosEventos.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCambiosEventos.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaCambiosEventos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T03:54:45.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VistaRegistro.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRegistro.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRegistro.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRegistro.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaRegistro.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T04:06:03.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Inicio.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\Inicio.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\Inicio.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\Inicio.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:51:32.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "UserControlNotificacion.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\UserControlNotificacion.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\UserControlNotificacion.cs",
@@ -277,6 +273,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "VistaGestionEventos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaGestionEventos.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaGestionEventos.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaGestionEventos.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaGestionEventos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T03:15:12.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VistaHistorial.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaHistorial.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs [Design]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaHistorial.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T04:05:59.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Usuario.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Usuario.cs",
+              "RelativeToolTip": "SistemaDeTickets\\Modelo\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T04:29:17.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RepositorioCompras.cs",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioCompras.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Controlador\\RepositorioCompras.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioCompras.cs",
+              "RelativeToolTip": "SistemaDeTickets\\Controlador\\RepositorioCompras.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:27:33.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RepositorioEvento.cs",
+              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioEvento.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Controlador\\RepositorioEvento.cs",
+              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioEvento.cs",
+              "RelativeToolTip": "SistemaDeTickets\\Controlador\\RepositorioEvento.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T10:04:46.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "VistaCompra.cs",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCompra.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaCompra.cs",
@@ -288,19 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VistaLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaLogin.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaLogin.cs",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaLogin.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAtwHwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T03:50:42.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "RepositorioUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Controlador\\RepositorioUsuarios.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Controlador\\RepositorioUsuarios.cs",
@@ -312,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Eventos.json",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Data\\Eventos.json",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Data\\Eventos.json",
@@ -323,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Compras.json",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Data\\Compras.json",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Data\\Compras.json",
@@ -335,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "VistaRecuperacionPassword.cs",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
@@ -347,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "GestorJSON.cs",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Utils\\GestorJSON.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Utils\\GestorJSON.cs",
@@ -359,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "GestorPDF.cs",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Utils\\GestorPDF.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Utils\\GestorPDF.cs",
@@ -371,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Usuarios.json",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Data\\Usuarios.json",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Data\\Usuarios.json",
@@ -383,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "VistaRecuperacionPassword.resx",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.resx",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.resx",
@@ -394,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "VistaRecuperacionPassword.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.Designer.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.Designer.cs",
@@ -406,19 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Usuario.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Modelo\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Modelo\\Usuario.cs",
-              "RelativeToolTip": "SistemaDeTickets\\Modelo\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T04:29:17.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "VistaRegistro.cs",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRegistro.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRegistro.cs",
@@ -430,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Usuarios.json",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\bin\\Debug\\Data\\Usuarios.json",
               "RelativeDocumentMoniker": "SistemaDeTickets\\bin\\Debug\\Data\\Usuarios.json",
@@ -443,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Eventos.json",
               "DocumentMoniker": "C:\\Users\\Jairo\\Documents\\Proyecto_progra2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\bin\\Debug\\Data\\Eventos.json",
               "RelativeDocumentMoniker": "SistemaDeTickets\\bin\\Debug\\Data\\Eventos.json",

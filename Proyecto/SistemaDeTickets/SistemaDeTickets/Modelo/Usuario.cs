@@ -3,11 +3,6 @@ using System.Collections.Generic;
 
 namespace SistemaDeTickets.Modelo
 {
-    public enum RolUsuario
-    {
-        Usuario,  // valor 0
-        Admin     // valor 1
-    }
     public class Usuario
     {
         public int Id { get; set; }
