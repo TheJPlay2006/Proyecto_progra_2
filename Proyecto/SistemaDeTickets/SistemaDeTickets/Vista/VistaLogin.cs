@@ -39,8 +39,6 @@ namespace SistemaDeTickets.Vista
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Sistema de Tickets - Iniciar Sesión";
-            this.BackColor = Color.FromArgb(247, 247, 251);
-
             // Restaurar imagen de fondo original
             try
             {
@@ -116,6 +114,9 @@ namespace SistemaDeTickets.Vista
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text.Trim();
 
+            Console.WriteLine($"[DEBUG VISTALOGIN] Email ingresado: '{email}'");
+            Console.WriteLine($"[DEBUG VISTALOGIN] Password ingresado: '{password}'");
+
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Por favor, complete todos los campos.", "Campos Requeridos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -129,16 +130,14 @@ namespace SistemaDeTickets.Vista
             {
                 var usuario = ServicioAutenticacion.CurrentUser;
 
-                MessageBox.Show($"¡Bienvenido, {usuario.Nombre}!", "Inicio de Sesión Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 // 🔹 Verificar el rol del usuario usando enum
                 if (usuario.Rol == RolUsuario.Admin)
                 {
-                    // Si es ADMIN → abrir formulario de gestión de eventos
+                    // Si es ADMIN → abrir formulario de cambios de eventos
                     this.Hide();
-                    var gestion = new VistaGestionEventos();
-                    gestion.StartPosition = FormStartPosition.CenterScreen;
-                    gestion.ShowDialog();
+                    var cambios = new VistaCambiosEventos();
+                    cambios.StartPosition = FormStartPosition.CenterScreen;
+                    cambios.ShowDialog();
                     this.Close(); // Cerrar login después de gestión
                 }
                 else // RolUsuario.Usuario
@@ -172,8 +171,8 @@ namespace SistemaDeTickets.Vista
             }
             else
             {
-                // Mostrar error
-                MessageBox.Show("Credenciales incorrectas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Mostrar error de credenciales
+                MessageBox.Show("Credenciales incorrectas. Verifique su email y contraseña.", "Error de Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPassword.Clear();
                 txtPassword.Focus();
             }
@@ -225,13 +224,8 @@ namespace SistemaDeTickets.Vista
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            // Solo usar Application.Exit() cuando el usuario realmente quiera cerrar todo
-            DialogResult result = MessageBox.Show("¿Está seguro que desea salir de la aplicación?",
-                                                "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            // Salir directamente sin confirmación
+            Application.Exit();
         }
 
         private void linkOlvidePassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

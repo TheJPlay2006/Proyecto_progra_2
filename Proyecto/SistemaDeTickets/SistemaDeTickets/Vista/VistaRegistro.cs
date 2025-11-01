@@ -93,19 +93,19 @@ namespace SistemaDeTickets.Vista
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(email) ||
                 string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmarPassword))
             {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, complete todos los campos.", "Campos Incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (!ValidadorDatos.ValidarEmail(email))
             {
-                MessageBox.Show("El formato del correo electrónico no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El formato del correo electrónico no es válido.", "Email Inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!ValidadorDatos.ValidarPassword(password))
             {
-                MessageBox.Show("La contraseña debe tener al menos 8 caracteres, incluir mayúsculas, minúsculas y números.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("La contraseña debe tener al menos 8 caracteres, incluir mayúsculas, minúsculas y números.", "Contraseña Débil", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -113,20 +113,19 @@ namespace SistemaDeTickets.Vista
             var fortaleza = CalcularFortalezaPassword(password);
             if (fortaleza == PasswordStrength.Weak)
             {
-                MessageBox.Show("La contraseña es demasiado débil. Debe ser al menos de fortaleza 'Media' para registrarse.", "Contraseña Débil", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("La contraseña es demasiado débil. Debe ser al menos de fortaleza 'Media' para registrarse.", "Contraseña Muy Débil", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (password != confirmarPassword)
             {
-                MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Las contraseñas no coinciden.", "Contraseñas Diferentes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             try
             {
                 var usuario = _controladorAutenticacion.Registrar(nombre, email, password, Modelo.RolUsuario.Usuario);
-                MessageBox.Show($"Usuario {usuario.Nombre} registrado exitosamente. Ahora puede iniciar sesión.", "Registro exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Navegar a login: ocultar ventana anterior y centrar nueva
                 this.Hide();
@@ -138,7 +137,7 @@ namespace SistemaDeTickets.Vista
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Error silencioso - el controlador maneja los errores
             }
         }
 

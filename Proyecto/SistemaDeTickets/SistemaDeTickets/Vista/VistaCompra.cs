@@ -332,8 +332,6 @@ namespace SistemaDeTickets.Vista
             int cantidadSeleccionada = (int)numericUpDownCantidad.Value;
             if (cantidadSeleccionada > _detalleCompra.Evento.TiquetesDisponibles)
             {
-                MessageBox.Show($"No hay suficientes tickets disponibles. Stock actual: {_detalleCompra.Evento.TiquetesDisponibles}",
-                               "Stock Insuficiente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -358,8 +356,6 @@ namespace SistemaDeTickets.Vista
                     // Confirmar compra (esto incluye actualizar stock)
                     Compra compraConfirmada = _fachadaCompra.ConfirmarCompra(_detalleCompra);
 
-                    MessageBox.Show("Compra realizada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                     // DEBUG: Verificar que el JSON se actualizó
                     var eventosDebug = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
                     var eventoDebug = eventosDebug.FirstOrDefault(ev => ev.Id == _detalleCompra.Evento.Id);
@@ -376,12 +372,12 @@ namespace SistemaDeTickets.Vista
                 }
                 else
                 {
-                    MessageBox.Show("Error al procesar el pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Error silencioso
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error en la compra: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Error silencioso
             }
         }
 
@@ -545,8 +541,6 @@ namespace SistemaDeTickets.Vista
                 panelErrores.Visible = true;
             }
 
-            // Mostrar mensaje de validación al usuario
-            MessageBox.Show(mensaje, "Validación de Datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         // Validación en tiempo real
@@ -843,7 +837,6 @@ namespace SistemaDeTickets.Vista
                               $"Nombre válido: {ValidadorTarjeta.ValidarNombreTitular(txtNombreTitular.Text.Trim())}\n" +
                               $"Cantidad válida: {(numericUpDownCantidad != null && (int)numericUpDownCantidad.Value > 0 && (int)numericUpDownCantidad.Value <= _detalleCompra.Evento.TiquetesDisponibles)}\n";
 
-                MessageBox.Show(debug, "DEBUG VALIDACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
             };
 
             this.Controls.Add(btnDebug);

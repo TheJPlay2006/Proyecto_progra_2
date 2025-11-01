@@ -27,7 +27,17 @@ namespace SistemaDeTickets.Services
 
         public Usuario ObtenerPorCorreo(string email)
         {
-            return ObtenerTodos().FirstOrDefault(u => u.Email.Equals(email, System.StringComparison.OrdinalIgnoreCase));
+            var usuarios = ObtenerTodos();
+            Console.WriteLine($"[DEBUG SERVICIOUSUARIO] Total usuarios cargados: {usuarios.Count}");
+            foreach (var u in usuarios)
+            {
+                Console.WriteLine($"[DEBUG SERVICIOUSUARIO] Usuario: {u.Email} (Rol: {u.Rol})");
+            }
+
+            var usuarioEncontrado = usuarios.FirstOrDefault(u => u.Email.Equals(email, System.StringComparison.OrdinalIgnoreCase));
+            Console.WriteLine($"[DEBUG SERVICIOUSUARIO] Buscando email: '{email}', encontrado: {usuarioEncontrado != null}");
+
+            return usuarioEncontrado;
         }
 
         /// <summary>

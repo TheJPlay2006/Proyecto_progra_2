@@ -31,5 +31,38 @@
     "FechaRegistro": "2025-10-31T21:10:43.4560751-06:00",
     "TokenRecuperacion": null,
     "TokenExpiracion": null
+  },
+  {
+    "Id": 4,
+    "Nombre": "JE Tickets CR Admin",
+    "Email": "admin@jeticketscr.com",
+    "PasswordHash": "PBKDF2$100000$W9xIBYMQLBp3fGd7YUcD0w==$D5xAYz71UF4fDGs3bnSY3K3oq2oFFS5TD95w9zSBKDE=",
+    "Rol": 1,
+    "EventosSeguidos": [],
+    "FechaRegistro": "2025-11-01T09:42:30-06:00",
+    "TokenRecuperacion": null,
+    "TokenExpiracion": null
+  },
+  {
+    "Id": 5,
+    "Nombre": "Jairo Admin",
+    "Email": "jairo@jeticketscr.com",
+    "PasswordHash": "PBKDF2$100000$R/acvITyeqpdXEHhzlnZGA==$kd7ELm5l7tCVVWvqq0p2xZqqlHn128bIt7o+K1n4ujA=",
+    "Rol": 1,
+    "EventosSeguidos": [],
+    "FechaRegistro": "2025-11-01T09:42:30-06:00",
+    "TokenRecuperacion": null,
+    "TokenExpiracion": null
+  },
+  {
+    "Id": 6,
+    "Nombre": "Emesis Admin",
+    "Email": "emesis@jeticketscr.com",
+    "PasswordHash": "PBKDF2$100000$X3BkdhPSI5UKl5WjoAfiSA==$zAnIQNVCo9SVeM6YSRuHbEaAotuQudz1QbQmXyHP6wU=",
+    "Rol": 1,
+    "EventosSeguidos": [],
+    "FechaRegistro": "2025-11-01T09:42:30-06:00",
+    "TokenRecuperacion": null,
+    "TokenExpiracion": null
   }
 ]
