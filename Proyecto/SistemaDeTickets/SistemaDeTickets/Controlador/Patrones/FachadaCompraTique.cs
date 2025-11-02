@@ -3,6 +3,8 @@ using SistemaDeTickets.Controlador.Patrones;
 using SistemaDeTickets.Utils;
 using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -134,6 +136,14 @@ namespace SistemaDeTickets.Controlador.Patrones
                 // Notificar stock bajo si es necesario
                 await NotificarStockBajoAsync(eventoId);
 
+                // Notificar compra exitosa
+                var eventos = GestorJSON.LeerArchivo<List<SistemaDeTickets.Modelo.Evento>>("Data/MisEventos.json") ?? new List<SistemaDeTickets.Modelo.Evento>();
+                var evento = eventos.FirstOrDefault(e => e.Id == eventoId);
+                if (evento != null)
+                {
+                    _gestorEventos.NotificarCompraExitosa(evento.Nombre, cantidad);
+                }
+
                 return new ResultadoCompra
                 {
                     Exitoso = true,
@@ -173,11 +183,18 @@ namespace SistemaDeTickets.Controlador.Patrones
         private async Task NotificarStockBajoAsync(int eventoId)
         {
             var disponibilidad = _gestorInventario.ObtenerDisponibilidad(eventoId);
-            
+
             if (disponibilidad <= 10)
             {
-                // Aquí se notificaría al Observer pattern
-                // await _sujetoObservable.NotificarStockBajo(eventoId.ToString(), disponibilidad);
+                // Obtener nombre del evento para la notificación
+                var eventos = GestorJSON.LeerArchivo<List<SistemaDeTickets.Modelo.Evento>>("Data/MisEventos.json") ?? new List<SistemaDeTickets.Modelo.Evento>();
+                var evento = eventos.FirstOrDefault(e => e.Id == eventoId);
+
+                if (evento != null)
+                {
+                    // Notificar bajo inventario
+                    _gestorEventos.NotificarBajoInventario(eventoId, disponibilidad, evento.Nombre);
+                }
             }
         }
 

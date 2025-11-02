@@ -1,10 +1,14 @@
-﻿using SistemaDeTickets.Modelo;
+﻿using Newtonsoft.Json;
+using SistemaDeTickets.Modelo;
 using SistemaDeTickets.Utils;
 using SistemaDeTickets.Services;
+using SistemaDeTickets.Controlador.Patrones;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace SistemaDeTickets.Controlador
 {
@@ -21,7 +25,7 @@ namespace SistemaDeTickets.Controlador
         {
             var detalle = new DetalleCompra
             {
-                Evento = null, 
+                Evento = null,
                 Cantidad = cantidad
             };
             detalle.CalcularSubtotal();
@@ -85,9 +89,6 @@ namespace SistemaDeTickets.Controlador
         /// <param name="cantidadDescontar">Cantidad a descontar del stock</param>
         private void ActualizarStockEventoPersistente(int eventoId, int cantidadDescontar)
         {
-            // DEBUG: Log antes de actualizar
-            Console.WriteLine($"[DEBUG] Actualizando stock - Evento {eventoId}, Cantidad a descontar: {cantidadDescontar}");
-
             // Cargar eventos frescos del archivo
             var eventos = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
 
@@ -96,23 +97,20 @@ namespace SistemaDeTickets.Controlador
 
             if (evento != null)
             {
-                Console.WriteLine($"[DEBUG] Evento encontrado - Stock actual: {evento.TiquetesDisponibles}");
-
                 if (evento.TiquetesDisponibles >= cantidadDescontar)
                 {
                     // Descontar stock
-                    int stockAnterior = evento.TiquetesDisponibles;
                     evento.TiquetesDisponibles -= cantidadDescontar;
-
-                    Console.WriteLine($"[DEBUG] Stock actualizado: {stockAnterior} -> {evento.TiquetesDisponibles}");
 
                     // Guardar cambios usando escritura atómica - PERSISTENTE EN ARCHIVO
                     GestorJSON.EscribirAtomico("Data/MisEventos.json", eventos);
 
-                    // Verificar que se guardó correctamente
-                    var eventosVerificados = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
-                    var eventoVerificado = eventosVerificados.FirstOrDefault(e => e.Id == eventoId);
-                    Console.WriteLine($"[DEBUG] Verificación post-guardado - Stock en JSON: {eventoVerificado?.TiquetesDisponibles ?? -1}");
+                    // **NUEVO**: Notificar stock bajo si es necesario después de la actualización
+                    if (evento.TiquetesDisponibles <= 10)
+                    {
+                        var gestorEventos = new GestorEventos();
+                        gestorEventos.NotificarBajoInventario(eventoId, evento.TiquetesDisponibles, evento.Nombre);
+                    }
                 }
                 else
                 {

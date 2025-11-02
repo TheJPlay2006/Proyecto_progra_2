@@ -24,11 +24,15 @@ namespace SistemaDeTickets.Controlador
 
         public Modelo.Evento BuscarPorId(int id)
         {
+            // SIEMPRE leer del JSON para obtener datos frescos
+            _eventos = GestorJSON.LeerArchivo<List<Modelo.Evento>>(RutaArchivo) ?? new List<Modelo.Evento>();
             return _eventos.FirstOrDefault(e => e.Id == id);
         }
 
         public List<Modelo.Evento> ObtenerTodos()
         {
+            // SIEMPRE leer del JSON para obtener datos frescos
+            _eventos = GestorJSON.LeerArchivo<List<Modelo.Evento>>(RutaArchivo) ?? new List<Modelo.Evento>();
             return _eventos;
         }
 

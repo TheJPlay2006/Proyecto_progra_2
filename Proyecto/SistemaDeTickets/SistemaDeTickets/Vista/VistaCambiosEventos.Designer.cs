@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaCambiosEventos));
             this.label1 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -51,79 +52,87 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(367, 23);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(273, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(368, 38);
+            this.label1.Size = new System.Drawing.Size(241, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cambios para los eventos";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(31, 169);
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(2, 137);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(165, 20);
+            this.lblNombre.Size = new System.Drawing.Size(144, 21);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre del Evento";
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(31, 261);
+            this.lblTipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(2, 212);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(131, 20);
+            this.lblTipo.Size = new System.Drawing.Size(112, 21);
             this.lblTipo.TabIndex = 2;
             this.lblTipo.Text = "Tipo de Evento";
             // 
             // lblRecinto
             // 
             this.lblRecinto.AutoSize = true;
-            this.lblRecinto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecinto.Location = new System.Drawing.Point(31, 347);
+            this.lblRecinto.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecinto.Location = new System.Drawing.Point(2, 280);
+            this.lblRecinto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRecinto.Name = "lblRecinto";
-            this.lblRecinto.Size = new System.Drawing.Size(162, 20);
+            this.lblRecinto.Size = new System.Drawing.Size(133, 20);
             this.lblRecinto.TabIndex = 3;
             this.lblRecinto.Text = "Recinto del Evento";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(31, 446);
+            this.lblDescripcion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(0, 362);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(199, 20);
+            this.lblDescripcion.Size = new System.Drawing.Size(167, 21);
             this.lblDescripcion.TabIndex = 4;
             this.lblDescripcion.Text = "Descripcion del Evento";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(561, 169);
+            this.lblFecha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(421, 137);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(149, 20);
+            this.lblFecha.Size = new System.Drawing.Size(126, 21);
             this.lblFecha.TabIndex = 5;
             this.lblFecha.Text = "Fecha del Evento";
             // 
             // lblTiquetes
             // 
             this.lblTiquetes.AutoSize = true;
-            this.lblTiquetes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiquetes.Location = new System.Drawing.Point(561, 261);
+            this.lblTiquetes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTiquetes.Location = new System.Drawing.Point(414, 210);
+            this.lblTiquetes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTiquetes.Name = "lblTiquetes";
-            this.lblTiquetes.Size = new System.Drawing.Size(170, 20);
+            this.lblTiquetes.Size = new System.Drawing.Size(148, 21);
             this.lblTiquetes.TabIndex = 6;
             this.lblTiquetes.Text = "Numero de tiquetes";
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(615, 465);
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(461, 378);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(137, 41);
+            this.btnGuardar.Size = new System.Drawing.Size(103, 33);
             this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -131,10 +140,11 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(837, 465);
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(628, 378);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(142, 41);
+            this.btnCancelar.Size = new System.Drawing.Size(106, 33);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -143,68 +153,76 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(562, 345);
+            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(433, 274);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(152, 20);
+            this.lblPrecio.Size = new System.Drawing.Size(129, 21);
             this.lblPrecio.TabIndex = 9;
             this.lblPrecio.Text = "Precio del Evento";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(236, 166);
+            this.txtNombre.Location = new System.Drawing.Point(177, 135);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(270, 22);
+            this.txtNombre.Size = new System.Drawing.Size(204, 20);
             this.txtNombre.TabIndex = 10;
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(236, 258);
+            this.txtTipo.Location = new System.Drawing.Point(177, 210);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(270, 22);
+            this.txtTipo.Size = new System.Drawing.Size(204, 20);
             this.txtTipo.TabIndex = 11;
             // 
             // txtRecinto
             // 
-            this.txtRecinto.Location = new System.Drawing.Point(236, 345);
+            this.txtRecinto.Location = new System.Drawing.Point(177, 280);
+            this.txtRecinto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRecinto.Name = "txtRecinto";
-            this.txtRecinto.Size = new System.Drawing.Size(270, 22);
+            this.txtRecinto.Size = new System.Drawing.Size(204, 20);
             this.txtRecinto.TabIndex = 12;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(236, 444);
+            this.txtDescripcion.Location = new System.Drawing.Point(177, 362);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(270, 22);
+            this.txtDescripcion.Size = new System.Drawing.Size(204, 20);
             this.txtDescripcion.TabIndex = 13;
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(754, 167);
+            this.dtpFecha.Location = new System.Drawing.Point(566, 136);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(243, 22);
+            this.dtpFecha.Size = new System.Drawing.Size(183, 20);
             this.dtpFecha.TabIndex = 14;
             // 
             // nudTiquetes
             // 
-            this.nudTiquetes.Location = new System.Drawing.Point(754, 259);
+            this.nudTiquetes.Location = new System.Drawing.Point(566, 210);
+            this.nudTiquetes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nudTiquetes.Name = "nudTiquetes";
-            this.nudTiquetes.Size = new System.Drawing.Size(243, 22);
+            this.nudTiquetes.Size = new System.Drawing.Size(182, 20);
             this.nudTiquetes.TabIndex = 15;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(754, 339);
+            this.txtPrecio.Location = new System.Drawing.Point(566, 275);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(243, 22);
+            this.txtPrecio.Size = new System.Drawing.Size(183, 20);
             this.txtPrecio.TabIndex = 16;
             // 
             // VistaCambiosEventos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1052, 562);
+            this.ClientSize = new System.Drawing.Size(789, 457);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.nudTiquetes);
             this.Controls.Add(this.dtpFecha);
@@ -222,6 +240,8 @@
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VistaCambiosEventos";
             this.Text = "VistaCambiosEventos";
             ((System.ComponentModel.ISupportInitialize)(this.nudTiquetes)).EndInit();

@@ -358,8 +358,7 @@ namespace SistemaDeTickets.Vista
 
                     // DEBUG: Verificar que el JSON se actualizó
                     var eventosDebug = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
-                    var eventoDebug = eventosDebug.FirstOrDefault(ev => ev.Id == _detalleCompra.Evento.Id);
-                    Console.WriteLine($"[DEBUG Compra] Stock después de compra - Evento {_detalleCompra.Evento.Id}: {eventoDebug?.TiquetesDisponibles ?? -1} tickets");
+                    // Debug eliminado
 
                     // Navegar a confirmación con datos de la compra
                     this.Hide();
@@ -368,6 +367,15 @@ namespace SistemaDeTickets.Vista
                     confirmacionForm.ShowDialog();
 
                     // REFRESCO FORZADO: Cerrar VistaCompra y forzar refresco en VistaEvento
+                    // Buscar instancia existente de VistaEvento y refrescarla
+                    foreach (Form form in Application.OpenForms)
+                    {
+                        if (form is VistaEvento vistaEvento && !form.IsDisposed)
+                        {
+                            vistaEvento.RefrescarVistaDesdeCompra();
+                            break;
+                        }
+                    }
                     this.Close(); // Cerrar VistaCompra después de confirmación
                 }
                 else
@@ -377,7 +385,7 @@ namespace SistemaDeTickets.Vista
             }
             catch (Exception ex)
             {
-                // Error silencioso
+                // Error silencioso - variable ex no utilizada
             }
         }
 
@@ -744,7 +752,7 @@ namespace SistemaDeTickets.Vista
             // Forzar refresco de VistaEvento al regresar
             if (eventosForm != null && !eventosForm.IsDisposed)
             {
-                eventosForm.RefrescarVista();
+                eventosForm.RefrescarVistaDesdeCompra();
             }
 
             if (!this.IsDisposed)

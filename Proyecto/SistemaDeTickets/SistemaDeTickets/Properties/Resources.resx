@@ -121,4 +121,7 @@
   <data name="Fondo_Pop-Conciertos_Acento-CTA_2563EB_3840x2160" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Fondo_Pop-Conciertos_Acento-CTA_2563EB_3840x2160.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rojo_escena_1920x1080_banda_lateral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rojo_escena_1920x1080_banda_lateral.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -1,5 +1,6 @@
 ﻿using SistemaDeTickets.Controlador;
 using SistemaDeTickets.Services;
+using SistemaDeTickets.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,15 +20,19 @@ namespace SistemaDeTickets.Vista
         {
             InitializeComponent();
             controlador = new ControladorEvento();
+            // Cargar eventos leyendo SIEMPRE del JSON
             CargarEventos();
         }
         // ------------------------------
-        // Cargar los eventos en la tabla
+        // Cargar los eventos en la tabla - SIEMPRE LEE DEL JSON
         // ------------------------------
         private void CargarEventos()
         {
+            // SIEMPRE leer directamente del JSON para obtener datos frescos
+            var eventos = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
+
             dgvEventos.DataSource = null;
-            dgvEventos.DataSource = controlador.ObtenerEventos();
+            dgvEventos.DataSource = eventos;
             dgvEventos.AutoResizeColumns();
         }
         // Botón Agregar nuevo evento
@@ -36,7 +41,8 @@ namespace SistemaDeTickets.Vista
             var formCambios = new VistaCambiosEventos(); // abre el formulario para crear un evento
             if (formCambios.ShowDialog() == DialogResult.OK)
             {
-                CargarEventos(); // refresca la tabla después de crear
+                // REFRESCAR leyendo del JSON actualizado
+                CargarEventos();
             }
         }
         // Botón Editar evento seleccionado
@@ -50,7 +56,8 @@ namespace SistemaDeTickets.Vista
 
                 if (formEditar.ShowDialog() == DialogResult.OK)
                 {
-                    CargarEventos(); // refresca los datos si se guardó
+                    // REFRESCAR leyendo del JSON actualizado
+                    CargarEventos();
                 }
             }
             else
@@ -76,6 +83,7 @@ namespace SistemaDeTickets.Vista
                     if (controlador.EliminarEvento(seleccionado.Id))
                     {
                         MessageBox.Show("Evento eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // REFRESCAR leyendo del JSON actualizado
                         CargarEventos();
                     }
                     else

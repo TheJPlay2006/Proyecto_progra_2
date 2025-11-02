@@ -69,5 +69,15 @@ namespace SistemaDeTickets.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rojo_escena_1920x1080_banda_lateral {
+            get {
+                object obj = ResourceManager.GetObject("rojo_escena_1920x1080_banda_lateral", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

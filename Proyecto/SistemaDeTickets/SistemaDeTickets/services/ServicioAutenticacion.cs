@@ -83,7 +83,6 @@ namespace SistemaDeTickets.Services
             // Primero intentar comparación directa (para passwords en texto plano)
             if (password == hashAlmacenado)
             {
-                Console.WriteLine("[DEBUG PASSWORD] Password coincide directamente (texto plano)");
                 return true;
             }
 
@@ -93,7 +92,6 @@ namespace SistemaDeTickets.Services
                 var partes = hashAlmacenado.Split('$');
                 if (partes.Length != 4 || partes[0] != "PBKDF2")
                 {
-                    Console.WriteLine($"[DEBUG PASSWORD] No es formato PBKDF2, partes: {partes.Length}, primer parte: '{partes[0]}'");
                     return false;
                 }
 
@@ -110,13 +108,11 @@ namespace SistemaDeTickets.Services
 
                 // Comparar arrays de bytes
                 bool coincide = hashNuevo.SequenceEqual(hashOriginal);
-                Console.WriteLine($"[DEBUG PASSWORD] Comparación PBKDF2: {coincide}");
                 return coincide;
             }
             catch (Exception ex)
             {
                 // Si hay error en parsing, podría ser un password en claro (legacy)
-                Console.WriteLine($"[DEBUG PASSWORD] Error en parsing PBKDF2: {ex.Message}, intentando comparación directa");
                 return password == hashAlmacenado;
             }
         }
@@ -160,29 +156,14 @@ namespace SistemaDeTickets.Services
 
             if (usuario != null)
             {
-                // Debug temporal
-                Console.WriteLine($"[DEBUG LOGIN] Usuario encontrado: {usuario.Email}, Rol: {usuario.Rol}");
-                Console.WriteLine($"[DEBUG LOGIN] Password ingresado: '{password}'");
-                Console.WriteLine($"[DEBUG LOGIN] Password almacenado: '{usuario.PasswordHash}'");
-
                 // Verificar password usando el método seguro
                 bool passwordValido = VerificarPassword(password, usuario.PasswordHash);
-                Console.WriteLine($"[DEBUG LOGIN] Password válido: {passwordValido}");
 
                 if (passwordValido)
                 {
                     CurrentUser = usuario;
-                    Console.WriteLine($"[DEBUG LOGIN] Login exitoso para {usuario.Email}");
                     return true;
                 }
-                else
-                {
-                    Console.WriteLine($"[DEBUG LOGIN] Password incorrecto para {usuario.Email}");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"[DEBUG LOGIN] Usuario no encontrado: {email}");
             }
             return false;
         }

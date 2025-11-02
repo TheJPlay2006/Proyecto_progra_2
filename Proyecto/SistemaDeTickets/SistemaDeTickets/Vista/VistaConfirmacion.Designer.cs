@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaConfirmacion));
             this.lblMensajeExito = new System.Windows.Forms.Label();
             this.lblCodigoCompra = new System.Windows.Forms.Label();
             this.lblDetallesCompra = new System.Windows.Forms.Label();
@@ -39,37 +40,37 @@
             // lblMensajeExito
             // 
             this.lblMensajeExito.AutoSize = true;
-            this.lblMensajeExito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensajeExito.Location = new System.Drawing.Point(95, 86);
+            this.lblMensajeExito.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensajeExito.Location = new System.Drawing.Point(59, 86);
             this.lblMensajeExito.Name = "lblMensajeExito";
-            this.lblMensajeExito.Size = new System.Drawing.Size(106, 20);
+            this.lblMensajeExito.Size = new System.Drawing.Size(105, 21);
             this.lblMensajeExito.TabIndex = 0;
             this.lblMensajeExito.Text = "Mensaje exito";
             // 
             // lblCodigoCompra
             // 
             this.lblCodigoCompra.AutoSize = true;
-            this.lblCodigoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoCompra.Location = new System.Drawing.Point(376, 86);
+            this.lblCodigoCompra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoCompra.Location = new System.Drawing.Point(338, 86);
             this.lblCodigoCompra.Name = "lblCodigoCompra";
-            this.lblCodigoCompra.Size = new System.Drawing.Size(116, 20);
+            this.lblCodigoCompra.Size = new System.Drawing.Size(117, 21);
             this.lblCodigoCompra.TabIndex = 1;
             this.lblCodigoCompra.Text = "Codigo compra";
             // 
             // lblDetallesCompra
             // 
             this.lblDetallesCompra.AutoSize = true;
-            this.lblDetallesCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetallesCompra.Location = new System.Drawing.Point(633, 86);
+            this.lblDetallesCompra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDetallesCompra.Location = new System.Drawing.Point(605, 86);
             this.lblDetallesCompra.Name = "lblDetallesCompra";
-            this.lblDetallesCompra.Size = new System.Drawing.Size(124, 20);
+            this.lblDetallesCompra.Size = new System.Drawing.Size(122, 21);
             this.lblDetallesCompra.TabIndex = 2;
             this.lblDetallesCompra.Text = "Detalles compra";
             // 
             // btnDescargarRecibo
             // 
-            this.btnDescargarRecibo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescargarRecibo.Location = new System.Drawing.Point(143, 292);
+            this.btnDescargarRecibo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescargarRecibo.Location = new System.Drawing.Point(63, 292);
             this.btnDescargarRecibo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDescargarRecibo.Name = "btnDescargarRecibo";
             this.btnDescargarRecibo.Size = new System.Drawing.Size(153, 39);
@@ -79,7 +80,8 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(592, 292);
+            this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(574, 292);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(153, 39);
@@ -89,7 +91,8 @@
             // 
             // btnRealizarOtraCompra
             // 
-            this.btnRealizarOtraCompra.Location = new System.Drawing.Point(348, 292);
+            this.btnRealizarOtraCompra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRealizarOtraCompra.Location = new System.Drawing.Point(317, 292);
             this.btnRealizarOtraCompra.Name = "btnRealizarOtraCompra";
             this.btnRealizarOtraCompra.Size = new System.Drawing.Size(170, 39);
             this.btnRealizarOtraCompra.TabIndex = 5;
@@ -100,7 +103,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 446);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(791, 374);
             this.Controls.Add(this.btnRealizarOtraCompra);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnDescargarRecibo);
@@ -108,6 +112,7 @@
             this.Controls.Add(this.lblCodigoCompra);
             this.Controls.Add(this.lblMensajeExito);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VistaConfirmacion";
             this.Text = "VistaConfirmacion";

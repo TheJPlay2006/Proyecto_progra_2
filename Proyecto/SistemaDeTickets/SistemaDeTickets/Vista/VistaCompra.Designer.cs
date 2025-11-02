@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaCompra));
             this.lblNombreEvento = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -50,33 +51,33 @@
             // lblNombreEvento
             // 
             this.lblNombreEvento.AutoSize = true;
-            this.lblNombreEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreEvento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreEvento.Location = new System.Drawing.Point(38, 33);
             this.lblNombreEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreEvento.Name = "lblNombreEvento";
-            this.lblNombreEvento.Size = new System.Drawing.Size(117, 20);
+            this.lblNombreEvento.Size = new System.Drawing.Size(119, 21);
             this.lblNombreEvento.TabIndex = 0;
             this.lblNombreEvento.Text = "Nombre evento";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.Location = new System.Drawing.Point(279, 33);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(54, 20);
+            this.lblFecha.Size = new System.Drawing.Size(50, 21);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "Fecha";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(603, 33);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(44, 20);
+            this.lblTotal.Size = new System.Drawing.Size(42, 21);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "Total";
             // 
@@ -118,7 +119,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.Location = new System.Drawing.Point(313, 263);
             this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirmar.Name = "btnConfirmar";
@@ -130,7 +131,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(525, 263);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
@@ -143,50 +144,51 @@
             // lblNumeroTarjeta
             // 
             this.lblNumeroTarjeta.AutoSize = true;
-            this.lblNumeroTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroTarjeta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroTarjeta.Location = new System.Drawing.Point(267, 131);
             this.lblNumeroTarjeta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumeroTarjeta.Name = "lblNumeroTarjeta";
-            this.lblNumeroTarjeta.Size = new System.Drawing.Size(136, 20);
+            this.lblNumeroTarjeta.Size = new System.Drawing.Size(137, 21);
             this.lblNumeroTarjeta.TabIndex = 10;
             this.lblNumeroTarjeta.Text = "Número de tarjeta";
             // 
             // lblCVV
             // 
             this.lblCVV.AutoSize = true;
-            this.lblCVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCVV.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCVV.Location = new System.Drawing.Point(469, 131);
             this.lblCVV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCVV.Name = "lblCVV";
-            this.lblCVV.Size = new System.Drawing.Size(42, 20);
+            this.lblCVV.Size = new System.Drawing.Size(40, 21);
             this.lblCVV.TabIndex = 11;
             this.lblCVV.Text = "CVV";
             // 
             // lblFechaExpiracion
             // 
             this.lblFechaExpiracion.AutoSize = true;
-            this.lblFechaExpiracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaExpiracion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaExpiracion.Location = new System.Drawing.Point(591, 131);
             this.lblFechaExpiracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFechaExpiracion.Name = "lblFechaExpiracion";
-            this.lblFechaExpiracion.Size = new System.Drawing.Size(151, 20);
+            this.lblFechaExpiracion.Size = new System.Drawing.Size(146, 21);
             this.lblFechaExpiracion.TabIndex = 12;
             this.lblFechaExpiracion.Text = "Fecha de expiración";
             // 
             // lblNombreTitular
             // 
             this.lblNombreTitular.AutoSize = true;
-            this.lblNombreTitular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreTitular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreTitular.Location = new System.Drawing.Point(25, 131);
             this.lblNombreTitular.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreTitular.Name = "lblNombreTitular";
-            this.lblNombreTitular.Size = new System.Drawing.Size(137, 20);
+            this.lblNombreTitular.Size = new System.Drawing.Size(141, 21);
             this.lblNombreTitular.TabIndex = 13;
             this.lblNombreTitular.Text = "Nombre del titular:";
             // 
             // panelDetalles
             // 
             this.panelDetalles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelDetalles.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDetalles.Location = new System.Drawing.Point(813, 33);
             this.panelDetalles.Name = "panelDetalles";
             this.panelDetalles.Size = new System.Drawing.Size(306, 292);
@@ -194,9 +196,10 @@
             // 
             // numericUpDownCantidad
             // 
+            this.numericUpDownCantidad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownCantidad.Location = new System.Drawing.Point(442, 36);
             this.numericUpDownCantidad.Name = "numericUpDownCantidad";
-            this.numericUpDownCantidad.Size = new System.Drawing.Size(81, 20);
+            this.numericUpDownCantidad.Size = new System.Drawing.Size(87, 29);
             this.numericUpDownCantidad.TabIndex = 15;
             // 
             // panelErrores
@@ -210,6 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1158, 404);
             this.Controls.Add(this.panelErrores);
             this.Controls.Add(this.numericUpDownCantidad);
@@ -227,6 +231,7 @@
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblNombreEvento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaCompra";
             this.Text = "VistaCompra";

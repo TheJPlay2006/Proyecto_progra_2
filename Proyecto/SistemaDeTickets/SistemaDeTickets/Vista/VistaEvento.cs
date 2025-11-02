@@ -274,6 +274,9 @@ namespace SistemaDeTickets.Vista
             {
                 btnVerHistorial.Visible = ServicioAutenticacion.IsLoggedIn();
             }
+
+            // Configurar visibilidad del botón cerrar sesión
+            ConfigurarVisibilidadBotonCerrarSesion();
         }
 
         
@@ -430,22 +433,74 @@ namespace SistemaDeTickets.Vista
         }
 
         /// <summary>
-        /// Evento para cerrar sesión y volver al login
+        /// Configura la visibilidad del botón cerrar sesión según el estado de autenticación
+        /// </summary>
+        private void ConfigurarVisibilidadBotonCerrarSesion()
+        {
+            // Buscar el botón cerrar sesión por nombre
+            var btnCerrarSesion = this.Controls.Find("btnCerrarSesion", true).FirstOrDefault() as Button;
+            if (btnCerrarSesion != null)
+            {
+                btnCerrarSesion.Visible = ServicioAutenticacion.IsLoggedIn();
+            }
+
+            // Configurar visibilidad de botones de login/registro
+            var btnIniciarSesion = this.Controls.Find("btnIniciarSesion", true).FirstOrDefault() as Button;
+            var btnRegistrarse = this.Controls.Find("button1", true).FirstOrDefault() as Button; // button1 es el botón registrarse
+
+            if (btnIniciarSesion != null)
+            {
+                btnIniciarSesion.Visible = !ServicioAutenticacion.IsLoggedIn();
+            }
+
+            if (btnRegistrarse != null)
+            {
+                btnRegistrarse.Visible = !ServicioAutenticacion.IsLoggedIn();
+            }
+
+            // Configurar visibilidad del botón historial
+            if (btnVerHistorial != null)
+            {
+                btnVerHistorial.Visible = ServicioAutenticacion.IsLoggedIn();
+            }
+        }
+
+        /// <summary>
+        /// Evento para cerrar sesión y permanecer en VistaEvento
         /// </summary>
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            // Cerrar sesión
-            ServicioAutenticacion.Logout();
+            try
+            {
+                // Confirmar cierre de sesión
+                var result = MessageBox.Show(
+                    "¿Estás seguro de que quieres cerrar sesión?",
+                    "Confirmar Cierre de Sesión",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
 
-            // Mostrar login nuevamente
-            this.Hide();
-            var loginForm = new VistaLogin();
-            loginForm.ContextoOrigen = VistaLogin.ContextoNavegacion.DesdeInicio; // Volver a inicio después de logout
-            loginForm.StartPosition = FormStartPosition.CenterScreen;
-            loginForm.ShowDialog();
+                if (result == DialogResult.Yes)
+                {
+                    // Cerrar sesión - SOLO ESTO, sin cerrar ventanas
+                    ServicioAutenticacion.Logout();
 
-            // Cerrar vista de eventos después de que login se cierre
-            this.Close();
+                    // Verificar que se cerró correctamente
+                    if (!ServicioAutenticacion.IsLoggedIn())
+                    {
+                        // NO cerrar ninguna ventana - solo actualizar la interfaz actual
+                        ConfigurarVisibilidadBotonCerrarSesion(); // Actualizar visibilidad de botones
+
+                        // Mostrar mensaje de confirmación
+                        MessageBox.Show("Sesión cerrada exitosamente. Puedes iniciar sesión con otra cuenta si lo deseas.",
+                                      "Sesión Cerrada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cerrar sesión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         /// <summary>
@@ -568,6 +623,14 @@ namespace SistemaDeTickets.Vista
             CargarEventos(null);
         }
 
+        /// <summary>
+        /// Método público para refresco forzado desde otras ventanas - IMPLEMENTACIÓN CENTRALIZADA
+        /// </summary>
+        public void RefrescarVistaDesdeCompra()
+        {
+            RefrescarDatosEventos();
+        }
+
         private void cmbTipoEvento_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -578,9 +641,11 @@ namespace SistemaDeTickets.Vista
         /// </summary>
         private void VistaEvento_Activated(object sender, EventArgs e)
         {
-            Console.WriteLine("[DEBUG VistaEvento] Form Activated - Refrescando datos");
             // REFRESCO FORZADO: Cada vez que la ventana vuelve a tener foco
             RefrescarEventosDesdeJson();
+
+            // Actualizar visibilidad de botones según estado de sesión
+            ConfigurarVisibilidadBotonCerrarSesion();
         }
 
         /// <summary>
@@ -588,30 +653,19 @@ namespace SistemaDeTickets.Vista
         /// </summary>
         private void VistaEvento_Shown(object sender, EventArgs e)
         {
-            Console.WriteLine("[DEBUG VistaEvento] Form Shown - Refrescando datos adicionales");
             // REFRESCO ADICIONAL: Cuando la ventana se muestra completamente
             RefrescarEventosDesdeJson();
         }
 
         /// <summary>
-        /// Método para refrescar eventos desde JSON de forma forzada - IMPLEMENTACIÓN ROBUSTA
+        /// Método centralizado para refrescar eventos desde JSON - SIEMPRE LEE DEL ARCHIVO
         /// </summary>
-        private void RefrescarEventosDesdeJson()
+        public void RefrescarDatosEventos()
         {
             try
             {
-                Console.WriteLine("[DEBUG VistaEvento] Refrescando eventos desde JSON...");
-
                 // PASO 1: LEER SIEMPRE DEL JSON FRESCO (fuente real de verdad)
                 var eventos = GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
-
-                Console.WriteLine($"[DEBUG VistaEvento] Eventos cargados: {eventos.Count}");
-
-                // Mostrar stock de cada evento para debug
-                foreach (var evento in eventos)
-                {
-                    Console.WriteLine($"[DEBUG VistaEvento] Evento {evento.Id} ({evento.Nombre}): {evento.TiquetesDisponibles} tickets");
-                }
 
                 // PASO 2: MARCAR EVENTOS AGOTADOS (lógica de negocio)
                 foreach (var evento in eventos)
@@ -640,36 +694,60 @@ namespace SistemaDeTickets.Vista
 
                 // PASO 6: RECARGAR FILTROS SOBRE DATOS FRESCOS
                 CargarFiltros();
-
-                Console.WriteLine("[DEBUG VistaEvento] Refresco completado exitosamente");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"[DEBUG VistaEvento] Error al refrescar: {ex.Message}");
                 MessageBox.Show($"Error al refrescar eventos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         /// <summary>
-        /// Formateo visual de celdas para mostrar "AGOTADO" en eventos sin stock - IMPLEMENTACIÓN ROBUSTA
+        /// Método auxiliar para mantener compatibilidad
+        /// </summary>
+        private void RefrescarEventosDesdeJson()
+        {
+            RefrescarDatosEventos();
+        }
+
+        /// <summary>
+        /// Formateo visual de celdas para mostrar "AGOTADO" en eventos sin stock y alertas de stock bajo - IMPLEMENTACIÓN ROBUSTA
         /// </summary>
         private void DgvEventos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             // Verificar que estamos en la columna correcta y el valor es numérico
             if (dgvEventos.Columns[e.ColumnIndex].Name == "TiquetesDisponibles" &&
-                e.Value is int valor &&
-                valor == 0)
+                e.Value is int valor)
             {
-                // MOSTRAR "AGOTADO" TEXTUALMENTE EN LUGAR DEL NÚMERO
-                e.Value = "AGOTADO";
+                if (valor == 0)
+                {
+                    // MOSTRAR "AGOTADO" TEXTUALMENTE EN LUGAR DEL NÚMERO
+                    e.Value = "AGOTADO";
 
-                // FORMATEO VISUAL PARA DESTACAR EVENTOS AGOTADOS
-                e.CellStyle.ForeColor = Color.Red;
-                e.CellStyle.Font = new Font(e.CellStyle.Font, FontStyle.Bold);
-                e.CellStyle.BackColor = Color.LightGray;
+                    // FORMATEO VISUAL PARA DESTACAR EVENTOS AGOTADOS
+                    e.CellStyle.ForeColor = Color.Red;
+                    e.CellStyle.Font = new Font(e.CellStyle.Font, FontStyle.Bold);
+                    e.CellStyle.BackColor = Color.LightGray;
 
-                // OPCIONAL: Cambiar alineación para mejor legibilidad
-                e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    // OPCIONAL: Cambiar alineación para mejor legibilidad
+                    e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+                else if (valor <= 10)
+                {
+                    // ALERTA VISUAL PARA STOCK BAJO (≤ 10 tickets)
+                    e.CellStyle.ForeColor = Color.OrangeRed;
+                    e.CellStyle.Font = new Font(e.CellStyle.Font, FontStyle.Bold);
+                    e.CellStyle.BackColor = Color.LightYellow;
+
+                    // Agregar indicador visual de alerta
+                    e.Value = $"{valor} ⚠";
+                }
+                else if (valor <= 25)
+                {
+                    // ADVERTENCIA PARA STOCK MODERADO (11-25 tickets)
+                    e.CellStyle.ForeColor = Color.DarkOrange;
+                    e.CellStyle.Font = new Font(e.CellStyle.Font, FontStyle.Regular);
+                    e.CellStyle.BackColor = Color.LightGoldenrodYellow;
+                }
             }
         }
     }

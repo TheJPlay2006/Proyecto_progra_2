@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using SistemaDeTickets.Modelo;
 using SistemaDeTickets.Controlador;
 using SistemaDeTickets.Services;
+using SistemaDeTickets.Utils;
 
 namespace SistemaDeTickets.Vista
 {
@@ -31,8 +32,31 @@ namespace SistemaDeTickets.Vista
             _usuarioId = usuarioId;
             _eventoId = eventoId;
 
-            CargarDatos();
+            // REFRESCAR DATOS FRESCOS DESDE JSON
+            RefrescarDatosEvento();
             ConfigurarControles();
+
+            // Configurar eventos para refresco automático
+            this.Activated += VistaDetalleEvento_Activated;
+            this.Shown += VistaDetalleEvento_Shown;
+        }
+
+        /// <summary>
+        /// Evento que se dispara cuando la ventana recibe el foco - refresca datos
+        /// </summary>
+        private void VistaDetalleEvento_Activated(object sender, EventArgs e)
+        {
+            // REFRESCO FORZADO: Cada vez que la ventana vuelve a tener foco
+            RefrescarDatosEvento();
+        }
+
+        /// <summary>
+        /// Evento adicional para refresco cuando la ventana se muestra
+        /// </summary>
+        private void VistaDetalleEvento_Shown(object sender, EventArgs e)
+        {
+            // REFRESCO ADICIONAL: Cuando la ventana se muestra completamente
+            RefrescarDatosEvento();
         }
 
         private void ConfigurarControles()
@@ -79,12 +103,16 @@ namespace SistemaDeTickets.Vista
             }
         }
 
-        private void CargarDatos()
+        /// <summary>
+        /// Método centralizado para refrescar datos del evento desde JSON
+        /// </summary>
+        public void RefrescarDatosEvento()
         {
             try
             {
-                var repoEventos = new RepositorioEventos();
-                _evento = repoEventos.BuscarPorId(_eventoId);
+                // SIEMPRE leer directamente del JSON para datos frescos
+                var eventos = SistemaDeTickets.Utils.GestorJSON.LeerArchivo<List<Modelo.Evento>>("Data/MisEventos.json") ?? new List<Modelo.Evento>();
+                _evento = eventos.FirstOrDefault(e => e.Id == _eventoId);
 
                 if (_evento != null)
                 {
@@ -131,6 +159,11 @@ namespace SistemaDeTickets.Vista
                 MessageBox.Show($"Error al cargar datos del evento: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
             }
+        }
+
+        private void CargarDatos()
+        {
+            RefrescarDatosEvento();
         }
 
         private void btnComprar_Click(object sender, EventArgs e)
@@ -188,6 +221,9 @@ namespace SistemaDeTickets.Vista
                 var compraForm = new VistaCompra(detalleCompra);
                 compraForm.StartPosition = FormStartPosition.CenterScreen;
                 compraForm.ShowDialog();
+
+                // REFRESCAR DATOS DESPUÉS DE LA COMPRA - Leer JSON fresco
+                RefrescarDatosEvento();
 
                 // Mostrar este formulario nuevamente cuando se cierre compra
                 if (!this.IsDisposed)

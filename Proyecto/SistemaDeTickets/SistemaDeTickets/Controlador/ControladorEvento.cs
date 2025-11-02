@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using SistemaDeTickets.Modelo;
+using SistemaDeTickets.Controlador.Patrones;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -133,7 +134,7 @@ namespace SistemaDeTickets.Controlador
         }
 
         // Crear un nuevo evento (para el administrador)
-        
+
         public void CrearEvento(Modelo.Evento nuevoEvento)
         {
             // Busca el ID más alto y le suma uno al nuevo evento
@@ -145,6 +146,10 @@ namespace SistemaDeTickets.Controlador
 
             // Guarda los cambios en el archivo
             GuardarEventos();
+
+            // Notificar nuevo evento
+            var gestorEventos = new GestorEventos();
+            gestorEventos.NotificarNuevoEvento(nuevoEvento);
         }
 
         

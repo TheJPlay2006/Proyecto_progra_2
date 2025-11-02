@@ -137,7 +137,7 @@ namespace SistemaDeTickets.Vista
             }
             catch (Exception ex)
             {
-                // Error silencioso - el controlador maneja los errores
+                // Error silencioso - el controlador maneja los errores, variable ex no utilizada
             }
         }
 

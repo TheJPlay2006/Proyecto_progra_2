@@ -1,27 +1,37 @@
 ﻿using SistemaDeTickets.Modelo;
+using SistemaDeTickets.Utils;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SistemaDeTickets.Controlador
 {
     public class GestorInventario
     {
         private readonly object _bloqueo = new object();
-        private readonly Dictionary<int, Inventario> _inventarios;
 
         public GestorInventario()
         {
-            _inventarios = new Dictionary<int, Inventario>();
+            // Constructor vacío - ahora lee directamente del JSON
         }
 
         public bool BloquearInventario(int eventoId, int cantidad)
         {
             lock (_bloqueo)
             {
-                if (_inventarios.ContainsKey(eventoId) && _inventarios[eventoId].VerificarDisponibilidad(cantidad))
+                // SIEMPRE leer del JSON para obtener datos frescos
+                var eventos = GestorJSON.LeerArchivo<List<SistemaDeTickets.Modelo.Evento>>("Data/MisEventos.json") ?? new List<SistemaDeTickets.Modelo.Evento>();
+                var evento = eventos.FirstOrDefault(e => e.Id == eventoId);
+
+                if (evento != null && evento.TiquetesDisponibles >= cantidad)
                 {
-                    _inventarios[eventoId].ReservarTiques(cantidad);
+                    // Descontar stock directamente en el JSON
+                    evento.TiquetesDisponibles -= cantidad;
+                    GestorJSON.EscribirAtomico("Data/MisEventos.json", eventos);
+
                     return true;
                 }
+
                 return false;
             }
         }
@@ -33,11 +43,17 @@ namespace SistemaDeTickets.Controlador
 
         public void LiberarBloqueo(int eventoId)
         {
+            // Método obsoleto - el bloqueo se maneja automáticamente
         }
 
         public int ObtenerDisponibilidad(int eventoId)
         {
-            return _inventarios.ContainsKey(eventoId) ? _inventarios[eventoId].TiquesDisponibles : 0;
+            // SIEMPRE leer del JSON para obtener datos frescos
+            var eventos = GestorJSON.LeerArchivo<List<SistemaDeTickets.Modelo.Evento>>("Data/MisEventos.json") ?? new List<SistemaDeTickets.Modelo.Evento>();
+            var evento = eventos.FirstOrDefault(e => e.Id == eventoId);
+
+            int disponibilidad = evento?.TiquetesDisponibles ?? 0;
+            return disponibilidad;
         }
     }
 }

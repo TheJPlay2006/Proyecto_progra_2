@@ -324,6 +324,19 @@
     <Content Include="Images\Fondo_Pop-Conciertos_Primario_1E1F3B_3840x2160.png" />
     <Content Include="Images\Fondo_Pop-Conciertos_Secundario_FF385C_3840x2160.png" />
     <Content Include="Images\Fondo_Pop-Conciertos_Texto_111318_3840x2160.png" />
+    <Content Include="Images\marfil_luz_1920x1080_sombra_esquina.jpg" />
+    <Content Include="Images\marfil_luz_1920x1080_sombra_inferior.jpg" />
+    <Content Include="Images\marfil_luz_1920x1080_vineta_suave.jpg" />
+    <Content Include="Images\naranja_calido_1920x1080_sombra_esquina.jpg" />
+    <Content Include="Images\naranja_calido_1920x1080_sombra_inferior.jpg" />
+    <Content Include="Images\naranja_calido_1920x1080_vineta_suave.jpg" />
+    <Content Include="Images\negro_profundo_1920x1080_sombra_esquina.jpg" />
+    <Content Include="Images\negro_profundo_1920x1080_sombra_inferior.jpg" />
+    <Content Include="Images\negro_profundo_1920x1080_vineta_suave.jpg" />
+    <Content Include="Images\rojo_escena_1920x1080_sombra_esquina.jpg" />
+    <Content Include="Images\rojo_escena_1920x1080_sombra_inferior.jpg" />
+    <Content Include="Images\rojo_escena_1920x1080_vineta_suave.jpg" />
+    <None Include="Resources\rojo_escena_1920x1080_banda_lateral.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
