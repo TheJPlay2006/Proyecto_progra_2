@@ -135,9 +135,9 @@ namespace SistemaDeTickets.Vista
                 {
                     // Si es ADMIN → abrir formulario de cambios de eventos
                     this.Hide();
-                    var cambios = new VistaCambiosEventos();
-                    cambios.StartPosition = FormStartPosition.CenterScreen;
-                    cambios.ShowDialog();
+                    var gestion = new VistaGestionEventos();
+                    gestion.StartPosition = FormStartPosition.CenterScreen;
+                    gestion.ShowDialog();
                     this.Close(); // Cerrar login después de gestión
                 }
                 else // RolUsuario.Usuario

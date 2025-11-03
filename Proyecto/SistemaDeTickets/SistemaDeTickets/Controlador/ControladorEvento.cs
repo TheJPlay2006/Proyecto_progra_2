@@ -169,6 +169,7 @@ namespace SistemaDeTickets.Controlador
                 e.Tipo = eventoEditado.Tipo;
                 e.TiquetesDisponibles = eventoEditado.TiquetesDisponibles;
                 e.Descripcion = eventoEditado.Descripcion;
+                e.Precio = eventoEditado.Precio;
 
                 // Guarda la lista actualizada
                 GuardarEventos();
