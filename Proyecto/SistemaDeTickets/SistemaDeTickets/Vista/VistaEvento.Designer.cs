@@ -152,7 +152,7 @@
             this.btnSalir.BackColor = System.Drawing.Color.Snow;
             this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(1044, 512);
+            this.btnSalir.Location = new System.Drawing.Point(1026, 488);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(76, 30);
@@ -168,7 +168,7 @@
             "",
             "Estadio Nacional",
             "Teatro Melico Salazar"});
-            this.cmbRecinto.Location = new System.Drawing.Point(191, 443);
+            this.cmbRecinto.Location = new System.Drawing.Point(163, 194);
             this.cmbRecinto.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRecinto.Name = "cmbRecinto";
             this.cmbRecinto.Size = new System.Drawing.Size(119, 21);
@@ -181,7 +181,7 @@
             "",
             "Concierto de Rock Nacional",
             "Obra de Teatro: Hamlet"});
-            this.cmbTipoEvento.Location = new System.Drawing.Point(191, 370);
+            this.cmbTipoEvento.Location = new System.Drawing.Point(163, 145);
             this.cmbTipoEvento.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTipoEvento.Name = "cmbTipoEvento";
             this.cmbTipoEvento.Size = new System.Drawing.Size(119, 21);
@@ -197,7 +197,7 @@
             "10-11-2025",
             "11-11-2025",
             "12-11-2025"});
-            this.cmbBuscarFecha.Location = new System.Drawing.Point(191, 292);
+            this.cmbBuscarFecha.Location = new System.Drawing.Point(163, 86);
             this.cmbBuscarFecha.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBuscarFecha.Name = "cmbBuscarFecha";
             this.cmbBuscarFecha.Size = new System.Drawing.Size(119, 22);
@@ -207,7 +207,7 @@
             // 
             this.lblRecinto.AutoSize = true;
             this.lblRecinto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecinto.Location = new System.Drawing.Point(21, 446);
+            this.lblRecinto.Location = new System.Drawing.Point(21, 192);
             this.lblRecinto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRecinto.Name = "lblRecinto";
             this.lblRecinto.Size = new System.Drawing.Size(62, 21);
@@ -218,7 +218,7 @@
             // 
             this.lblTipoEvento.AutoSize = true;
             this.lblTipoEvento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoEvento.Location = new System.Drawing.Point(21, 370);
+            this.lblTipoEvento.Location = new System.Drawing.Point(21, 142);
             this.lblTipoEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoEvento.Name = "lblTipoEvento";
             this.lblTipoEvento.Size = new System.Drawing.Size(112, 21);
@@ -229,7 +229,7 @@
             // 
             this.lblBuscarFecha.AutoSize = true;
             this.lblBuscarFecha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscarFecha.Location = new System.Drawing.Point(21, 293);
+            this.lblBuscarFecha.Location = new System.Drawing.Point(21, 87);
             this.lblBuscarFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBuscarFecha.Name = "lblBuscarFecha";
             this.lblBuscarFecha.Size = new System.Drawing.Size(128, 21);
@@ -240,7 +240,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 30);
+            this.label1.Location = new System.Drawing.Point(372, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 33);
@@ -253,13 +253,13 @@
             this.dgvEventos.AllowUserToDeleteRows = false;
             this.dgvEventos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvEventos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEventos.Location = new System.Drawing.Point(325, 234);
+            this.dgvEventos.Location = new System.Drawing.Point(61, 256);
             this.dgvEventos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvEventos.Name = "dgvEventos";
             this.dgvEventos.ReadOnly = true;
             this.dgvEventos.RowHeadersWidth = 51;
             this.dgvEventos.RowTemplate.Height = 24;
-            this.dgvEventos.Size = new System.Drawing.Size(795, 262);
+            this.dgvEventos.Size = new System.Drawing.Size(882, 262);
             this.dgvEventos.TabIndex = 25;
             // 
             // btnVerHistorial
