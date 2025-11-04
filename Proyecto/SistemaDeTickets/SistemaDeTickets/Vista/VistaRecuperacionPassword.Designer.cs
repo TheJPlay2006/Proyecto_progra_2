@@ -48,10 +48,10 @@ namespace SistemaDeTickets.Vista
             // btnRecuperar
             // 
             this.btnRecuperar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecuperar.Location = new System.Drawing.Point(662, 163);
-            this.btnRecuperar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRecuperar.Location = new System.Drawing.Point(883, 201);
+            this.btnRecuperar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRecuperar.Name = "btnRecuperar";
-            this.btnRecuperar.Size = new System.Drawing.Size(177, 27);
+            this.btnRecuperar.Size = new System.Drawing.Size(236, 33);
             this.btnRecuperar.TabIndex = 0;
             this.btnRecuperar.Text = "Recuperar ";
             this.btnRecuperar.UseVisualStyleBackColor = true;
@@ -59,28 +59,28 @@ namespace SistemaDeTickets.Vista
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(124, 125);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Location = new System.Drawing.Point(165, 154);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(462, 21);
+            this.txtEmail.Size = new System.Drawing.Size(615, 24);
             this.txtEmail.TabIndex = 1;
             // 
             // txtToken
             // 
             this.txtToken.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtToken.Location = new System.Drawing.Point(124, 183);
-            this.txtToken.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtToken.Location = new System.Drawing.Point(165, 225);
+            this.txtToken.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtToken.Name = "txtToken";
-            this.txtToken.Size = new System.Drawing.Size(462, 21);
+            this.txtToken.Size = new System.Drawing.Size(615, 24);
             this.txtToken.TabIndex = 2;
             // 
             // txtNuevoPassword
             // 
             this.txtNuevoPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNuevoPassword.Location = new System.Drawing.Point(124, 244);
-            this.txtNuevoPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNuevoPassword.Location = new System.Drawing.Point(165, 300);
+            this.txtNuevoPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNuevoPassword.Name = "txtNuevoPassword";
-            this.txtNuevoPassword.Size = new System.Drawing.Size(462, 21);
+            this.txtNuevoPassword.Size = new System.Drawing.Size(615, 24);
             this.txtNuevoPassword.TabIndex = 3;
             // 
             // lblEmail
@@ -88,10 +88,9 @@ namespace SistemaDeTickets.Vista
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(122, 83);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Location = new System.Drawing.Point(163, 102);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(178, 25);
+            this.lblEmail.Size = new System.Drawing.Size(223, 32);
             this.lblEmail.TabIndex = 4;
             this.lblEmail.Text = "Correo electrónico: ";
             this.lblEmail.Click += new System.EventHandler(this.lblEmail_Click);
@@ -101,10 +100,9 @@ namespace SistemaDeTickets.Vista
             this.lblToken.AutoSize = true;
             this.lblToken.BackColor = System.Drawing.Color.Transparent;
             this.lblToken.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblToken.Location = new System.Drawing.Point(122, 148);
-            this.lblToken.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblToken.Location = new System.Drawing.Point(163, 182);
             this.lblToken.Name = "lblToken";
-            this.lblToken.Size = new System.Drawing.Size(155, 25);
+            this.lblToken.Size = new System.Drawing.Size(198, 32);
             this.lblToken.TabIndex = 5;
             this.lblToken.Text = "Ingrese el token: ";
             this.lblToken.Visible = false;
@@ -115,20 +113,19 @@ namespace SistemaDeTickets.Vista
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(124, 218);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(165, 268);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 25);
+            this.label3.Size = new System.Drawing.Size(218, 32);
             this.label3.TabIndex = 6;
             this.label3.Text = "Nueva contraseña: ";
             // 
             // btnEnviarToken
             // 
             this.btnEnviarToken.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviarToken.Location = new System.Drawing.Point(662, 83);
-            this.btnEnviarToken.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnviarToken.Location = new System.Drawing.Point(883, 102);
+            this.btnEnviarToken.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEnviarToken.Name = "btnEnviarToken";
-            this.btnEnviarToken.Size = new System.Drawing.Size(177, 34);
+            this.btnEnviarToken.Size = new System.Drawing.Size(236, 42);
             this.btnEnviarToken.TabIndex = 7;
             this.btnEnviarToken.Text = "Enviar token";
             this.btnEnviarToken.UseVisualStyleBackColor = true;
@@ -136,19 +133,22 @@ namespace SistemaDeTickets.Vista
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(298, 29);
+            this.label1.Location = new System.Drawing.Point(441, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 33);
+            this.label1.Size = new System.Drawing.Size(339, 41);
             this.label1.TabIndex = 8;
             this.label1.Text = "Recuperación de contraseña";
             // 
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(346, 303);
+            this.btnCancelar.Location = new System.Drawing.Point(461, 373);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(146, 31);
+            this.btnCancelar.Size = new System.Drawing.Size(195, 38);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -156,9 +156,10 @@ namespace SistemaDeTickets.Vista
             // btnCambiarContrasena
             // 
             this.btnCambiarContrasena.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCambiarContrasena.Location = new System.Drawing.Point(662, 238);
+            this.btnCambiarContrasena.Location = new System.Drawing.Point(883, 293);
+            this.btnCambiarContrasena.Margin = new System.Windows.Forms.Padding(4);
             this.btnCambiarContrasena.Name = "btnCambiarContrasena";
-            this.btnCambiarContrasena.Size = new System.Drawing.Size(177, 30);
+            this.btnCambiarContrasena.Size = new System.Drawing.Size(236, 37);
             this.btnCambiarContrasena.TabIndex = 10;
             this.btnCambiarContrasena.Text = "Cambiar contraseña";
             this.btnCambiarContrasena.UseVisualStyleBackColor = true;
@@ -166,9 +167,10 @@ namespace SistemaDeTickets.Vista
             // 
             // btnOcultarVerContra
             // 
-            this.btnOcultarVerContra.Location = new System.Drawing.Point(592, 242);
+            this.btnOcultarVerContra.Location = new System.Drawing.Point(789, 298);
+            this.btnOcultarVerContra.Margin = new System.Windows.Forms.Padding(4);
             this.btnOcultarVerContra.Name = "btnOcultarVerContra";
-            this.btnOcultarVerContra.Size = new System.Drawing.Size(38, 23);
+            this.btnOcultarVerContra.Size = new System.Drawing.Size(51, 28);
             this.btnOcultarVerContra.TabIndex = 11;
             this.btnOcultarVerContra.Text = "👁";
             this.btnOcultarVerContra.UseVisualStyleBackColor = true;
@@ -176,10 +178,11 @@ namespace SistemaDeTickets.Vista
             // 
             // VistaRecuperacionPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(904, 370);
+            this.ClientSize = new System.Drawing.Size(1205, 455);
             this.Controls.Add(this.btnOcultarVerContra);
             this.Controls.Add(this.btnCambiarContrasena);
             this.Controls.Add(this.btnCancelar);
@@ -193,7 +196,7 @@ namespace SistemaDeTickets.Vista
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnRecuperar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VistaRecuperacionPassword";
             this.Text = "VistaRecuperacionPassword";
             this.ResumeLayout(false);

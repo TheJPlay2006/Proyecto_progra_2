@@ -39,21 +39,21 @@
             // dataGridViewCompras
             // 
             this.dataGridViewCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCompras.Location = new System.Drawing.Point(9, 11);
-            this.dataGridViewCompras.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewCompras.Location = new System.Drawing.Point(12, 14);
+            this.dataGridViewCompras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewCompras.Name = "dataGridViewCompras";
             this.dataGridViewCompras.RowHeadersWidth = 51;
             this.dataGridViewCompras.RowTemplate.Height = 24;
-            this.dataGridViewCompras.Size = new System.Drawing.Size(806, 359);
+            this.dataGridViewCompras.Size = new System.Drawing.Size(1075, 442);
             this.dataGridViewCompras.TabIndex = 0;
             // 
             // btnDescargarRecibo
             // 
             this.btnDescargarRecibo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescargarRecibo.Location = new System.Drawing.Point(70, 399);
-            this.btnDescargarRecibo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDescargarRecibo.Location = new System.Drawing.Point(93, 491);
+            this.btnDescargarRecibo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDescargarRecibo.Name = "btnDescargarRecibo";
-            this.btnDescargarRecibo.Size = new System.Drawing.Size(158, 37);
+            this.btnDescargarRecibo.Size = new System.Drawing.Size(211, 46);
             this.btnDescargarRecibo.TabIndex = 1;
             this.btnDescargarRecibo.Text = "Descargar recibo";
             this.btnDescargarRecibo.UseVisualStyleBackColor = true;
@@ -62,10 +62,10 @@
             // btnFiltrar
             // 
             this.btnFiltrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(334, 399);
-            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFiltrar.Location = new System.Drawing.Point(445, 491);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(158, 37);
+            this.btnFiltrar.Size = new System.Drawing.Size(211, 46);
             this.btnFiltrar.TabIndex = 2;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
@@ -74,10 +74,10 @@
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(600, 399);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVolver.Location = new System.Drawing.Point(800, 491);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(158, 37);
+            this.btnVolver.Size = new System.Drawing.Size(211, 46);
             this.btnVolver.TabIndex = 3;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
@@ -85,16 +85,17 @@
             // 
             // VistaHistorial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SandyBrown;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(826, 472);
+            this.ClientSize = new System.Drawing.Size(1101, 581);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.btnDescargarRecibo);
             this.Controls.Add(this.dataGridViewCompras);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VistaHistorial";
             this.Text = "VistaHistorial";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompras)).EndInit();

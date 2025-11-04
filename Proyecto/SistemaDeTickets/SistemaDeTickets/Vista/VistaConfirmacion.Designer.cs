@@ -40,35 +40,39 @@
             // lblMensajeExito
             // 
             this.lblMensajeExito.AutoSize = true;
+            this.lblMensajeExito.BackColor = System.Drawing.Color.Transparent;
             this.lblMensajeExito.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensajeExito.Location = new System.Drawing.Point(59, 86);
             this.lblMensajeExito.Name = "lblMensajeExito";
-            this.lblMensajeExito.Size = new System.Drawing.Size(105, 21);
+            this.lblMensajeExito.Size = new System.Drawing.Size(132, 28);
             this.lblMensajeExito.TabIndex = 0;
             this.lblMensajeExito.Text = "Mensaje exito";
             // 
             // lblCodigoCompra
             // 
             this.lblCodigoCompra.AutoSize = true;
+            this.lblCodigoCompra.BackColor = System.Drawing.Color.Transparent;
             this.lblCodigoCompra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigoCompra.Location = new System.Drawing.Point(338, 86);
             this.lblCodigoCompra.Name = "lblCodigoCompra";
-            this.lblCodigoCompra.Size = new System.Drawing.Size(117, 21);
+            this.lblCodigoCompra.Size = new System.Drawing.Size(149, 28);
             this.lblCodigoCompra.TabIndex = 1;
             this.lblCodigoCompra.Text = "Codigo compra";
             // 
             // lblDetallesCompra
             // 
             this.lblDetallesCompra.AutoSize = true;
+            this.lblDetallesCompra.BackColor = System.Drawing.Color.Transparent;
             this.lblDetallesCompra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDetallesCompra.Location = new System.Drawing.Point(605, 86);
             this.lblDetallesCompra.Name = "lblDetallesCompra";
-            this.lblDetallesCompra.Size = new System.Drawing.Size(122, 21);
+            this.lblDetallesCompra.Size = new System.Drawing.Size(153, 28);
             this.lblDetallesCompra.TabIndex = 2;
             this.lblDetallesCompra.Text = "Detalles compra";
             // 
             // btnDescargarRecibo
             // 
+            this.btnDescargarRecibo.BackColor = System.Drawing.Color.Transparent;
             this.btnDescargarRecibo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDescargarRecibo.Location = new System.Drawing.Point(63, 292);
             this.btnDescargarRecibo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -76,7 +80,7 @@
             this.btnDescargarRecibo.Size = new System.Drawing.Size(153, 39);
             this.btnDescargarRecibo.TabIndex = 3;
             this.btnDescargarRecibo.Text = "Descargar recibo";
-            this.btnDescargarRecibo.UseVisualStyleBackColor = true;
+            this.btnDescargarRecibo.UseVisualStyleBackColor = false;
             // 
             // btnVolver
             // 
@@ -101,7 +105,7 @@
             // 
             // VistaConfirmacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(791, 374);

@@ -52,15 +52,15 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(274, 120);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Location = new System.Drawing.Point(365, 148);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(238, 22);
+            this.txtNombre.Size = new System.Drawing.Size(316, 26);
             this.txtNombre.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.lblTitulo);
             this.panel1.Controls.Add(this.lblConfirmarPassword);
@@ -78,10 +78,10 @@
             this.panel1.Controls.Add(this.lblFortalezaContrasena);
             this.panel1.Controls.Add(this.lblFortalezaConfirmarContrasena);
             this.panel1.Controls.Add(this.btnOcultarVerContra);
-            this.panel1.Location = new System.Drawing.Point(-3, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(-4, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(676, 462);
+            this.panel1.Size = new System.Drawing.Size(901, 569);
             this.panel1.TabIndex = 1;
             // 
             // lblTitulo
@@ -89,10 +89,9 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(416, 27);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(555, 33);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(179, 33);
+            this.lblTitulo.Size = new System.Drawing.Size(228, 41);
             this.lblTitulo.TabIndex = 10;
             this.lblTitulo.Text = "Registro ticketera ";
             this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
@@ -100,33 +99,33 @@
             // lblConfirmarPassword
             // 
             this.lblConfirmarPassword.AutoSize = true;
+            this.lblConfirmarPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblConfirmarPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmarPassword.Location = new System.Drawing.Point(70, 285);
-            this.lblConfirmarPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblConfirmarPassword.Location = new System.Drawing.Point(93, 351);
             this.lblConfirmarPassword.Name = "lblConfirmarPassword";
-            this.lblConfirmarPassword.Size = new System.Drawing.Size(199, 25);
+            this.lblConfirmarPassword.Size = new System.Drawing.Size(248, 32);
             this.lblConfirmarPassword.TabIndex = 9;
             this.lblConfirmarPassword.Text = "Confirmar contraseña:";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(70, 234);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPassword.Location = new System.Drawing.Point(93, 288);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(117, 25);
+            this.lblPassword.Size = new System.Drawing.Size(146, 32);
             this.lblPassword.TabIndex = 8;
             this.lblPassword.Text = "Contraseña: ";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(70, 172);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Location = new System.Drawing.Point(93, 212);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(67, 25);
+            this.lblEmail.Size = new System.Drawing.Size(83, 32);
             this.lblEmail.TabIndex = 7;
             this.lblEmail.Text = "Email: ";
             // 
@@ -134,21 +133,21 @@
             // 
             this.lblNombre.AccessibleName = "";
             this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(70, 117);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre.Location = new System.Drawing.Point(93, 144);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(85, 25);
+            this.lblNombre.Size = new System.Drawing.Size(107, 32);
             this.lblNombre.TabIndex = 6;
             this.lblNombre.Text = "Nombre:";
             // 
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(390, 377);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVolver.Location = new System.Drawing.Point(520, 464);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(130, 37);
+            this.btnVolver.Size = new System.Drawing.Size(173, 46);
             this.btnVolver.TabIndex = 5;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
@@ -157,10 +156,10 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(151, 376);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrar.Location = new System.Drawing.Point(204, 463);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(131, 37);
+            this.btnRegistrar.Size = new System.Drawing.Size(175, 46);
             this.btnRegistrar.TabIndex = 4;
             this.btnRegistrar.Text = "Registrarse";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -169,71 +168,76 @@
             // txtConfirmarPassword
             // 
             this.txtConfirmarPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmarPassword.Location = new System.Drawing.Point(274, 288);
-            this.txtConfirmarPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtConfirmarPassword.Location = new System.Drawing.Point(365, 354);
+            this.txtConfirmarPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConfirmarPassword.Name = "txtConfirmarPassword";
-            this.txtConfirmarPassword.Size = new System.Drawing.Size(238, 22);
+            this.txtConfirmarPassword.Size = new System.Drawing.Size(316, 26);
             this.txtConfirmarPassword.TabIndex = 3;
             this.txtConfirmarPassword.TextChanged += new System.EventHandler(this.txtConfirmarPassword_TextChanged);
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(274, 237);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Location = new System.Drawing.Point(365, 292);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(238, 22);
+            this.txtPassword.Size = new System.Drawing.Size(316, 26);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(274, 175);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Location = new System.Drawing.Point(365, 215);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(238, 22);
+            this.txtEmail.Size = new System.Drawing.Size(316, 26);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // progressBarContrasena
             // 
-            this.progressBarContrasena.Location = new System.Drawing.Point(274, 265);
+            this.progressBarContrasena.Location = new System.Drawing.Point(365, 326);
+            this.progressBarContrasena.Margin = new System.Windows.Forms.Padding(4);
             this.progressBarContrasena.Name = "progressBarContrasena";
-            this.progressBarContrasena.Size = new System.Drawing.Size(238, 10);
+            this.progressBarContrasena.Size = new System.Drawing.Size(317, 12);
             this.progressBarContrasena.TabIndex = 11;
             // 
             // progressBarConfirmarContrasena
             // 
-            this.progressBarConfirmarContrasena.Location = new System.Drawing.Point(274, 316);
+            this.progressBarConfirmarContrasena.Location = new System.Drawing.Point(365, 389);
+            this.progressBarConfirmarContrasena.Margin = new System.Windows.Forms.Padding(4);
             this.progressBarConfirmarContrasena.Name = "progressBarConfirmarContrasena";
-            this.progressBarConfirmarContrasena.Size = new System.Drawing.Size(238, 10);
+            this.progressBarConfirmarContrasena.Size = new System.Drawing.Size(317, 12);
             this.progressBarConfirmarContrasena.TabIndex = 12;
             // 
             // lblFortalezaContrasena
             // 
             this.lblFortalezaContrasena.AutoSize = true;
             this.lblFortalezaContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFortalezaContrasena.Location = new System.Drawing.Point(520, 265);
+            this.lblFortalezaContrasena.Location = new System.Drawing.Point(693, 326);
+            this.lblFortalezaContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFortalezaContrasena.Name = "lblFortalezaContrasena";
-            this.lblFortalezaContrasena.Size = new System.Drawing.Size(0, 13);
+            this.lblFortalezaContrasena.Size = new System.Drawing.Size(0, 17);
             this.lblFortalezaContrasena.TabIndex = 13;
             // 
             // lblFortalezaConfirmarContrasena
             // 
             this.lblFortalezaConfirmarContrasena.AutoSize = true;
             this.lblFortalezaConfirmarContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFortalezaConfirmarContrasena.Location = new System.Drawing.Point(520, 316);
+            this.lblFortalezaConfirmarContrasena.Location = new System.Drawing.Point(693, 389);
+            this.lblFortalezaConfirmarContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFortalezaConfirmarContrasena.Name = "lblFortalezaConfirmarContrasena";
-            this.lblFortalezaConfirmarContrasena.Size = new System.Drawing.Size(0, 13);
+            this.lblFortalezaConfirmarContrasena.Size = new System.Drawing.Size(0, 17);
             this.lblFortalezaConfirmarContrasena.TabIndex = 14;
             // 
             // btnOcultarVerContra
             // 
             this.btnOcultarVerContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOcultarVerContra.Location = new System.Drawing.Point(520, 237);
+            this.btnOcultarVerContra.Location = new System.Drawing.Point(693, 292);
+            this.btnOcultarVerContra.Margin = new System.Windows.Forms.Padding(4);
             this.btnOcultarVerContra.Name = "btnOcultarVerContra";
-            this.btnOcultarVerContra.Size = new System.Drawing.Size(30, 25);
+            this.btnOcultarVerContra.Size = new System.Drawing.Size(40, 31);
             this.btnOcultarVerContra.TabIndex = 15;
             this.btnOcultarVerContra.Text = "👁";
             this.btnOcultarVerContra.UseVisualStyleBackColor = true;
@@ -241,12 +245,12 @@
             // 
             // VistaRegistro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 447);
+            this.ClientSize = new System.Drawing.Size(883, 550);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VistaRegistro";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
