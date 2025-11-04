@@ -18,7 +18,7 @@
     "Tipo": "teatro",
     "Descripcion": "Clásica obra de Shakespeare.",
     "TiquetesDisponibles": 200,
-    "Precio": 8000.00,
+    "Precio": 8000.0,
     "Estado": 0
   },
   {
@@ -29,7 +29,7 @@
     "Tipo": "deportes",
     "Descripcion": "Amistoso internacional.",
     "TiquetesDisponibles": 1000,
-    "Precio": 25000.00,
+    "Precio": 25000.0,
     "Estado": 0
   },
   {
@@ -40,7 +40,7 @@
     "Tipo": "Festival",
     "Descripcion": "Tres días de jazz con artistas internacionales.",
     "TiquetesDisponibles": 300,
-    "Precio": 35000.00,
+    "Precio": 35000.0,
     "Estado": 0
   },
   {
@@ -51,7 +51,7 @@
     "Tipo": "Conferencia",
     "Descripcion": "Últimas tendencias en tecnología e innovación.",
     "TiquetesDisponibles": 150,
-    "Precio": 25000.00,
+    "Precio": 25000.0,
     "Estado": 0
   },
   {
@@ -61,8 +61,8 @@
     "Recinto": "Teatro Nacional",
     "Tipo": "Ballet",
     "Descripcion": "Presentación completa del ballet clásico de Tchaikovsky.",
-    "TiquetesDisponibles": 250,
-    "Precio": 18000.00,
+    "TiquetesDisponibles": 248,
+    "Precio": 18000.0,
     "Estado": 0
   },
   {
@@ -73,7 +73,7 @@
     "Tipo": "Concierto",
     "Descripcion": "Reunión especial de la legendaria banda costarricense.",
     "TiquetesDisponibles": 400,
-    "Precio": 30000.00,
+    "Precio": 30000.0,
     "Estado": 0
   },
   {
@@ -84,7 +84,7 @@
     "Tipo": "Feria",
     "Descripcion": "Tres días de literatura, autores y cultura.",
     "TiquetesDisponibles": 500,
-    "Precio": 15000.00,
+    "Precio": 15000.0,
     "Estado": 0
   },
   {
@@ -95,7 +95,7 @@
     "Tipo": "deportes",
     "Descripcion": "Clásico del básquetbol costarricense.",
     "TiquetesDisponibles": 800,
-    "Precio": 12000.00,
+    "Precio": 12000.0,
     "Estado": 0
   },
   {
@@ -106,7 +106,7 @@
     "Tipo": "Ópera",
     "Descripcion": "Producción completa de la ópera de Puccini.",
     "TiquetesDisponibles": 180,
-    "Precio": 45000.00,
+    "Precio": 45000.0,
     "Estado": 0
   },
   {
@@ -117,7 +117,7 @@
     "Tipo": "Festival",
     "Descripcion": "Selección de películas centroamericanas premiadas.",
     "TiquetesDisponibles": 200,
-    "Precio": 8000.00,
+    "Precio": 8000.0,
     "Estado": 0
   },
   {
@@ -128,7 +128,7 @@
     "Tipo": "Concierto",
     "Descripcion": "Especial navideño con la Orquesta Sinfónica Nacional.",
     "TiquetesDisponibles": 350,
-    "Precio": 22000.00,
+    "Precio": 22000.0,
     "Estado": 0
   },
   {
@@ -139,7 +139,7 @@
     "Tipo": "deportes",
     "Descripcion": "Torneo internacional de tenis ATP.",
     "TiquetesDisponibles": 600,
-    "Precio": 28000.00,
+    "Precio": 28000.0,
     "Estado": 0
   }
 ]

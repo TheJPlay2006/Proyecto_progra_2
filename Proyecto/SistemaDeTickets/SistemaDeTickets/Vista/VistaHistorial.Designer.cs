@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaHistorial));
             this.dataGridViewCompras = new System.Windows.Forms.DataGridView();
             this.btnDescargarRecibo = new System.Windows.Forms.Button();
-            this.btnFiltrar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompras)).BeginInit();
             this.SuspendLayout();
@@ -59,18 +58,6 @@
             this.btnDescargarRecibo.UseVisualStyleBackColor = true;
             this.btnDescargarRecibo.Click += new System.EventHandler(this.btnDescargarRecibo_Click);
             // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(445, 491);
-            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(211, 46);
-            this.btnFiltrar.TabIndex = 2;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
-            // 
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -91,7 +78,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1101, 581);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.btnDescargarRecibo);
             this.Controls.Add(this.dataGridViewCompras);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -107,7 +93,6 @@
 
         private System.Windows.Forms.DataGridView dataGridViewCompras;
         private System.Windows.Forms.Button btnDescargarRecibo;
-        private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.Button btnVolver;
     }
 }

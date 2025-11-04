@@ -609,5 +609,31 @@
     "MetodoPago": 0,
     "UltimosDigitosTarjeta": null,
     "Detalles": null
+  },
+  {
+    "Id": 48,
+    "UsuarioId": 6,
+    "EventoId": 1,
+    "Cantidad": 2,
+    "PrecioUnitario": 40000.0,
+    "PrecioTotal": 80000.0,
+    "FechaCompra": "2025-11-04T13:22:45.6989989-06:00",
+    "Estado": 2,
+    "MetodoPago": 0,
+    "UltimosDigitosTarjeta": null,
+    "Detalles": null
+  },
+  {
+    "Id": 49,
+    "UsuarioId": 6,
+    "EventoId": 6,
+    "Cantidad": 2,
+    "PrecioUnitario": 18000.0,
+    "PrecioTotal": 36000.0,
+    "FechaCompra": "2025-11-04T13:29:43.4976734-06:00",
+    "Estado": 2,
+    "MetodoPago": 0,
+    "UltimosDigitosTarjeta": null,
+    "Detalles": null
   }
 ]

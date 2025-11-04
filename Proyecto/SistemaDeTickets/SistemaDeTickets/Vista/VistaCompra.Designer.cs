@@ -190,7 +190,7 @@
             this.panelDetalles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDetalles.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDetalles.Location = new System.Drawing.Point(1084, 41);
-            this.panelDetalles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelDetalles.Margin = new System.Windows.Forms.Padding(4);
             this.panelDetalles.Name = "panelDetalles";
             this.panelDetalles.Size = new System.Drawing.Size(407, 359);
             this.panelDetalles.TabIndex = 14;
@@ -199,7 +199,7 @@
             // 
             this.numericUpDownCantidad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownCantidad.Location = new System.Drawing.Point(589, 44);
-            this.numericUpDownCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownCantidad.Name = "numericUpDownCantidad";
             this.numericUpDownCantidad.Size = new System.Drawing.Size(116, 34);
             this.numericUpDownCantidad.TabIndex = 15;
@@ -207,9 +207,9 @@
             // panelErrores
             // 
             this.panelErrores.Location = new System.Drawing.Point(39, 289);
-            this.panelErrores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelErrores.Margin = new System.Windows.Forms.Padding(4);
             this.panelErrores.Name = "panelErrores";
-            this.panelErrores.Size = new System.Drawing.Size(267, 123);
+            this.panelErrores.Size = new System.Drawing.Size(267, 242);
             this.panelErrores.TabIndex = 16;
             // 
             // VistaCompra
@@ -218,7 +218,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1544, 497);
+            this.ClientSize = new System.Drawing.Size(1544, 640);
             this.Controls.Add(this.panelErrores);
             this.Controls.Add(this.numericUpDownCantidad);
             this.Controls.Add(this.panelDetalles);

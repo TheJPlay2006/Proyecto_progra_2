@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\",
+  "WorkspaceRootPath": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\jh599\\onedrive\\documentos\\proyecto_progra_2\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\maire\\onedrive\\escritorio\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistaconfirmacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistaconfirmacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\maire\\onedrive\\escritorio\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\maire\\onedrive\\escritorio\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistahistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|c:\\users\\maire\\onedrive\\escritorio\\proyecto_progra_2\\proyecto\\sistemadetickets\\sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F7BCE54-0EA4-4530-8E07-6D765A859F81}|SistemaDeTickets\\SistemaDeTickets.csproj|solutionrelative:sistemadetickets\\vista\\vistarecuperacionpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +38,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VistaRecuperacionPassword.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
-              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
-              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "VistaConfirmacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaConfirmacion.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaConfirmacion.cs",
+              "ToolTip": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaConfirmacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaConfirmacion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T19:11:30.567Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-04T19:24:07.444Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VistaCompra.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCompra.cs",
+              "DocumentIndex": 2,
+              "Title": "VistaHistorial.cs",
+              "DocumentMoniker": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaHistorial.cs",
+              "ToolTip": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaHistorial.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAtwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:18:29.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VistaHistorial.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaHistorial.cs",
+              "ToolTip": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaHistorial.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaHistorial.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:18:12.088Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VistaRecuperacionPassword.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
+              "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs",
+              "ToolTip": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaRecuperacionPassword.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:11:30.567Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VistaCompra.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCompra.cs",
               "RelativeDocumentMoniker": "SistemaDeTickets\\Vista\\VistaCompra.cs",
-              "ToolTip": "C:\\Users\\jh599\\OneDrive\\Documentos\\Proyecto_progra_2\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCompra.cs [Design]",
-              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaCompra.cs [Design]",
+              "ToolTip": "C:\\Users\\maire\\OneDrive\\Escritorio\\Proyecto_progra_2\\Proyecto\\SistemaDeTickets\\SistemaDeTickets\\Vista\\VistaCompra.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaDeTickets\\Vista\\VistaCompra.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T19:10:41.589Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

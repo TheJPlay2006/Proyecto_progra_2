@@ -104,9 +104,6 @@ namespace SistemaDeTickets.Vista
             if (btnDescargarRecibo != null)
                 btnDescargarRecibo.Click += btnDescargarRecibo_Click;
 
-            if (btnFiltrar != null)
-                btnFiltrar.Click += btnFiltrar_Click;
-
             if (btnVolver != null)
                 btnVolver.Click += btnVolver_Click;
         }

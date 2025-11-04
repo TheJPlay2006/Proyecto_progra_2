@@ -85,7 +85,7 @@
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(574, 292);
+            this.btnVolver.Location = new System.Drawing.Point(605, 292);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(153, 39);
@@ -108,7 +108,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(791, 374);
+            this.ClientSize = new System.Drawing.Size(1180, 374);
             this.Controls.Add(this.btnRealizarOtraCompra);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnDescargarRecibo);
