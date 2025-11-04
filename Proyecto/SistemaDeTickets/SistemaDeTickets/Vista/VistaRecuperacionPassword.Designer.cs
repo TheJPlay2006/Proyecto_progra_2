@@ -59,28 +59,28 @@ namespace SistemaDeTickets.Vista
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(165, 154);
+            this.txtEmail.Location = new System.Drawing.Point(94, 154);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(615, 24);
+            this.txtEmail.Size = new System.Drawing.Size(686, 24);
             this.txtEmail.TabIndex = 1;
             // 
             // txtToken
             // 
             this.txtToken.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtToken.Location = new System.Drawing.Point(165, 225);
+            this.txtToken.Location = new System.Drawing.Point(94, 225);
             this.txtToken.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtToken.Name = "txtToken";
-            this.txtToken.Size = new System.Drawing.Size(615, 24);
+            this.txtToken.Size = new System.Drawing.Size(686, 24);
             this.txtToken.TabIndex = 2;
             // 
             // txtNuevoPassword
             // 
             this.txtNuevoPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNuevoPassword.Location = new System.Drawing.Point(165, 300);
+            this.txtNuevoPassword.Location = new System.Drawing.Point(94, 300);
             this.txtNuevoPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNuevoPassword.Name = "txtNuevoPassword";
-            this.txtNuevoPassword.Size = new System.Drawing.Size(615, 24);
+            this.txtNuevoPassword.Size = new System.Drawing.Size(686, 24);
             this.txtNuevoPassword.TabIndex = 3;
             // 
             // lblEmail
@@ -88,7 +88,7 @@ namespace SistemaDeTickets.Vista
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(163, 102);
+            this.lblEmail.Location = new System.Drawing.Point(88, 106);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(223, 32);
             this.lblEmail.TabIndex = 4;
@@ -100,7 +100,7 @@ namespace SistemaDeTickets.Vista
             this.lblToken.AutoSize = true;
             this.lblToken.BackColor = System.Drawing.Color.Transparent;
             this.lblToken.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblToken.Location = new System.Drawing.Point(163, 182);
+            this.lblToken.Location = new System.Drawing.Point(88, 191);
             this.lblToken.Name = "lblToken";
             this.lblToken.Size = new System.Drawing.Size(198, 32);
             this.lblToken.TabIndex = 5;
@@ -113,7 +113,7 @@ namespace SistemaDeTickets.Vista
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(165, 268);
+            this.label3.Location = new System.Drawing.Point(93, 266);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(218, 32);
             this.label3.TabIndex = 6;

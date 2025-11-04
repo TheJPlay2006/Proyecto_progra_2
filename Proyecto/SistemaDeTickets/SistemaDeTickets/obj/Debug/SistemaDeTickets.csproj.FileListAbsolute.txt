@@ -11,7 +11,6 @@ C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\Sist
 C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\Eventos.json
 C:\Users\maire\OneDrive\Escritorio\Sexto cuatri\Progra II\Proyecto\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.exe.config
 c:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.csproj.AssemblyReference.cache
-C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\Eventos.json
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.exe.config
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.exe
 C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\SistemaDeTickets.pdb
@@ -228,3 +227,35 @@ C:\Users\maire\OneDrive\Escritorio\Proyecto_progra_2\Proyecto\SistemaDeTickets\S
 C:\Users\maire\OneDrive\Escritorio\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaGestionEventos.resources
 C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaCambiosEventos.resources
 C:\Users\Jairo\Documents\Proyecto_progra2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaGestionEventos.resources
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Data\MisEventos.json
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\PdfSharp-gdi.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\PdfSharp.Charting-gdi.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.ValueTuple.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\PdfSharp-gdi.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\PdfSharp.Charting-gdi.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\System.ValueTuple.xml
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\de\PdfSharp-gdi.resources.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\bin\Debug\de\PdfSharp.Charting-gdi.resources.dll
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaCambiosEventos.resources
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaEvento.resources
+C:\Users\jh599\OneDrive\Documentos\Proyecto_progra_2\Proyecto_progra_2\Proyecto\SistemaDeTickets\SistemaDeTickets\obj\Debug\SistemaDeTickets.Vista.VistaGestionEventos.resources
