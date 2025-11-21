@@ -635,5 +635,18 @@
     "MetodoPago": 0,
     "UltimosDigitosTarjeta": null,
     "Detalles": null
+  },
+  {
+    "Id": 50,
+    "UsuarioId": 9,
+    "EventoId": 2,
+    "Cantidad": 6,
+    "PrecioUnitario": 8000.0,
+    "PrecioTotal": 48000.0,
+    "FechaCompra": "2025-11-07T15:37:05.7097852-06:00",
+    "Estado": 2,
+    "MetodoPago": 0,
+    "UltimosDigitosTarjeta": null,
+    "Detalles": null
   }
 ]
